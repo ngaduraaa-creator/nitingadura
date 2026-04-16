@@ -29,7 +29,17 @@
     "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "57" },
     "memberOf": { "@type": "Organization", "name": "OneKey MLS" }
   }
-  </script>
+    // CONTACT WIDGET
+  const cwToggle = document.getElementById('cw-toggle');
+  const cwOptions = document.getElementById('cw-options');
+  cwToggle.addEventListener('click', () => {
+    const open = cwOptions.classList.toggle('open');
+    cwToggle.classList.toggle('open', open);
+  });
+  document.addEventListener('click', e => {
+    if(!e.target.closest('#cw')) { cwOptions.classList.remove('open'); cwToggle.classList.remove('open'); }
+  });
+</script>
 
   <script type="application/ld+json">
   {

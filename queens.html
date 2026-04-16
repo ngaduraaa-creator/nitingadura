@@ -122,11 +122,21 @@
     .btn-submit{width:100%;background:var(--gold);color:#fff;font-size:0.66rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;padding:15px;border-radius:2px;margin-top:6px;transition:background 0.2s;cursor:pointer;border:none;font-family:var(--sans)}
     .btn-submit:hover{background:#b07e2d}
 
-    /* FLOAT BTN */
-    .float-btn{position:fixed;bottom:28px;right:28px;z-index:99;background:var(--gold);color:#fff;font-size:0.6rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;padding:14px 22px;border-radius:2px;display:flex;align-items:center;gap:8px;box-shadow:0 8px 32px rgba(200,149,58,0.4);transition:all 0.22s;cursor:pointer;border:none;font-family:var(--sans)}
-    .float-btn:hover{background:#b07e2d;transform:translateY(-2px)}
-    .float-dot{width:7px;height:7px;border-radius:50%;background:#fff;opacity:0.8;animation:pulse 2s infinite}
-    @keyframes pulse{0%,100%{opacity:0.8;transform:scale(1)}50%{opacity:0.4;transform:scale(0.8)}}
+        /* CONTACT WIDGET */
+    .cw{position:fixed;bottom:28px;right:28px;z-index:99;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+    .cw-options{display:flex;flex-direction:column;gap:8px;align-items:flex-end;opacity:0;pointer-events:none;transform:translateY(8px);transition:all 0.22s var(--ease)}
+    .cw-options.open{opacity:1;pointer-events:all;transform:translateY(0)}
+    .cw-option{display:flex;align-items:center;gap:10px;background:#fff;color:var(--dark);font-size:0.7rem;font-weight:600;letter-spacing:0.08em;padding:11px 18px;border-radius:100px;box-shadow:0 4px 20px rgba(0,0,0,0.12);text-decoration:none;transition:all 0.18s;white-space:nowrap}
+    .cw-option:hover{transform:translateX(-3px);box-shadow:0 6px 28px rgba(0,0,0,0.16)}
+    .cw-option-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+    .cw-option.call .cw-option-dot{background:#2563eb}
+    .cw-option.sms .cw-option-dot{background:#16a34a}
+    .cw-option.wa .cw-option-dot{background:#25D366}
+    .cw-toggle{width:54px;height:54px;border-radius:50%;background:var(--gold);color:#fff;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 28px rgba(200,149,58,0.45);transition:all 0.22s;font-size:1.3rem;flex-shrink:0}
+    .cw-toggle:hover{background:#b07e2d;transform:scale(1.06)}
+    .cw-toggle svg{transition:transform 0.22s}
+    .cw-toggle.open svg{transform:rotate(45deg)}
+    50%{opacity:0.4;transform:scale(0.8)}}
 
     /* FOOTER */
     .footer{background:#080705;padding:64px 0 32px}
@@ -143,7 +153,7 @@
 
     /* RESPONSIVE */
     @media(max-width:900px){.featured-grid{grid-template-columns:repeat(2,1fr)}.nav-links{display:none}.footer-grid{grid-template-columns:1fr 1fr}}
-    @media(max-width:520px){.container{padding:0 20px}.featured-grid{grid-template-columns:1fr}.hero-stat-row{gap:24px}.float-btn{bottom:16px;right:16px;padding:12px 18px}}
+    @media(max-width:520px){.container{padding:0 20px}.featured-grid{grid-template-columns:1fr}.hero-stat-row{gap:24px}.cw{bottom:16px;right:16px}}
   </style>
 </head>
 <body>
@@ -179,9 +189,16 @@
   </div>
 </div>
 
-<button class="float-btn popup-trigger" aria-label="Contact Nitin">
-  <span class="float-dot"></span>Contact Nitin
-</button>
+<div class="cw" id="cw">
+  <div class="cw-options" id="cw-options">
+    <a href="tel:9177050132" class="cw-option call"><span class="cw-option-dot"></span>Call Nitin</a>
+    <a href="sms:9177050132" class="cw-option sms"><span class="cw-option-dot"></span>Text Nitin</a>
+    <a href="https://wa.me/19177050132" class="cw-option wa" target="_blank" rel="noopener"><span class="cw-option-dot"></span>WhatsApp</a>
+  </div>
+  <button class="cw-toggle" id="cw-toggle" aria-label="Contact Nitin">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+  </button>
+</div>
 
 <!-- NAV -->
 <nav class="nav" aria-label="Main navigation">
