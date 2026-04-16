@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nitin Gadura | Queens & Long Island Real Estate Agent | Buy, Sell, Invest in NY</title>
-  <meta name="description" content="Nitin Gadura — Queens & Long Island real estate agent. 7+ years, 57+ five-star reviews, $100M+ sold. Expert in buying, selling, multi-family & investment properties. Free home valuation. (917) 705-0132.">
-  <meta name="keywords" content="Queens real estate agent, Long Island realtor, sell my house Queens NY, buy home Queens NY, Ozone Park realtor, Jamaica NY real estate, how to sell a house in Queens, what is my home worth Queens NY, best real estate agent Queens New York, OneKey MLS agent Queens, multi-family homes Queens NY, first time home buyer Queens NY, home valuation Queens, Richmond Hill real estate, Howard Beach homes for sale, Flushing real estate agent, Nassau County realtor, sell house fast New York">
+  <title>Nitin Gadura | Queens & Long Island Real Estate Agent</title>
+  <meta name="description" content="Nitin Gadura — Queens & Long Island real estate agent. 7+ years, 57+ five-star reviews, $100M+ sold. Expert in buying, selling & investment properties. Free home valuation. (917) 705-0132.">
+  <meta name="keywords" content="Queens real estate agent, Long Island realtor, sell my house Queens NY, buy home Queens NY, Ozone Park realtor, Jamaica NY real estate, best real estate agent Queens New York, OneKey MLS agent Queens, multi-family homes Queens NY, first time home buyer Queens NY, home valuation Queens, Richmond Hill real estate, Howard Beach homes for sale, Flushing real estate agent, Nassau County realtor, sell house fast New York">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://nitingadura.com/">
   <meta property="og:title" content="Nitin Gadura | Queens & Long Island Real Estate Expert">
-  <meta property="og:description" content="7+ years, 57+ five-star reviews, $100M+ sold. Free home valuation. Serving Queens, Brooklyn & Long Island.">
+  <meta property="og:description" content="7+ years, 57+ five-star reviews, $100M+ sold. Free home valuation.">
   <meta property="og:url" content="https://nitingadura.com/">
   <meta property="og:type" content="profile">
   <meta property="og:image" content="https://nitingadura.com/nitin-gadura.jpg">
@@ -25,633 +25,544 @@
     "telephone": "+19177050132",
     "email": "info@gadurarealestate.com",
     "licenseNumber": "10401383405",
-    "knowsLanguage": ["English", "Hindi", "Punjabi", "Gujarati", "Urdu"],
-    "memberOf": { "@type": "Organization", "name": "OneKey MLS" },
-    "worksFor": {
-      "@type": "RealEstateAgent",
-      "name": "Gadura Real Estate, LLC",
-      "url": "https://www.gadurarealestate.com",
-      "address": { "@type": "PostalAddress", "streetAddress": "106-09 101st Ave", "addressLocality": "Ozone Park", "addressRegion": "NY", "postalCode": "11416" }
-    },
-    "areaServed": [
-      {"@type": "City", "name": "Queens, New York"},
-      {"@type": "City", "name": "Brooklyn, New York"},
-      {"@type": "AdministrativeArea", "name": "Nassau County, New York"},
-      {"@type": "AdministrativeArea", "name": "Suffolk County, New York"}
-    ],
-    "sameAs": ["https://www.gadurarealestate.com", "https://www.zillow.com/profile/NitinGadura/", "https://www.homes.com/real-estate-agents/nitin-k-gadura-6dpbd3k/"],
-    "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "57", "bestRating": "5"}
+    "knowsLanguage": ["English","Hindi","Punjabi","Gujarati","Urdu"],
+    "memberOf": {"@type":"Organization","name":"OneKey MLS"},
+    "worksFor": {"@type":"RealEstateAgent","name":"Gadura Real Estate, LLC","url":"https://www.gadurarealestate.com","address":{"@type":"PostalAddress","streetAddress":"106-09 101st Ave","addressLocality":"Ozone Park","addressRegion":"NY","postalCode":"11416"}},
+    "areaServed": [{"@type":"City","name":"Queens, New York"},{"@type":"City","name":"Brooklyn, New York"},{"@type":"AdministrativeArea","name":"Nassau County, New York"},{"@type":"AdministrativeArea","name":"Suffolk County, New York"}],
+    "sameAs": ["https://www.gadurarealestate.com","https://www.zillow.com/profile/NitinGadura/","https://www.homes.com/real-estate-agents/nitin-k-gadura-6dpbd3k/"],
+    "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"57","bestRating":"5"}
   }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    /* ── HERO REDESIGN ─────────────────────────────────────── */
-    .hero-v2 {
-      position: relative;
-      min-height: calc(100vh - 72px);
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      overflow: hidden;
-      background: #0a0a0a;
+    :root {
+      --black:  #0A0908;
+      --dark:   #1C1A18;
+      --gold:   #C8953A;
+      --gold-lt:rgba(200,149,58,0.1);
+      --cream:  #F8F5F0;
+      --off-w:  #FDFCFA;
+      --white:  #FFFFFF;
+      --mid:    #6B6560;
+      --muted:  #A09890;
+      --border: rgba(0,0,0,0.09);
+      --bd:     rgba(255,255,255,0.07);
+      --serif:  'Playfair Display', Georgia, serif;
+      --sans:   'Inter', system-ui, sans-serif;
+      --ease:   cubic-bezier(0.16,1,0.3,1);
     }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--sans);color:var(--dark);background:var(--white);-webkit-font-smoothing:antialiased}
+    a{text-decoration:none;color:inherit}
+    img{display:block;max-width:100%}
+    button{cursor:pointer;font-family:inherit;border:none;background:none}
 
-    /* Left: photo with cinematic treatment */
-    .hero-v2-photo {
-      position: relative;
-      overflow: hidden;
-    }
-    .hero-v2-photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center 15%;
-      display: block;
-      filter: contrast(1.05) saturate(0.92);
-    }
-    /* Deep vignette + right fade into content panel */
-    .hero-v2-photo::before {
-      content: '';
-      position: absolute; inset: 0; z-index: 1;
-      background:
-        linear-gradient(to top, rgba(10,10,10,0.55) 0%, transparent 50%),
-        linear-gradient(to right, transparent 55%, #0e1a12 100%);
-    }
-    /* Subtle warm amber light from top-left */
-    .hero-v2-photo::after {
-      content: '';
-      position: absolute; inset: 0; z-index: 1;
-      background: radial-gradient(ellipse 70% 60% at 20% 10%, rgba(200,149,58,0.12) 0%, transparent 60%);
-      pointer-events: none;
-    }
+    .container{max-width:1200px;margin:0 auto;padding:0 40px}
+    .section{padding:clamp(64px,8vw,120px) 0}
+    .section-cream{background:var(--cream)}
+    .section-dark{background:var(--black)}
+    .eyebrow{display:block;font-size:0.6rem;font-weight:600;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+    .section-title{font-family:var(--serif);font-size:clamp(1.9rem,3vw,2.9rem);font-weight:700;line-height:1.12;color:var(--black);margin-bottom:14px}
+    .section-sub{font-size:0.92rem;font-weight:300;line-height:1.85;color:var(--mid);max-width:580px}
+    .section-header{margin-bottom:56px}
+    .section-header.centered{text-align:center}
+    .section-header.centered .section-sub{margin:0 auto}
 
-    /* Floating credential badge on photo */
-    .hero-badge {
-      position: absolute; bottom: 32px; left: 28px; z-index: 2;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.12);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border-radius: 10px;
-      padding: 14px 18px;
-      display: flex; align-items: center; gap: 12px;
-    }
-    .hero-badge-logo { width: 36px; height: 36px; object-fit: contain; filter: brightness(0) invert(1) opacity(0.9); }
-    .hero-badge-text strong { display: block; font-size: 0.72rem; font-weight: 700; color: #fff; letter-spacing: 0.04em; }
-    .hero-badge-text span { font-size: 0.62rem; color: rgba(255,255,255,0.55); letter-spacing: 0.04em; }
+    /* NAV */
+    .nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;padding:22px 40px;transition:all 0.35s var(--ease)}
+    .nav.scrolled{background:rgba(10,9,8,0.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);padding:14px 40px;border-bottom:1px solid var(--bd)}
+    .nav-logo{flex-shrink:0;display:flex;flex-direction:column;gap:3px}
+    .nav-logo-name{font-size:0.9rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#fff;line-height:1}
+    .nav-logo-sub{font-size:0.5rem;font-weight:400;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.3);line-height:1}
+    .nav-links{display:flex;align-items:center;gap:28px;margin:0 auto}
+    .nav-links a{font-size:0.68rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.55);transition:color 0.2s}
+    .nav-links a:hover{color:#fff}
+    .nav-actions{display:flex;align-items:center;gap:18px;flex-shrink:0}
+    .nav-phone{font-size:0.7rem;font-weight:400;color:rgba(255,255,255,0.45);letter-spacing:0.05em;transition:color 0.2s}
+    .nav-phone:hover{color:rgba(255,255,255,0.85)}
+    .nav-cta{background:var(--gold);color:#fff;font-size:0.62rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;padding:10px 20px;border-radius:2px;transition:background 0.2s;cursor:pointer}
+    .nav-cta:hover{background:#b07e2d}
 
-    /* Right: dark green content panel */
-    .hero-v2-content {
-      background: #0e1a12;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: clamp(40px, 5vw, 72px) clamp(32px, 4vw, 60px);
-      position: relative;
-      overflow: hidden;
+    /* HERO — uses background-image to avoid CSS conflict with badge logo */
+    .hero{min-height:100vh;display:grid;grid-template-columns:58% 42%;background:var(--black)}
+    .hero-photo{
+      background:url('nitin-gadura.jpg') center 8% / cover no-repeat;
+      position:relative;min-height:100vh
     }
-    /* Subtle texture on content panel */
-    .hero-v2-content::before {
-      content: '';
-      position: absolute; inset: 0;
-      background: radial-gradient(ellipse 80% 60% at 80% 0%, rgba(200,149,58,0.07) 0%, transparent 55%);
-      pointer-events: none;
+    .hero-photo::after{
+      content:'';position:absolute;inset:0;
+      background:linear-gradient(to right,transparent 55%,var(--black) 100%)
     }
-    .hero-v2-eyebrow {
-      display: flex; align-items: center; gap: 10px;
-      font-size: 0.68rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase;
-      color: var(--amber); margin-bottom: 24px;
+    .hero-content{
+      background:var(--black);display:flex;flex-direction:column;
+      justify-content:flex-end;
+      padding:clamp(100px,10vw,140px) clamp(40px,4vw,64px) clamp(60px,7vw,90px);
+      position:relative
     }
-    .hero-v2-eyebrow::before { content: ''; width: 28px; height: 1px; background: var(--amber); }
-    .hero-v2-headline {
-      font-family: var(--serif);
-      font-size: clamp(2.4rem, 4.5vw, 3.8rem);
-      font-weight: 700; line-height: 1.08;
-      color: #fff; margin-bottom: 10px;
+    .hero-content::before{
+      content:'';position:absolute;inset:0;pointer-events:none;
+      background:radial-gradient(ellipse 80% 50% at 60% 0%,rgba(200,149,58,0.05) 0%,transparent 60%)
     }
-    .hero-v2-headline em {
-      font-style: italic;
-      color: var(--amber);
-    }
-    .hero-v2-sub {
-      font-size: clamp(0.88rem, 1.2vw, 1rem);
-      color: rgba(255,255,255,0.6);
-      line-height: 1.72; margin-bottom: 32px;
-      max-width: 440px;
-    }
+    .hero-eyebrow{font-size:0.56rem;font-weight:500;letter-spacing:0.32em;text-transform:uppercase;color:var(--gold);margin-bottom:22px;display:flex;align-items:center;gap:14px}
+    .hero-eyebrow::before{content:'';width:36px;height:1px;background:var(--gold);flex-shrink:0}
+    .hero-headline{font-family:var(--serif);font-size:clamp(2.8rem,5vw,4.4rem);font-weight:700;line-height:1.04;color:#fff;margin-bottom:22px}
+    .hero-headline em{font-style:italic;color:var(--gold);font-weight:400}
+    .hero-desc{font-size:0.87rem;font-weight:300;line-height:1.9;color:rgba(255,255,255,0.45);margin-bottom:32px;max-width:360px}
+    .hero-rating{display:flex;align-items:center;gap:12px;margin-bottom:32px}
+    .hero-stars{color:var(--gold);font-size:0.72rem;letter-spacing:0.08em}
+    .hero-rating-text{font-size:0.7rem;color:rgba(255,255,255,0.38)}
+    .hero-rating-text strong{color:rgba(255,255,255,0.65);font-weight:500}
+    .hero-ctas{display:flex;flex-direction:column;gap:10px;margin-bottom:36px;max-width:340px}
+    .btn-gold{background:var(--gold);color:#fff;font-size:0.68rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;padding:17px 28px;border-radius:2px;text-align:center;transition:all 0.22s;display:block;cursor:pointer}
+    .btn-gold:hover{background:#b07e2d;transform:translateY(-1px);box-shadow:0 8px 32px rgba(200,149,58,0.3)}
+    .btn-ghost{border:1px solid rgba(255,255,255,0.18);color:rgba(255,255,255,0.65);font-size:0.68rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;padding:16px 28px;border-radius:2px;text-align:center;transition:all 0.22s;display:block}
+    .btn-ghost:hover{border-color:rgba(255,255,255,0.45);color:#fff}
+    .hero-pills{display:flex;gap:8px;flex-wrap:wrap}
+    .hero-pill{font-size:0.6rem;font-weight:500;letter-spacing:0.08em;color:rgba(255,255,255,0.3);border:1px solid rgba(255,255,255,0.1);padding:6px 13px;border-radius:100px;transition:all 0.2s}
+    .hero-pill:hover{color:rgba(255,255,255,0.65);border-color:rgba(255,255,255,0.25)}
 
-    /* Star rating row */
-    .hero-rating {
-      display: flex; align-items: center; gap: 10px; margin-bottom: 32px;
-    }
-    .hero-stars { color: #F5A623; font-size: 0.9rem; letter-spacing: 0.05em; }
-    .hero-rating-text { font-size: 0.8rem; color: rgba(255,255,255,0.55); }
-    .hero-rating-text strong { color: rgba(255,255,255,0.85); }
+    /* STATS */
+    .stats-band{display:grid;grid-template-columns:repeat(4,1fr);background:#0D0B09;border-top:1px solid rgba(255,255,255,0.05)}
+    .stat-cell{padding:32px 20px;text-align:center;border-right:1px solid rgba(255,255,255,0.05)}
+    .stat-cell:last-child{border-right:none}
+    .stat-num{display:block;font-family:var(--serif);font-size:clamp(2rem,3.5vw,3rem);font-weight:700;color:var(--gold);line-height:1;margin-bottom:8px}
+    .stat-lbl{font-size:0.56rem;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.28)}
 
-    .hero-v2-ctas { display: flex; flex-direction: column; gap: 12px; margin-bottom: 36px; }
-    .hero-v2-ctas .btn { justify-content: center; font-size: 0.82rem; }
-    .btn-hero-primary {
-      background: var(--amber); color: #fff; padding: 16px 32px; border-radius: 6px;
-      font-weight: 700; letter-spacing: 0.04em; transition: all 0.22s;
-      display: flex; align-items: center; justify-content: center; gap: 8px;
-    }
-    .btn-hero-primary:hover { background: #b07e2d; transform: translateY(-1px); box-shadow: 0 8px 28px rgba(200,149,58,0.35); }
-    .btn-hero-secondary {
-      border: 1.5px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.8);
-      padding: 15px 32px; border-radius: 6px; font-weight: 500; letter-spacing: 0.04em;
-      transition: all 0.22s; display: flex; align-items: center; justify-content: center; gap: 8px;
-      font-size: 0.82rem;
-    }
-    .btn-hero-secondary:hover { border-color: rgba(255,255,255,0.5); color: #fff; background: rgba(255,255,255,0.06); }
+    /* TRUST TICKER */
+    .trust-bar{background:#0D0B09;border-top:1px solid rgba(255,255,255,0.04);padding:11px 0;overflow:hidden}
+    .trust-track{display:flex;white-space:nowrap;animation:ticker 36s linear infinite}
+    .trust-item{flex-shrink:0;padding:0 28px;font-size:0.58rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.22)}
+    .trust-item::after{content:'·';margin-left:28px;color:var(--gold);opacity:0.4}
+    @keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
-    /* Social proof row */
-    .hero-profiles {
-      display: flex; gap: 10px; flex-wrap: wrap;
-    }
-    .hero-profile-link {
-      display: flex; align-items: center; gap: 7px;
-      background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 6px; padding: 8px 12px;
-      font-size: 0.7rem; font-weight: 600; color: rgba(255,255,255,0.65);
-      letter-spacing: 0.04em; transition: all 0.2s;
-    }
-    .hero-profile-link:hover { background: rgba(255,255,255,0.1); color: #fff; border-color: rgba(255,255,255,0.25); }
-    .hero-profile-link .dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
-    .dot-zillow { background: #006AFF; }
-    .dot-homes { background: #E0441E; }
-    .dot-google { background: #34A853; }
-    .dot-mls { background: var(--amber); }
+    /* LISTINGS */
+    .tabs{display:flex;border-bottom:1px solid var(--border);margin-bottom:48px;gap:0}
+    .tab-btn{padding:12px 0;margin-right:32px;font-size:0.67rem;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--muted);border-bottom:2px solid transparent;margin-bottom:-1px;cursor:pointer;transition:all 0.2s;background:none}
+    .tab-btn.active{color:var(--black);border-bottom-color:var(--gold)}
+    .tab-btn:hover{color:var(--dark)}
+    .tab-panel{display:none}
+    .tab-panel.active{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .prop-card{border:1px solid var(--border);background:var(--white);transition:all 0.22s}
+    .prop-card:hover{box-shadow:0 12px 48px rgba(0,0,0,0.08);transform:translateY(-2px)}
+    .prop-top{padding:22px 22px 0;display:flex;justify-content:space-between;align-items:baseline}
+    .prop-badge{font-size:0.54rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:4px 10px;border-radius:100px}
+    .b-active{background:#EEF6EE;color:#1A5C1A}
+    .b-new{background:#FDF3E4;color:#8B4000}
+    .b-sold{background:var(--gold-lt);color:#7A4E10}
+    .prop-price{font-family:var(--serif);font-size:1.3rem;font-weight:700;color:var(--black)}
+    .prop-body{padding:12px 22px 22px}
+    .prop-addr{font-size:0.82rem;font-weight:600;color:var(--dark);margin-bottom:3px}
+    .prop-loc{font-size:0.68rem;color:var(--muted);margin-bottom:16px;letter-spacing:0.04em}
+    .prop-meta{display:flex;border-top:1px solid var(--border);padding-top:14px}
+    .prop-m{flex:1;text-align:center;border-right:1px solid var(--border)}
+    .prop-m:last-child{border-right:none}
+    .prop-m strong{display:block;font-size:0.86rem;font-weight:700;color:var(--dark);margin-bottom:2px}
+    .prop-m span{font-size:0.54rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted)}
 
-    /* Stats band on dark background */
-    .stats-band {
-      background: #0e1a12;
-      border-top: 1px solid rgba(255,255,255,0.07);
-      display: grid; grid-template-columns: repeat(4,1fr);
-    }
-    .stat-cell {
-      padding: 28px 20px; text-align: center;
-      border-right: 1px solid rgba(255,255,255,0.07);
-    }
-    .stat-cell:last-child { border-right: none; }
-    .stat-cell strong {
-      display: block; font-family: var(--serif); font-size: clamp(1.8rem, 3vw, 2.6rem);
-      font-weight: 700; color: var(--amber); line-height: 1; margin-bottom: 6px;
-    }
-    .stat-cell span { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.45); }
+    /* PLATFORMS */
+    .platform-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border)}
+    .platform-card{background:var(--off-w);padding:40px 36px;transition:background 0.2s;display:block}
+    .platform-card:hover{background:var(--white)}
+    .platform-name{font-family:var(--serif);font-size:1.25rem;font-weight:700;color:var(--black);margin-bottom:10px}
+    .platform-tag{font-size:0.58rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;display:block}
+    .platform-desc{font-size:0.82rem;font-weight:300;color:var(--mid);line-height:1.82;margin-bottom:22px}
+    .platform-cta{font-size:0.62rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold)}
 
-    /* ── LISTINGS ───────────────────────────────────────────── */
-    .listings-tabs {
-      display: flex; gap: 0; border-bottom: 2px solid var(--border); margin-bottom: 40px;
-    }
-    .listings-tab {
-      padding: 14px 28px; font-size: var(--sm); font-weight: 600;
-      color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent;
-      margin-bottom: -2px; transition: all 0.2s; background: none;
-    }
-    .listings-tab.active { color: var(--green); border-bottom-color: var(--green); }
-    .listings-tab:hover { color: var(--green); }
-    .listings-panel { display: none; }
-    .listings-panel.active { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+    /* WHY — DARK */
+    .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,0.05)}
+    .why-card{padding:48px 44px;background:var(--black)}
+    .why-num{display:block;font-family:var(--serif);font-size:3.5rem;font-weight:700;color:rgba(200,149,58,0.15);line-height:1;margin-bottom:20px}
+    .why-card h3{font-family:var(--serif);font-size:1.2rem;font-weight:600;color:#fff;margin-bottom:14px;line-height:1.3}
+    .why-card p{font-size:0.83rem;font-weight:300;color:rgba(255,255,255,0.4);line-height:1.9}
 
-    .prop-card {
-      background: var(--white); border: 1px solid var(--border); border-radius: var(--r-lg);
-      overflow: hidden; transition: box-shadow 0.22s, transform 0.22s;
-    }
-    .prop-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-3px); }
-    .prop-card-header {
-      padding: 20px 20px 0;
-      display: flex; justify-content: space-between; align-items: flex-start;
-    }
-    .prop-badge {
-      display: inline-flex; align-items: center; gap: 5px;
-      font-size: 0.62rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
-      padding: 4px 10px; border-radius: 100px;
-    }
-    .badge-active { background: #E8F5E9; color: #1B5E20; }
-    .badge-just-listed { background: #FFF8E1; color: #E65100; }
-    .badge-sold { background: var(--green-light); color: var(--green); }
-    .prop-price {
-      font-family: var(--serif); font-size: 1.4rem; font-weight: 700; color: var(--dark); margin-bottom: 4px;
-    }
-    .prop-body { padding: 12px 20px 20px; }
-    .prop-address { font-size: var(--sm); font-weight: 600; color: var(--dark); margin-bottom: 4px; }
-    .prop-loc { font-size: var(--xs); color: var(--muted); margin-bottom: 14px; }
-    .prop-details {
-      display: flex; gap: 0; border-top: 1px solid var(--border); padding-top: 14px;
-    }
-    .prop-detail {
-      flex: 1; text-align: center; padding: 0 8px; border-right: 1px solid var(--border);
-    }
-    .prop-detail:last-child { border-right: none; }
-    .prop-detail strong { display: block; font-size: 0.9rem; font-weight: 700; color: var(--dark); margin-bottom: 2px; }
-    .prop-detail span { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 600; }
+    /* MARKETS */
+    .markets-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .market-card{border:1px solid var(--border);background:var(--white);padding:40px 32px;position:relative;overflow:hidden;transition:all 0.25s;display:block}
+    .market-card:hover{box-shadow:0 12px 48px rgba(0,0,0,0.08);transform:translateY(-2px)}
+    .market-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--gold)}
+    .market-eyebrow{font-size:0.56rem;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;display:block}
+    .market-card h3{font-family:var(--serif);font-size:1.6rem;font-weight:700;color:var(--black);margin-bottom:12px}
+    .market-card p{font-size:0.82rem;font-weight:300;color:var(--mid);line-height:1.82;margin-bottom:18px}
+    .market-zips{font-size:0.6rem;color:var(--muted);letter-spacing:0.05em;margin-bottom:20px}
+    .market-link-text{font-size:0.6rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold)}
 
-    /* ── SEO FAQ SECTION ─────────────────────────────────────── */
-    .seo-grid {
-      display: grid; grid-template-columns: repeat(2,1fr); gap: 24px;
-    }
-    .seo-card {
-      background: var(--white); border: 1px solid var(--border); border-radius: var(--r-lg);
-      padding: 28px 24px;
-    }
-    .seo-card h3 {
-      font-family: var(--serif); font-size: 1.05rem; font-weight: 700; color: var(--green);
-      margin-bottom: 10px; line-height: 1.3;
-    }
-    .seo-card p { font-size: var(--sm); color: var(--mid); line-height: 1.75; }
+    /* VALUATION */
+    .val-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+    .val-title{font-family:var(--serif);font-size:clamp(2rem,3vw,2.9rem);font-weight:700;color:#fff;line-height:1.12;margin-bottom:18px}
+    .val-desc{font-size:0.87rem;font-weight:300;color:rgba(255,255,255,0.4);line-height:1.9;margin-bottom:28px}
+    .val-bullets{list-style:none;display:flex;flex-direction:column;gap:12px;margin-bottom:36px}
+    .val-bullets li{font-size:0.82rem;font-weight:300;color:rgba(255,255,255,0.45);display:flex;gap:14px;align-items:flex-start;line-height:1.65}
+    .val-bullets li::before{content:'—';color:var(--gold);flex-shrink:0}
+    .val-form{background:#fff;padding:40px}
+    .val-form h3{font-family:var(--serif);font-size:1.35rem;font-weight:700;color:var(--black);margin-bottom:28px}
+    .form-field{margin-bottom:16px}
+    .form-field label{display:block;font-size:0.62rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--mid);margin-bottom:7px}
+    .form-field input,.form-field select{width:100%;padding:13px 16px;border:1px solid var(--border);border-radius:2px;font-family:var(--sans);font-size:0.87rem;font-weight:300;color:var(--dark);background:#fff;transition:border-color 0.2s;appearance:none}
+    .form-field input:focus,.form-field select:focus{outline:none;border-color:var(--gold)}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .btn-submit{width:100%;background:var(--gold);color:#fff;font-size:0.66rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;padding:16px;border-radius:2px;margin-top:8px;transition:background 0.2s;cursor:pointer;border:none;font-family:var(--sans)}
+    .btn-submit:hover{background:#b07e2d}
+    .form-disclaimer{font-size:0.58rem;color:var(--muted);line-height:1.75;margin-top:14px}
 
-    /* ── PROFILES SECTION ────────────────────────────────────── */
-    .profile-links-grid {
-      display: grid; grid-template-columns: repeat(3,1fr); gap: 20px;
-    }
-    .profile-platform-card {
-      display: flex; flex-direction: column; align-items: center; text-align: center;
-      background: var(--white); border: 1px solid var(--border); border-radius: var(--r-lg);
-      padding: 32px 24px; transition: all 0.22s;
-    }
-    .profile-platform-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
-    .platform-icon { font-size: 2.4rem; margin-bottom: 14px; }
-    .platform-name { font-size: var(--sm); font-weight: 700; color: var(--dark); margin-bottom: 6px; }
-    .platform-desc { font-size: var(--xs); color: var(--muted); line-height: 1.6; margin-bottom: 16px; }
-    .platform-rating { font-size: var(--sm); font-weight: 700; color: var(--green); margin-bottom: 16px; }
+    /* TESTIMONIALS */
+    .testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+    .testimonial{padding:36px;background:var(--white);border:1px solid var(--border)}
+    .testimonial-mark{font-family:var(--serif);font-size:3rem;font-weight:700;color:var(--gold);line-height:1;margin-bottom:12px}
+    .testimonial p{font-size:0.86rem;font-weight:300;color:var(--mid);line-height:1.88;margin-bottom:24px}
+    .testimonial-stars{color:var(--gold);font-size:0.68rem;letter-spacing:0.1em;margin-bottom:8px}
+    .testimonial-name{font-size:0.75rem;font-weight:600;color:var(--dark);margin-bottom:3px}
+    .testimonial-loc{font-size:0.62rem;color:var(--muted);letter-spacing:0.05em}
 
-    /* ── RESPONSIVE ──────────────────────────────────────────── */
-    @media (max-width: 900px) {
-      .hero-v2 { grid-template-columns: 1fr; min-height: auto; }
-      .hero-v2-photo { height: 70vw; max-height: 420px; }
-      .hero-v2-photo::before { background: linear-gradient(to bottom, transparent 30%, rgba(10,10,10,0.7) 100%); }
-      .hero-badge { bottom: 20px; }
-      .stats-band { grid-template-columns: repeat(2,1fr); }
-      .stat-cell:nth-child(2) { border-right: none; }
-      .listings-panel.active { grid-template-columns: 1fr; }
-      .seo-grid { grid-template-columns: 1fr; }
-      .profile-links-grid { grid-template-columns: 1fr; }
+    /* FAQ */
+    .faq-wrap{max-width:800px;margin:0 auto}
+    .faq-item{border-bottom:1px solid var(--border)}
+    .faq-q{width:100%;padding:22px 0;display:flex;justify-content:space-between;align-items:center;font-size:0.9rem;font-weight:500;color:var(--dark);text-align:left;gap:20px;cursor:pointer;background:none}
+    .faq-icon{font-size:1.1rem;color:var(--gold);flex-shrink:0;transition:transform 0.3s var(--ease)}
+    .faq-item.open .faq-icon{transform:rotate(45deg)}
+    .faq-a{font-size:0.83rem;font-weight:300;color:var(--mid);line-height:1.88;max-height:0;overflow:hidden;transition:max-height 0.4s var(--ease)}
+    .faq-item.open .faq-a{max-height:500px}
+    .faq-a-inner{padding-bottom:22px}
+
+    /* SEO GRID */
+    .seo-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+    .seo-card{background:var(--white);border:1px solid var(--border);padding:28px 24px}
+    .seo-card h3{font-family:var(--serif);font-size:1rem;font-weight:700;color:var(--black);margin-bottom:10px;line-height:1.3}
+    .seo-card p{font-size:0.81rem;font-weight:300;color:var(--mid);line-height:1.82}
+
+    /* FOOTER */
+    .footer{background:#080705;padding:64px 0 32px}
+    .footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
+    .footer-brand-name{font-size:0.88rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#fff;margin-bottom:5px}
+    .footer-brand-sub{font-size:0.52rem;font-weight:400;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.22);margin-bottom:16px}
+    .footer-brand-desc{font-size:0.76rem;font-weight:300;color:rgba(255,255,255,0.3);line-height:1.9}
+    .footer-col-title{font-size:0.56rem;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.28);margin-bottom:16px}
+    .footer-links{display:flex;flex-direction:column;gap:10px}
+    .footer-links a{font-size:0.76rem;font-weight:300;color:rgba(255,255,255,0.4);transition:color 0.2s}
+    .footer-links a:hover{color:rgba(255,255,255,0.8)}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,0.06);padding-top:28px;display:flex;justify-content:space-between;align-items:flex-start;gap:24px}
+    .footer-legal{font-size:0.58rem;font-weight:300;color:rgba(255,255,255,0.2);line-height:1.85;max-width:680px}
+
+    /* POPUP */
+    .popup-overlay{display:none;position:fixed;inset:0;z-index:200;background:rgba(0,0,0,0.78);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);align-items:center;justify-content:center;padding:20px}
+    .popup-overlay.active{display:flex}
+    .popup-box{background:#fff;max-width:500px;width:100%;padding:48px;position:relative}
+    .popup-close{position:absolute;top:16px;right:20px;font-size:1.2rem;color:var(--muted);cursor:pointer;transition:color 0.2s;background:none;border:none}
+    .popup-close:hover{color:var(--dark)}
+    .popup-title{font-family:var(--serif);font-size:1.6rem;font-weight:700;color:var(--black);margin-bottom:8px}
+    .popup-sub{font-size:0.82rem;font-weight:300;color:var(--mid);margin-bottom:28px}
+    .popup-options{display:flex;flex-direction:column;gap:10px}
+    .popup-opt{padding:18px 20px;border:1px solid var(--border);cursor:pointer;display:flex;align-items:center;justify-content:space-between;font-size:0.82rem;font-weight:500;color:var(--dark);transition:all 0.18s;background:var(--off-w)}
+    .popup-opt:hover{border-color:var(--gold);background:#fff}
+    .popup-opt-arrow{color:var(--gold);font-size:1rem}
+    .popup-form-title{font-family:var(--serif);font-size:1.3rem;font-weight:700;color:var(--black);margin-bottom:6px}
+    .popup-form-sub{font-size:0.78rem;font-weight:300;color:var(--mid);margin-bottom:24px}
+    .popup-back{font-size:0.6rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);cursor:pointer;margin-bottom:20px;display:block;background:none;border:none}
+
+    /* FLOAT BTN */
+    .float-btn{position:fixed;bottom:28px;right:28px;z-index:99;background:var(--gold);color:#fff;font-size:0.6rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;padding:14px 22px;border-radius:2px;display:flex;align-items:center;gap:8px;box-shadow:0 8px 32px rgba(200,149,58,0.4);transition:all 0.22s;cursor:pointer;border:none;font-family:var(--sans)}
+    .float-btn:hover{background:#b07e2d;transform:translateY(-2px);box-shadow:0 12px 40px rgba(200,149,58,0.5)}
+    .float-dot{width:7px;height:7px;border-radius:50%;background:#fff;opacity:0.8;animation:pulse 2s infinite}
+    @keyframes pulse{0%,100%{opacity:0.8;transform:scale(1)}50%{opacity:0.4;transform:scale(0.8)}}
+
+    /* RESPONSIVE */
+    @media(max-width:960px){
+      .hero{grid-template-columns:1fr}
+      .hero-photo{min-height:65vh;background-position:center 12%}
+      .hero-photo::after{background:linear-gradient(to bottom,transparent 50%,var(--black) 95%)}
+      .hero-content{padding:40px 28px 60px}
+      .nav-links{display:none}
+      .stats-band{grid-template-columns:repeat(2,1fr)}
+      .tab-panel.active{grid-template-columns:1fr 1fr}
+      .platform-grid{grid-template-columns:1fr}
+      .why-grid{grid-template-columns:1fr}
+      .markets-grid{grid-template-columns:1fr}
+      .val-inner{grid-template-columns:1fr;gap:40px}
+      .testimonials-grid{grid-template-columns:1fr}
+      .seo-grid{grid-template-columns:1fr}
+      .footer-grid{grid-template-columns:1fr 1fr}
     }
-    @media (max-width: 600px) {
-      .hero-v2-ctas .btn-hero-primary,
-      .hero-v2-ctas .btn-hero-secondary { font-size: 0.78rem; padding: 14px 20px; }
-      .stats-band { grid-template-columns: repeat(2,1fr); }
+    @media(max-width:520px){
+      .container{padding:0 20px}
+      .nav{padding:16px 20px}
+      .tab-panel.active{grid-template-columns:1fr}
+      .footer-grid{grid-template-columns:1fr}
+      .form-row{grid-template-columns:1fr}
+      .float-btn{bottom:16px;right:16px;padding:12px 18px}
     }
   </style>
 </head>
 <body>
 
-<!-- ══ POPUP ═════════════════════════════════════════════════ -->
-<div class="popup-overlay" id="popup" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+<!-- POPUP -->
+<div class="popup-overlay" id="popup" role="dialog" aria-modal="true">
   <div class="popup-box">
     <button class="popup-close" id="popup-close" aria-label="Close">✕</button>
+
     <div id="popup-step1">
-      <h2 class="popup-title" id="popup-title">How Can Nitin Help You?</h2>
-      <p class="popup-sub">Queens &amp; Long Island real estate, made simple.</p>
-      <div class="popup-cards">
-        <div class="popup-card" tabindex="0" data-type="sell" role="button"><span class="popup-card-icon">🏠</span><h3>Sell My Home</h3><p>Free valuation &amp; full marketing plan</p></div>
-        <div class="popup-card" tabindex="0" data-type="buy" role="button"><span class="popup-card-icon">🔑</span><h3>Buy a Home</h3><p>Find your perfect Queens or LI home</p></div>
-        <div class="popup-card" tabindex="0" data-type="question" role="button"><span class="popup-card-icon">💬</span><h3>Just Have Questions</h3><p>No pressure — let's talk real estate</p></div>
+      <h2 class="popup-title">How Can I Help?</h2>
+      <p class="popup-sub">Nitin Gadura — Queens &amp; Long Island real estate specialist</p>
+      <div class="popup-options">
+        <button class="popup-opt" data-type="sell">
+          <span>I'm Ready to Sell My Home</span>
+          <span class="popup-opt-arrow">→</span>
+        </button>
+        <button class="popup-opt" data-type="buy">
+          <span>I'm Looking to Buy</span>
+          <span class="popup-opt-arrow">→</span>
+        </button>
+        <button class="popup-opt" data-type="question">
+          <span>I Have a Question</span>
+          <span class="popup-opt-arrow">→</span>
+        </button>
       </div>
     </div>
-    <div id="popup-step2" class="popup-form-wrap">
-      <h2 class="popup-form-title" id="popup-form-title"></h2>
-      <p class="popup-form-sub">Nitin typically responds within 2 hours.</p>
-      <form id="popup-form" novalidate>
-        <div class="form-row">
-          <div class="form-field"><label for="p-name">Your Name</label><input type="text" id="p-name" name="name" placeholder="Full name" required></div>
-          <div class="form-field"><label for="p-phone">Phone</label><input type="tel" id="p-phone" name="phone" placeholder="(917) 000-0000" required></div>
-        </div>
-        <div class="form-field"><label for="p-email">Email</label><input type="email" id="p-email" name="email" placeholder="you@email.com" required></div>
-        <div class="form-field"><label for="p-address">Property Address (if applicable)</label><input type="text" id="p-address" name="address" placeholder="Street address, Queens, NY"></div>
-        <div class="form-field"><label for="p-msg">Message</label><textarea id="p-msg" name="message" rows="3" placeholder="Tell me a little about what you're looking for..."></textarea></div>
-        <input type="hidden" id="p-type" name="type" value="">
-        <button type="submit" class="btn btn-green btn-full" style="margin-top:8px">Send Message to Nitin</button>
-        <button type="button" class="popup-back" id="popup-back">← Back</button>
-      </form>
+
+    <div id="popup-step2" style="display:none">
+      <button class="popup-back" id="popup-back">← Back</button>
+      <h2 class="popup-form-title" id="popup-form-title">Free Home Valuation</h2>
+      <p class="popup-form-sub" id="popup-form-sub">Get a precise, no-pressure market analysis for your home — delivered within 24 hours.</p>
+      <div class="form-field"><label for="p-name">Your Name</label><input type="text" id="p-name" placeholder="Full name" required></div>
+      <div class="form-field"><label for="p-phone">Phone</label><input type="tel" id="p-phone" placeholder="(917) 000-0000" required></div>
+      <div class="form-field"><label for="p-address">Property Address <small style="text-transform:none;letter-spacing:0;font-weight:300">(if selling)</small></label><input type="text" id="p-address" placeholder="Optional"></div>
+      <div class="form-field"><label for="p-msg">Message</label><input type="text" id="p-msg" placeholder="Tell me a little about your situation"></div>
+      <button class="btn-submit" id="popup-submit">Send Message</button>
+      <p class="form-disclaimer">Your info is never sold or shared. Nitin will respond within 2 hours.</p>
     </div>
-    <div id="popup-step3" style="display:none; text-align:center; padding:20px 0">
-      <div style="font-size:3.5rem; margin-bottom:16px">✅</div>
-      <h2 class="popup-form-title">Message Sent!</h2>
-      <p style="color:var(--mid); font-size:var(--sm); margin-top:8px">Nitin will reach out within 2 hours.</p>
-      <a href="tel:9177050132" class="btn btn-green" style="margin-top:24px; display:inline-flex">Call (917) 705-0132</a>
+
+    <div id="popup-step3" style="display:none;text-align:center;padding:20px 0">
+      <p style="font-size:2rem;margin-bottom:14px">✓</p>
+      <h2 class="popup-form-title">Message Sent</h2>
+      <p style="color:var(--mid);font-size:0.83rem;font-weight:300;margin-top:8px;line-height:1.8">Nitin will reach out within 2 hours. In the meantime, feel free to call directly.</p>
+      <a href="tel:9177050132" class="btn-gold" style="margin-top:24px;max-width:280px;margin-left:auto;margin-right:auto">(917) 705-0132</a>
     </div>
   </div>
 </div>
 
-<button class="float-btn popup-trigger" aria-label="Contact Nitin Gadura">
-  <span class="float-btn-dot"></span>
-  <span class="float-label">Contact Nitin</span>
+<button class="float-btn popup-trigger" aria-label="Contact Nitin">
+  <span class="float-dot"></span>Contact Nitin
 </button>
 
-<!-- ══ HEADER ════════════════════════════════════════════════ -->
-<header class="site-header">
-  <div class="header-inner">
-    <a href="/" class="header-logo">
-      <img src="logo-icon.png" alt="Gadura Real Estate" width="38" height="38">
-      <span class="header-logo-text">Nitin Gadura</span>
-    </a>
-    <nav class="header-nav" aria-label="Main navigation">
-      <a href="/queens.html">Queens</a>
-      <a href="/brooklyn.html">Brooklyn</a>
-      <a href="/long-island.html">Long Island</a>
-      <a href="#listings">Listings</a>
-      <a href="https://www.gadurarealestate.com" rel="noopener">Company</a>
-    </nav>
-    <div class="header-actions">
-      <a href="tel:9177050132" class="header-phone">(917) 705-0132</a>
-      <button class="btn btn-amber popup-trigger">Sell My Home</button>
-    </div>
-    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">☰</button>
+<!-- NAV -->
+<nav class="nav" id="nav" aria-label="Main navigation">
+  <a href="/" class="nav-logo">
+    <span class="nav-logo-name">Nitin Gadura</span>
+    <span class="nav-logo-sub">Licensed Real Estate · New York</span>
+  </a>
+  <div class="nav-links">
+    <a href="/queens.html">Queens</a>
+    <a href="/brooklyn.html">Brooklyn</a>
+    <a href="/long-island.html">Long Island</a>
+    <a href="#listings">Listings</a>
+    <a href="#neighborhoods">Markets</a>
+    <a href="https://www.gadurarealestate.com" rel="noopener">Brokerage</a>
   </div>
-</header>
-
-<!-- ══ HERO V2 — CINEMATIC DARK ══════════════════════════════ -->
-<section class="hero-v2" aria-labelledby="hero-heading">
-
-  <!-- Photo side -->
-  <div class="hero-v2-photo">
-    <img src="nitin-gadura.jpg"
-         alt="Nitin Gadura — Queens and Long Island Real Estate Agent"
-         width="1106" height="1567"
-         loading="eager" fetchpriority="high">
-    <!-- Floating credential -->
-    <div class="hero-badge">
-      <img src="logo-icon.png" alt="Gadura Real Estate" class="hero-badge-logo">
-      <div class="hero-badge-text">
-        <strong>Gadura Real Estate, LLC</strong>
-        <span>OneKey® MLS · Since 2006</span>
-      </div>
-    </div>
+  <div class="nav-actions">
+    <a href="tel:9177050132" class="nav-phone">(917) 705-0132</a>
+    <button class="nav-cta popup-trigger">Sell My Home</button>
   </div>
+</nav>
 
-  <!-- Content side -->
-  <div class="hero-v2-content">
-    <div class="hero-v2-eyebrow">Queens · Brooklyn · Long Island, NY</div>
-
-    <h1 class="hero-v2-headline" id="hero-heading">
+<!-- HERO -->
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="hero-photo" role="img" aria-label="Nitin Gadura — Queens and Long Island real estate agent"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Queens · Brooklyn · Long Island, NY</div>
+    <h1 class="hero-headline" id="hero-heading">
       Your Home.<br>
       Sold Right.<br>
       <em>Every Time.</em>
     </h1>
-
-    <p class="hero-v2-sub">
-      I'm Nitin Gadura — a licensed NYS real estate agent with 7+ years of hyperlocal expertise across Queens, Brooklyn, and Long Island. I help homeowners sell faster, for more, and without the stress.
-    </p>
-
-    <!-- Rating -->
+    <p class="hero-desc">Nitin Gadura — licensed NYS real estate agent with 7+ years of hyperlocal expertise. I help homeowners sell faster, for more, and without the stress.</p>
     <div class="hero-rating">
       <span class="hero-stars">★★★★★</span>
-      <span class="hero-rating-text"><strong>4.9 / 5</strong> — 57+ verified reviews</span>
+      <span class="hero-rating-text"><strong>4.9 / 5</strong> &nbsp;—&nbsp; 57+ verified reviews</span>
     </div>
-
-    <div class="hero-v2-ctas">
-      <button class="btn-hero-primary popup-trigger" data-type="sell">
-        🏠 Get My Free Home Valuation
-      </button>
-      <button class="btn-hero-secondary popup-trigger" data-type="buy">
-        🔑 I'm Looking to Buy
-      </button>
-      <a href="tel:9177050132" class="btn-hero-secondary">
-        📞 Call (917) 705-0132
-      </a>
+    <div class="hero-ctas">
+      <button class="btn-gold popup-trigger" data-type="sell">Free Home Valuation</button>
+      <button class="btn-ghost popup-trigger" data-type="buy">Buyer Consultation</button>
+      <a href="tel:9177050132" class="btn-ghost">(917) 705-0132</a>
     </div>
-
-    <!-- Profile links -->
-    <div class="hero-profiles">
-      <a href="https://www.zillow.com/profile/NitinGadura/" target="_blank" rel="noopener" class="hero-profile-link">
-        <span class="dot dot-zillow"></span>View on Zillow
-      </a>
-      <a href="https://www.homes.com/real-estate-agents/nitin-k-gadura-6dpbd3k/" target="_blank" rel="noopener" class="hero-profile-link">
-        <span class="dot dot-homes"></span>View on Homes.com
-      </a>
-      <a href="https://www.google.com/search?q=Nitin+Gadura+Gadura+Real+Estate" target="_blank" rel="noopener" class="hero-profile-link">
-        <span class="dot dot-google"></span>Google Reviews
-      </a>
+    <div class="hero-pills">
+      <a href="https://www.zillow.com/profile/NitinGadura/" target="_blank" rel="noopener" class="hero-pill">Zillow Profile</a>
+      <a href="https://www.homes.com/real-estate-agents/nitin-k-gadura-6dpbd3k/" target="_blank" rel="noopener" class="hero-pill">Homes.com Profile</a>
+      <a href="https://www.google.com/search?q=Nitin+Gadura+Gadura+Real+Estate" target="_blank" rel="noopener" class="hero-pill">Google Reviews</a>
     </div>
   </div>
 </section>
 
-<!-- ══ STATS BAND ════════════════════════════════════════════ -->
-<div class="stats-band" style="background:#0e1a12">
-  <div class="stat-cell"><strong>$100M+</strong><span>Volume Closed</span></div>
-  <div class="stat-cell"><strong>500+</strong><span>Families Served</span></div>
-  <div class="stat-cell"><strong>57+</strong><span>5-Star Reviews</span></div>
-  <div class="stat-cell"><strong>7+</strong><span>Years Active</span></div>
+<!-- STATS BAND -->
+<div class="stats-band" aria-label="Track record statistics">
+  <div class="stat-cell"><span class="stat-num">$100M+</span><span class="stat-lbl">Volume Closed</span></div>
+  <div class="stat-cell"><span class="stat-num">500+</span><span class="stat-lbl">Families Served</span></div>
+  <div class="stat-cell"><span class="stat-num">57+</span><span class="stat-lbl">Five-Star Reviews</span></div>
+  <div class="stat-cell"><span class="stat-num">7+</span><span class="stat-lbl">Years Active</span></div>
 </div>
 
-<!-- ══ TRUST BAR ═════════════════════════════════════════════ -->
+<!-- TRUST TICKER -->
 <div class="trust-bar" aria-hidden="true">
-  <div class="trust-bar-track">
-    <span class="trust-bar-item">OneKey® MLS Member</span>
-    <span class="trust-bar-item">NYS License #10401383405</span>
-    <span class="trust-bar-item">Equal Housing Opportunity</span>
-    <span class="trust-bar-item">4.9 ★ Google Rating</span>
-    <span class="trust-bar-item">Listed on Zillow · Homes.com · Realtor.com · StreetEasy</span>
-    <span class="trust-bar-item">English · Hindi · Punjabi · Gujarati · Urdu</span>
-    <span class="trust-bar-item">Free Home Valuations — No Obligation</span>
-    <span class="trust-bar-item">OneKey® MLS Member</span>
-    <span class="trust-bar-item">NYS License #10401383405</span>
-    <span class="trust-bar-item">Equal Housing Opportunity</span>
-    <span class="trust-bar-item">4.9 ★ Google Rating</span>
-    <span class="trust-bar-item">Listed on Zillow · Homes.com · Realtor.com · StreetEasy</span>
-    <span class="trust-bar-item">English · Hindi · Punjabi · Gujarati · Urdu</span>
-    <span class="trust-bar-item">Free Home Valuations — No Obligation</span>
+  <div class="trust-track">
+    <span class="trust-item">OneKey® MLS Member</span>
+    <span class="trust-item">NYS License #10401383405</span>
+    <span class="trust-item">Equal Housing Opportunity</span>
+    <span class="trust-item">4.9 ★ Google Rating</span>
+    <span class="trust-item">Zillow · Homes.com · Realtor.com · StreetEasy</span>
+    <span class="trust-item">English · Hindi · Punjabi · Gujarati · Urdu</span>
+    <span class="trust-item">Free Home Valuations · No Obligation</span>
+    <span class="trust-item">OneKey® MLS Member</span>
+    <span class="trust-item">NYS License #10401383405</span>
+    <span class="trust-item">Equal Housing Opportunity</span>
+    <span class="trust-item">4.9 ★ Google Rating</span>
+    <span class="trust-item">Zillow · Homes.com · Realtor.com · StreetEasy</span>
+    <span class="trust-item">English · Hindi · Punjabi · Gujarati · Urdu</span>
+    <span class="trust-item">Free Home Valuations · No Obligation</span>
   </div>
 </div>
 
-<!-- ══ LISTINGS ══════════════════════════════════════════════ -->
+<!-- LISTINGS -->
 <section class="section" id="listings">
   <div class="container">
     <div class="section-header">
-      <span class="eyebrow">Active &amp; Sold Listings</span>
+      <span class="eyebrow">Active &amp; Sold Properties</span>
       <h2 class="section-title">Properties Listed &amp; Sold by Nitin</h2>
-      <p class="section-sub">Real results for real Queens and Long Island homeowners. Every listing marketed on OneKey MLS, Zillow, Realtor.com, Homes.com, and StreetEasy.</p>
+      <p class="section-sub">Real results for Queens and Long Island homeowners. Every listing marketed on OneKey MLS, Zillow, Realtor.com, Homes.com, and StreetEasy.</p>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="tab-btn active" data-panel="active" role="tab" aria-selected="true">For Sale (3)</button>
+      <button class="tab-btn" data-panel="sold" role="tab" aria-selected="false">Recently Sold (12+)</button>
     </div>
 
-    <div class="listings-tabs" role="tablist">
-      <button class="listings-tab active" data-panel="active" role="tab" aria-selected="true">For Sale (3)</button>
-      <button class="listings-tab" data-panel="sold" role="tab" aria-selected="false">Recently Sold (16+)</button>
-    </div>
-
-    <!-- ACTIVE LISTINGS -->
-    <div class="listings-panel active" id="panel-active" role="tabpanel">
+    <div class="tab-panel active" id="panel-active" role="tabpanel">
       <div class="prop-card">
-        <div class="prop-card-header">
-          <span class="prop-badge badge-just-listed">🔥 Just Listed</span>
-          <div class="prop-price">$1,099,999</div>
-        </div>
+        <div class="prop-top"><span class="prop-badge b-new">Just Listed</span><span class="prop-price">$1,099,999</span></div>
         <div class="prop-body">
-          <div class="prop-address">South Richmond Hill, NY</div>
+          <div class="prop-addr">South Richmond Hill, NY</div>
           <div class="prop-loc">Queens, New York</div>
-          <div class="prop-details">
-            <div class="prop-detail"><strong>5</strong><span>Beds</span></div>
-            <div class="prop-detail"><strong>1.5</strong><span>Baths</span></div>
-            <div class="prop-detail"><strong>1,980</strong><span>SqFt</span></div>
-            <div class="prop-detail"><strong>2-Fam</strong><span>Type</span></div>
+          <div class="prop-meta">
+            <div class="prop-m"><strong>5</strong><span>Beds</span></div>
+            <div class="prop-m"><strong>1.5</strong><span>Baths</span></div>
+            <div class="prop-m"><strong>1,980</strong><span>SqFt</span></div>
+            <div class="prop-m"><strong>2-Fam</strong><span>Type</span></div>
           </div>
         </div>
       </div>
-
       <div class="prop-card">
-        <div class="prop-card-header">
-          <span class="prop-badge badge-just-listed">🔥 Just Listed</span>
-          <div class="prop-price">$1,299,000</div>
-        </div>
+        <div class="prop-top"><span class="prop-badge b-new">Just Listed</span><span class="prop-price">$1,299,000</span></div>
         <div class="prop-body">
-          <div class="prop-address">South Richmond Hill, NY</div>
+          <div class="prop-addr">South Richmond Hill, NY</div>
           <div class="prop-loc">Queens, New York</div>
-          <div class="prop-details">
-            <div class="prop-detail"><strong>7</strong><span>Beds</span></div>
-            <div class="prop-detail"><strong>2</strong><span>Baths</span></div>
-            <div class="prop-detail"><strong>1,762</strong><span>SqFt</span></div>
-            <div class="prop-detail"><strong>2-Fam</strong><span>Type</span></div>
+          <div class="prop-meta">
+            <div class="prop-m"><strong>7</strong><span>Beds</span></div>
+            <div class="prop-m"><strong>2</strong><span>Baths</span></div>
+            <div class="prop-m"><strong>1,762</strong><span>SqFt</span></div>
+            <div class="prop-m"><strong>2-Fam</strong><span>Type</span></div>
           </div>
         </div>
       </div>
-
       <div class="prop-card">
-        <div class="prop-card-header">
-          <span class="prop-badge badge-active">Active</span>
-          <div class="prop-price">$1,065,000</div>
-        </div>
+        <div class="prop-top"><span class="prop-badge b-active">Active</span><span class="prop-price">$1,065,000</span></div>
         <div class="prop-body">
-          <div class="prop-address">Ozone Park, NY</div>
+          <div class="prop-addr">Ozone Park, NY</div>
           <div class="prop-loc">Queens, New York</div>
-          <div class="prop-details">
-            <div class="prop-detail"><strong>Mixed</strong><span>Type</span></div>
-            <div class="prop-detail"><strong>2,060</strong><span>SqFt</span></div>
-            <div class="prop-detail"><strong>MU</strong><span>Zoning</span></div>
+          <div class="prop-meta">
+            <div class="prop-m"><strong>MU</strong><span>Zoning</span></div>
+            <div class="prop-m"><strong>2,060</strong><span>SqFt</span></div>
+            <div class="prop-m"><strong>Mixed</strong><span>Type</span></div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- SOLD LISTINGS -->
-    <div class="listings-panel" id="panel-sold" role="tabpanel">
-      <div class="prop-card">
-        <div class="prop-card-header"><span class="prop-badge badge-sold">✓ Sold</span><div class="prop-price">$1,300,000</div></div>
-        <div class="prop-body"><div class="prop-address">Queens Village, NY</div><div class="prop-loc">Queens, New York</div><div class="prop-details"><div class="prop-detail"><strong>6</strong><span>Beds</span></div><div class="prop-detail"><strong>4</strong><span>Baths</span></div><div class="prop-detail"><strong>2,268</strong><span>SqFt</span></div><div class="prop-detail"><strong>S/F</strong><span>Type</span></div></div></div>
-      </div>
-      <div class="prop-card">
-        <div class="prop-card-header"><span class="prop-badge badge-sold">✓ Sold</span><div class="prop-price">$1,150,000</div></div>
-        <div class="prop-body"><div class="prop-address">Howard Beach, NY</div><div class="prop-loc">Queens, New York</div><div class="prop-details"><div class="prop-detail"><strong>4</strong><span>Beds</span></div><div class="prop-detail"><strong>2.5</strong><span>Baths</span></div><div class="prop-detail"><strong>2,126</strong><span>SqFt</span></div><div class="prop-detail"><strong>S/F</strong><span>Type</span></div></div></div>
-      </div>
-      <div class="prop-card">
-        <div class="prop-card-header"><span class="prop-badge badge-sold">✓ Sold</span><div class="prop-price">$947,000</div></div>
-        <div class="prop-body"><div class="prop-address">Elmont, NY</div><div class="prop-loc">Nassau County, Long Island</div><div class="prop-details"><div class="prop-detail"><strong>7</strong><span>Beds</span></div><div class="prop-detail"><strong>4</strong><span>Baths</span></div><div class="prop-detail"><strong>1,967</strong><span>SqFt</span></div><div class="prop-detail"><strong>Multi</strong><span>Type</span></div></div></div>
-      </div>
-      <div class="prop-card">
-        <div class="prop-card-header"><span class="prop-badge badge-sold">✓ Sold</span><div class="prop-price">$870,000</div></div>
-        <div class="prop-body"><div class="prop-address">Ozone Park, NY</div><div class="prop-loc">Queens, New York</div><div class="prop-details"><div class="prop-detail"><strong>4</strong><span>Beds</span></div><div class="prop-detail"><strong>3</strong><span>Baths</span></div><div class="prop-detail"><strong>1,248</strong><span>SqFt</span></div><div class="prop-detail"><strong>1-Fam</strong><span>Type</span></div></div></div>
-      </div>
-      <div class="prop-card">
-        <div class="prop-card-header"><span class="prop-badge badge-sold">✓ Sold</span><div class="prop-price">$806,000</div></div>
-        <div class="prop-body"><div class="prop-address">Valley Stream, NY</div><div class="prop-loc">Nassau County, Long Island</div><div class="prop-details"><div class="prop-detail"><strong>—</strong><span>Beds</span></div><div class="prop-detail"><strong>—</strong><span>Baths</span></div><div class="prop-detail"><strong>—</strong><span>SqFt</span></div><div class="prop-detail"><strong>S/F</strong><span>Type</span></div></div></div>
-      </div>
-      <div class="prop-card">
-        <div class="prop-card-header"><span class="prop-badge badge-sold">✓ Sold</span><div class="prop-price">$785,000</div></div>
-        <div class="prop-body"><div class="prop-address">Ozone Park, NY</div><div class="prop-loc">Queens, New York</div><div class="prop-details"><div class="prop-detail"><strong>3</strong><span>Beds</span></div><div class="prop-detail"><strong>1.5</strong><span>Baths</span></div><div class="prop-detail"><strong>1,200</strong><span>SqFt</span></div><div class="prop-detail"><strong>S/F</strong><span>Type</span></div></div></div>
-      </div>
-      <div class="prop-card">
-        <div class="prop-card-header"><span class="prop-badge badge-sold">✓ Sold</span><div class="prop-price">$785,000</div></div>
-        <div class="prop-body"><div class="prop-address">Ozone Park, NY</div><div class="prop-loc">Queens, New York</div><div class="prop-details"><div class="prop-detail"><strong>3</strong><span>Beds</span></div><div class="prop-detail"><strong>2</strong><span>Baths</span></div><div class="prop-detail"><strong>1,630</strong><span>SqFt</span></div><div class="prop-detail"><strong>1-Fam</strong><span>Type</span></div></div></div>
-      </div>
-      <div class="prop-card">
-        <div class="prop-card-header"><span class="prop-badge badge-sold">✓ Sold</span><div class="prop-price">$720,000</div></div>
-        <div class="prop-body"><div class="prop-address">Springfield Gardens, NY</div><div class="prop-loc">Queens, New York</div><div class="prop-details"><div class="prop-detail"><strong>4</strong><span>Beds</span></div><div class="prop-detail"><strong>3</strong><span>Baths</span></div><div class="prop-detail"><strong>1,100</strong><span>SqFt</span></div><div class="prop-detail"><strong>1-Fam</strong><span>Type</span></div></div></div>
-      </div>
-      <div class="prop-card">
-        <div class="prop-card-header"><span class="prop-badge badge-sold">✓ Sold</span><div class="prop-price">$718,000</div></div>
-        <div class="prop-body"><div class="prop-address">Elmont, NY</div><div class="prop-loc">Nassau County, Long Island</div><div class="prop-details"><div class="prop-detail"><strong>3</strong><span>Beds</span></div><div class="prop-detail"><strong>3</strong><span>Baths</span></div><div class="prop-detail"><strong>1,210</strong><span>SqFt</span></div><div class="prop-detail"><strong>S/F</strong><span>Type</span></div></div></div>
-      </div>
-      <div class="prop-card">
-        <div class="prop-card-header"><span class="prop-badge badge-sold">✓ Sold</span><div class="prop-price">$690,000</div></div>
-        <div class="prop-body"><div class="prop-address">Jamaica, NY</div><div class="prop-loc">Queens, New York</div><div class="prop-details"><div class="prop-detail"><strong>3</strong><span>Beds</span></div><div class="prop-detail"><strong>2.5</strong><span>Baths</span></div><div class="prop-detail"><strong>1,710</strong><span>SqFt</span></div><div class="prop-detail"><strong>S/F</strong><span>Type</span></div></div></div>
-      </div>
-      <div class="prop-card">
-        <div class="prop-card-header"><span class="prop-badge badge-sold">✓ Sold</span><div class="prop-price">$660,000</div></div>
-        <div class="prop-body"><div class="prop-address">Richmond Hill, NY</div><div class="prop-loc">Queens, New York</div><div class="prop-details"><div class="prop-detail"><strong>—</strong><span>Beds</span></div><div class="prop-detail"><strong>—</strong><span>Baths</span></div><div class="prop-detail"><strong>—</strong><span>SqFt</span></div><div class="prop-detail"><strong>S/F</strong><span>Type</span></div></div></div>
-      </div>
-      <div class="prop-card">
-        <div class="prop-card-header"><span class="prop-badge badge-sold">✓ Sold</span><div class="prop-price">$600,000+</div></div>
-        <div class="prop-body"><div class="prop-address">Ozone Park, NY (multiple)</div><div class="prop-loc">Queens, New York</div><div class="prop-details"><div class="prop-detail"><strong>Var.</strong><span>Beds</span></div><div class="prop-detail"><strong>Var.</strong><span>Baths</span></div><div class="prop-detail"><strong>Var.</strong><span>SqFt</span></div><div class="prop-detail"><strong>Multi</strong><span>Type</span></div></div></div>
-      </div>
+    <div class="tab-panel" id="panel-sold" role="tabpanel">
+      <div class="prop-card"><div class="prop-top"><span class="prop-badge b-sold">Sold</span><span class="prop-price">$1,300,000</span></div><div class="prop-body"><div class="prop-addr">Queens Village, NY</div><div class="prop-loc">Queens, New York</div><div class="prop-meta"><div class="prop-m"><strong>6</strong><span>Beds</span></div><div class="prop-m"><strong>4</strong><span>Baths</span></div><div class="prop-m"><strong>2,268</strong><span>SqFt</span></div><div class="prop-m"><strong>S/F</strong><span>Type</span></div></div></div></div>
+      <div class="prop-card"><div class="prop-top"><span class="prop-badge b-sold">Sold</span><span class="prop-price">$1,150,000</span></div><div class="prop-body"><div class="prop-addr">Howard Beach, NY</div><div class="prop-loc">Queens, New York</div><div class="prop-meta"><div class="prop-m"><strong>4</strong><span>Beds</span></div><div class="prop-m"><strong>2.5</strong><span>Baths</span></div><div class="prop-m"><strong>2,126</strong><span>SqFt</span></div><div class="prop-m"><strong>S/F</strong><span>Type</span></div></div></div></div>
+      <div class="prop-card"><div class="prop-top"><span class="prop-badge b-sold">Sold</span><span class="prop-price">$947,000</span></div><div class="prop-body"><div class="prop-addr">Elmont, NY</div><div class="prop-loc">Nassau County, Long Island</div><div class="prop-meta"><div class="prop-m"><strong>7</strong><span>Beds</span></div><div class="prop-m"><strong>4</strong><span>Baths</span></div><div class="prop-m"><strong>1,967</strong><span>SqFt</span></div><div class="prop-m"><strong>Multi</strong><span>Type</span></div></div></div></div>
+      <div class="prop-card"><div class="prop-top"><span class="prop-badge b-sold">Sold</span><span class="prop-price">$870,000</span></div><div class="prop-body"><div class="prop-addr">Ozone Park, NY</div><div class="prop-loc">Queens, New York</div><div class="prop-meta"><div class="prop-m"><strong>4</strong><span>Beds</span></div><div class="prop-m"><strong>3</strong><span>Baths</span></div><div class="prop-m"><strong>1,248</strong><span>SqFt</span></div><div class="prop-m"><strong>1-Fam</strong><span>Type</span></div></div></div></div>
+      <div class="prop-card"><div class="prop-top"><span class="prop-badge b-sold">Sold</span><span class="prop-price">$806,000</span></div><div class="prop-body"><div class="prop-addr">Valley Stream, NY</div><div class="prop-loc">Nassau County, Long Island</div><div class="prop-meta"><div class="prop-m"><strong>—</strong><span>Beds</span></div><div class="prop-m"><strong>—</strong><span>Baths</span></div><div class="prop-m"><strong>S/F</strong><span>Type</span></div></div></div></div>
+      <div class="prop-card"><div class="prop-top"><span class="prop-badge b-sold">Sold</span><span class="prop-price">$785,000</span></div><div class="prop-body"><div class="prop-addr">Ozone Park, NY</div><div class="prop-loc">Queens, New York</div><div class="prop-meta"><div class="prop-m"><strong>3</strong><span>Beds</span></div><div class="prop-m"><strong>1.5</strong><span>Baths</span></div><div class="prop-m"><strong>1,200</strong><span>SqFt</span></div><div class="prop-m"><strong>S/F</strong><span>Type</span></div></div></div></div>
+      <div class="prop-card"><div class="prop-top"><span class="prop-badge b-sold">Sold</span><span class="prop-price">$785,000</span></div><div class="prop-body"><div class="prop-addr">Ozone Park, NY</div><div class="prop-loc">Queens, New York</div><div class="prop-meta"><div class="prop-m"><strong>3</strong><span>Beds</span></div><div class="prop-m"><strong>2</strong><span>Baths</span></div><div class="prop-m"><strong>1,630</strong><span>SqFt</span></div><div class="prop-m"><strong>1-Fam</strong><span>Type</span></div></div></div></div>
+      <div class="prop-card"><div class="prop-top"><span class="prop-badge b-sold">Sold</span><span class="prop-price">$720,000</span></div><div class="prop-body"><div class="prop-addr">Springfield Gardens, NY</div><div class="prop-loc">Queens, New York</div><div class="prop-meta"><div class="prop-m"><strong>4</strong><span>Beds</span></div><div class="prop-m"><strong>3</strong><span>Baths</span></div><div class="prop-m"><strong>1,100</strong><span>SqFt</span></div><div class="prop-m"><strong>1-Fam</strong><span>Type</span></div></div></div></div>
+      <div class="prop-card"><div class="prop-top"><span class="prop-badge b-sold">Sold</span><span class="prop-price">$718,000</span></div><div class="prop-body"><div class="prop-addr">Elmont, NY</div><div class="prop-loc">Nassau County, Long Island</div><div class="prop-meta"><div class="prop-m"><strong>3</strong><span>Beds</span></div><div class="prop-m"><strong>3</strong><span>Baths</span></div><div class="prop-m"><strong>1,210</strong><span>SqFt</span></div><div class="prop-m"><strong>S/F</strong><span>Type</span></div></div></div></div>
+      <div class="prop-card"><div class="prop-top"><span class="prop-badge b-sold">Sold</span><span class="prop-price">$690,000</span></div><div class="prop-body"><div class="prop-addr">Jamaica, NY</div><div class="prop-loc">Queens, New York</div><div class="prop-meta"><div class="prop-m"><strong>3</strong><span>Beds</span></div><div class="prop-m"><strong>2.5</strong><span>Baths</span></div><div class="prop-m"><strong>1,710</strong><span>SqFt</span></div><div class="prop-m"><strong>S/F</strong><span>Type</span></div></div></div></div>
+      <div class="prop-card"><div class="prop-top"><span class="prop-badge b-sold">Sold</span><span class="prop-price">$660,000</span></div><div class="prop-body"><div class="prop-addr">Richmond Hill, NY</div><div class="prop-loc">Queens, New York</div><div class="prop-meta"><div class="prop-m"><strong>—</strong><span>Beds</span></div><div class="prop-m"><strong>—</strong><span>Baths</span></div><div class="prop-m"><strong>S/F</strong><span>Type</span></div></div></div></div>
+      <div class="prop-card"><div class="prop-top"><span class="prop-badge b-sold">Sold</span><span class="prop-price">$600,000+</span></div><div class="prop-body"><div class="prop-addr">Ozone Park (Multiple)</div><div class="prop-loc">Queens, New York</div><div class="prop-meta"><div class="prop-m"><strong>Var.</strong><span>Beds</span></div><div class="prop-m"><strong>Var.</strong><span>Baths</span></div><div class="prop-m"><strong>Multi</strong><span>Type</span></div></div></div></div>
     </div>
 
-    <div style="text-align:center; margin-top:36px">
-      <a href="https://www.gadurarealestate.com" target="_blank" rel="noopener" class="btn btn-green">View All Listings on Gadura Real Estate →</a>
+    <div style="text-align:center;margin-top:40px">
+      <a href="https://www.gadurarealestate.com" target="_blank" rel="noopener" class="btn-gold" style="display:inline-block;max-width:320px">View All Listings at Gadura Real Estate</a>
     </div>
   </div>
 </section>
 
-<!-- ══ FIND ME ON ══════════════════════════════════════════ -->
-<section class="section section-alt" id="profiles">
+<!-- FIND ME ONLINE -->
+<section class="section section-cream" id="profiles">
   <div class="container">
     <div class="section-header centered">
       <span class="eyebrow">Find Me Online</span>
       <h2 class="section-title">Verified on Every Major Platform</h2>
-      <p class="section-sub">57+ five-star reviews across Google, Zillow, and Homes.com. Read real experiences from real Queens and Long Island clients.</p>
+      <p class="section-sub">57+ five-star reviews across Google, Zillow, and Homes.com. Read real client experiences from Queens and Long Island homeowners.</p>
     </div>
-    <div class="profile-links-grid">
-      <a href="https://www.zillow.com/profile/NitinGadura/" target="_blank" rel="noopener" class="profile-platform-card">
-        <span class="platform-icon">🏠</span>
-        <div class="platform-name">Zillow Profile</div>
-        <div class="platform-desc">View active listings, sold history, and client reviews on Zillow — America's largest real estate marketplace.</div>
-        <div class="platform-rating">★★★★★ Verified Agent</div>
-        <span class="btn btn-outline" style="font-size:var(--xs)">View Zillow Profile →</span>
+    <div class="platform-grid">
+      <a href="https://www.zillow.com/profile/NitinGadura/" target="_blank" rel="noopener" class="platform-card">
+        <span class="platform-tag">Zillow</span>
+        <div class="platform-name">Agent Profile</div>
+        <div class="platform-desc">Active listings, full transaction history, and verified client reviews on America's largest real estate marketplace.</div>
+        <span class="platform-cta">View Zillow Profile →</span>
       </a>
-      <a href="https://www.homes.com/real-estate-agents/nitin-k-gadura-6dpbd3k/" target="_blank" rel="noopener" class="profile-platform-card">
-        <span class="platform-icon">🔑</span>
-        <div class="platform-name">Homes.com Profile</div>
-        <div class="platform-desc">Browse Nitin's complete transaction history, current listings, and client testimonials on Homes.com.</div>
-        <div class="platform-rating">★★★★★ Verified Agent</div>
-        <span class="btn btn-outline" style="font-size:var(--xs)">View Homes.com Profile →</span>
+      <a href="https://www.homes.com/real-estate-agents/nitin-k-gadura-6dpbd3k/" target="_blank" rel="noopener" class="platform-card">
+        <span class="platform-tag">Homes.com</span>
+        <div class="platform-name">Agent Profile</div>
+        <div class="platform-desc">Complete transaction history, current listings, and client testimonials verified on Homes.com.</div>
+        <span class="platform-cta">View Homes.com Profile →</span>
       </a>
-      <a href="https://www.gadurarealestate.com" target="_blank" rel="noopener" class="profile-platform-card">
-        <span class="platform-icon">🏢</span>
+      <a href="https://www.gadurarealestate.com" target="_blank" rel="noopener" class="platform-card">
+        <span class="platform-tag">Brokerage Website</span>
         <div class="platform-name">Gadura Real Estate, LLC</div>
-        <div class="platform-desc">Full brokerage website — search all active MLS listings, meet the team, and get a free home valuation.</div>
-        <div class="platform-rating">OneKey® MLS Member</div>
-        <span class="btn btn-outline" style="font-size:var(--xs)">Visit Brokerage Site →</span>
+        <div class="platform-desc">Full brokerage site — search all active MLS listings, meet the team, and get a free home valuation.</div>
+        <span class="platform-cta">Visit Brokerage Site →</span>
       </a>
     </div>
   </div>
 </section>
 
-<!-- ══ WHY SECTION ════════════════════════════════════════════ -->
-<section class="section">
+<!-- WHY — DARK -->
+<section class="section section-dark" id="why">
   <div class="container">
-    <div class="section-header">
-      <span class="eyebrow">Why Queens Sellers Choose Nitin</span>
-      <h2 class="section-title">A Different Kind of Real Estate Agent</h2>
-      <p class="section-sub">Most agents list your home and wait. I market it with a proven strategy that drives competition, stronger offers, and faster closings.</p>
+    <div class="section-header" style="margin-bottom:48px">
+      <span class="eyebrow" style="color:var(--gold)">Why Sellers Choose Nitin</span>
+      <h2 class="section-title" style="color:#fff">A Different Kind of Agent</h2>
+      <p class="section-sub">Most agents list your home and wait. I market it with a proven system that drives competition, stronger offers, and faster closings.</p>
     </div>
     <div class="why-grid">
       <div class="why-card">
-        <div class="why-icon">📊</div>
+        <span class="why-num">01</span>
         <h3>Data-Driven Pricing</h3>
         <p>I analyze recent sold comps, active competition, and micro-market trends across every Queens and Long Island neighborhood to price your home where it attracts the most buyers — and the strongest offers.</p>
       </div>
       <div class="why-card">
-        <div class="why-icon">📸</div>
+        <span class="why-num">02</span>
         <h3>Maximum Listing Exposure</h3>
         <p>Professional photography, MLS syndication to Zillow, Homes.com, Realtor.com, StreetEasy, and 100+ partner sites. Your home reaches every qualified buyer agent from day one.</p>
       </div>
       <div class="why-card">
-        <div class="why-icon">🗣️</div>
+        <span class="why-num">03</span>
         <h3>Multilingual Community Reach</h3>
         <p>Queens is the most diverse county in the US. I market your listing across English, Hindi, Punjabi, Gujarati, and Urdu-speaking buyer networks — reaching buyers others can't.</p>
       </div>
       <div class="why-card">
-        <div class="why-icon">⚡</div>
-        <h3>Fast, Smooth Closings</h3>
-        <p>My network of trusted attorneys, lenders, and inspectors keeps your transaction moving. I've navigated hundreds of Queens and Long Island closings and know every obstacle before it appears.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon">🏘️</div>
+        <span class="why-num">04</span>
         <h3>Hyperlocal Block Knowledge</h3>
         <p>Born and raised in Queens — I know the difference between what Ozone Park sells for vs. Howard Beach vs. Jamaica, down to the block, school zone, and zoning classification.</p>
       </div>
       <div class="why-card">
-        <div class="why-icon">🏆</div>
+        <span class="why-num">05</span>
+        <h3>Fast, Smooth Closings</h3>
+        <p>My network of trusted attorneys, lenders, and inspectors keeps your transaction moving. I've navigated hundreds of closings and know every obstacle before it appears.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-num">06</span>
         <h3>Verified Track Record</h3>
         <p>$100M+ in closed volume. 57+ five-star reviews. 500+ families served across Queens and Long Island. Verifiable on Google, Zillow, and Homes.com — not just claims on a website.</p>
       </div>
@@ -659,23 +570,23 @@
   </div>
 </section>
 
-<!-- ══ VALUATION CTA ═════════════════════════════════════════ -->
-<section class="section section-green" id="valuation">
+<!-- VALUATION FORM -->
+<section class="section section-dark" id="valuation">
   <div class="container">
-    <div class="valuation-inner">
-      <div class="val-text">
-        <span class="eyebrow">Free &amp; No Obligation</span>
-        <h2 class="section-title" style="color:#fff">What Is Your Home Worth Today?</h2>
-        <p class="section-sub">Queens and Long Island home values have shifted significantly. Get a precise, no-pressure comparative market analysis based on actual sold data in your specific neighborhood — not an algorithm.</p>
+    <div class="val-inner">
+      <div>
+        <span class="eyebrow" style="color:var(--gold)">Free &amp; No Obligation</span>
+        <h2 class="val-title">What Is Your Home Worth Today?</h2>
+        <p class="val-desc">Queens and Long Island home values have shifted significantly. Get a precise, no-pressure comparative market analysis based on actual sold data — not an algorithm.</p>
         <ul class="val-bullets">
-          <li>Based on real, recent comparable sales from OneKey MLS</li>
+          <li>Based on real comparable sales from OneKey MLS</li>
           <li>Includes neighborhood trend analysis and pricing strategy</li>
           <li>Delivered within 24 hours — zero obligation</li>
           <li>No pressure, no hard sell — ever</li>
         </ul>
-        <button class="btn btn-amber btn-lg popup-trigger" data-type="sell">Request My Free Valuation</button>
+        <button class="btn-gold popup-trigger" data-type="sell" style="max-width:260px">Request My Free Valuation</button>
       </div>
-      <div class="val-form-card">
+      <div class="val-form">
         <h3>Start Your Free Home Valuation</h3>
         <form id="val-form" novalidate>
           <div class="form-field"><label for="v-address">Property Address</label><input type="text" id="v-address" name="address" placeholder="106-09 101st Ave, Ozone Park, NY" required></div>
@@ -695,19 +606,18 @@
               <option>Land / Vacant Lot</option>
             </select>
           </div>
-          <button type="submit" class="btn btn-green btn-full" style="margin-top:8px">Get My Free Valuation</button>
+          <button type="submit" class="btn-submit">Get My Free Valuation</button>
         </form>
-        <div id="val-success" style="display:none; text-align:center; padding:20px 0">
-          <div style="font-size:2.5rem; margin-bottom:10px">✅</div>
-          <p style="font-weight:600; color:var(--dark)">Thank you! Nitin will be in touch within 24 hours.</p>
+        <div id="val-success" style="display:none;text-align:center;padding:20px 0">
+          <p style="font-weight:600;color:var(--dark)">Thank you — Nitin will be in touch within 24 hours.</p>
         </div>
-        <p class="form-disclaimer">By submitting you consent to receive communications from Gadura Real Estate, LLC. Your info is never sold or shared.</p>
+        <p class="form-disclaimer">By submitting you consent to receive communications from Gadura Real Estate, LLC. Your information is never sold or shared.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══ NEIGHBORHOODS HUB ══════════════════════════════════════ -->
+<!-- NEIGHBORHOODS -->
 <section class="section" id="neighborhoods">
   <div class="container">
     <div class="section-header centered">
@@ -717,349 +627,301 @@
     </div>
     <div class="markets-grid">
       <a href="/queens.html" class="market-card">
-        <div class="market-card-top"></div>
-        <div class="market-card-body">
-          <span class="market-badge">40+ Neighborhoods</span>
-          <h3>Queens</h3>
-          <p>Ozone Park, Jamaica, Flushing, Forest Hills, Astoria, Richmond Hill, Howard Beach, and every neighborhood in between — with block-level pricing knowledge.</p>
-          <div class="market-zips">ZIP Codes: 11001–11109 · 11354–11436 · 11691–11697</div>
-          <span class="market-link">Explore Queens Neighborhoods</span>
-        </div>
+        <span class="market-eyebrow">40+ Neighborhoods</span>
+        <h3>Queens</h3>
+        <p>Ozone Park, Jamaica, Flushing, Forest Hills, Astoria, Richmond Hill, Howard Beach — with block-level pricing knowledge across every neighborhood.</p>
+        <div class="market-zips">ZIP Codes: 11001–11109 · 11354–11436 · 11691–11697</div>
+        <span class="market-link-text">Explore Queens Neighborhoods →</span>
       </a>
       <a href="/brooklyn.html" class="market-card">
-        <div class="market-card-top"></div>
-        <div class="market-card-body">
-          <span class="market-badge">35+ Neighborhoods</span>
-          <h3>Brooklyn</h3>
-          <p>Bay Ridge, Flatbush, Crown Heights, Bed-Stuy, Williamsburg, Canarsie, Marine Park — cross-borough Brooklyn expertise backed by full MLS access.</p>
-          <div class="market-zips">ZIP Codes: 11201–11256</div>
-          <span class="market-link">Explore Brooklyn Neighborhoods</span>
-        </div>
+        <span class="market-eyebrow">35+ Neighborhoods</span>
+        <h3>Brooklyn</h3>
+        <p>Bay Ridge, Flatbush, Crown Heights, Bed-Stuy, Williamsburg, Canarsie, Marine Park — cross-borough Brooklyn expertise backed by full MLS access.</p>
+        <div class="market-zips">ZIP Codes: 11201–11256</div>
+        <span class="market-link-text">Explore Brooklyn Neighborhoods →</span>
       </a>
       <a href="/long-island.html" class="market-card">
-        <div class="market-card-top"></div>
-        <div class="market-card-body">
-          <span class="market-badge">Nassau + Key Suffolk</span>
-          <h3>Long Island</h3>
-          <p>Valley Stream to Great Neck, Hempstead to Hicksville, Levittown to Huntington — Long Island homes for first-time buyers, families, and investors.</p>
-          <div class="market-zips">ZIP Codes: 11001–11003 · 11501–11798</div>
-          <span class="market-link">Explore Long Island Communities</span>
-        </div>
+        <span class="market-eyebrow">Nassau + Key Suffolk</span>
+        <h3>Long Island</h3>
+        <p>Valley Stream to Great Neck, Hempstead to Hicksville, Levittown to Huntington — Long Island homes for buyers, families, and investors.</p>
+        <div class="market-zips">ZIP Codes: 11001–11003 · 11501–11798</div>
+        <span class="market-link-text">Explore Long Island Communities →</span>
       </a>
     </div>
   </div>
 </section>
 
-<!-- ══ TESTIMONIALS ═══════════════════════════════════════════ -->
-<section class="section section-alt" id="reviews">
+<!-- TESTIMONIALS -->
+<section class="section section-cream" id="reviews">
   <div class="container">
     <div class="section-header centered">
       <span class="eyebrow">Client Reviews</span>
       <h2 class="section-title">Real Results from Real Clients</h2>
-      <p class="section-sub">57+ verified five-star reviews on Google, Zillow, and Homes.com. Here's what Queens and Long Island homeowners say.</p>
+      <p class="section-sub">57+ verified five-star reviews on Google, Zillow, and Homes.com.</p>
     </div>
     <div class="testimonials-grid">
-      <div class="testimonial-card">
-        <p class="testimonial-body">Nitin walked us through every step of selling our two-family in Richmond Hill. He was available nights and weekends, priced it perfectly, and we closed above asking in under three weeks.</p>
+      <div class="testimonial">
+        <div class="testimonial-mark">&ldquo;</div>
+        <p>Nitin walked us through every step of selling our two-family in Richmond Hill. He was available nights and weekends, priced it perfectly, and we closed above asking in under three weeks.</p>
         <div class="testimonial-stars">★★★★★</div>
-        <div class="testimonial-author"><strong>Priya S.</strong><span>Richmond Hill, Queens · Sold 2024</span></div>
+        <div class="testimonial-name">Priya S.</div>
+        <div class="testimonial-loc">Richmond Hill, Queens · Sold 2024</div>
       </div>
-      <div class="testimonial-card">
-        <p class="testimonial-body">As first-time buyers in a competitive market, we needed someone who truly knew the neighborhoods. Nitin got us into the house we loved in Ozone Park when three other offers failed. Highly recommend.</p>
+      <div class="testimonial">
+        <div class="testimonial-mark">&ldquo;</div>
+        <p>As first-time buyers in a competitive market, we needed someone who truly knew the neighborhoods. Nitin got us into the house we loved in Ozone Park when three other offers had already failed.</p>
         <div class="testimonial-stars">★★★★★</div>
-        <div class="testimonial-author"><strong>Marcus &amp; Diana T.</strong><span>Ozone Park, Queens · Purchased 2024</span></div>
+        <div class="testimonial-name">Marcus &amp; Diana T.</div>
+        <div class="testimonial-loc">Ozone Park, Queens · Purchased 2024</div>
       </div>
-      <div class="testimonial-card">
-        <p class="testimonial-body">I was relocating from New Jersey and needed someone who understood the Queens and Long Island markets. Nitin was incredibly knowledgeable, patient, and helped us find a beautiful home in Valley Stream.</p>
+      <div class="testimonial">
+        <div class="testimonial-mark">&ldquo;</div>
+        <p>I was relocating from New Jersey and needed someone who understood both the Queens and Long Island markets. Nitin was knowledgeable, patient, and helped us find a beautiful home in Valley Stream.</p>
         <div class="testimonial-stars">★★★★★</div>
-        <div class="testimonial-author"><strong>Kevin R.</strong><span>Valley Stream, Nassau County · 2023</span></div>
+        <div class="testimonial-name">Kevin R.</div>
+        <div class="testimonial-loc">Valley Stream, Nassau County · 2023</div>
       </div>
     </div>
-    <div class="reviews-cta">
-      <p>4.9 ★ average — verified on Google · Zillow · Homes.com</p>
-      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:16px">
-        <a href="https://www.google.com/search?q=Nitin+Gadura+Gadura+Real+Estate" target="_blank" rel="noopener" class="btn btn-outline">Google Reviews</a>
-        <a href="https://www.zillow.com/profile/NitinGadura/" target="_blank" rel="noopener" class="btn btn-outline">Zillow Reviews</a>
-        <a href="https://www.homes.com/real-estate-agents/nitin-k-gadura-6dpbd3k/" target="_blank" rel="noopener" class="btn btn-outline">Homes.com Reviews</a>
-      </div>
+    <div style="text-align:center;margin-top:40px">
+      <p style="font-size:0.78rem;font-weight:300;color:var(--mid);margin-bottom:20px">4.9 ★ average — verified on Google · Zillow · Homes.com</p>
+      <a href="https://www.google.com/search?q=Nitin+Gadura+Gadura+Real+Estate" target="_blank" rel="noopener" class="btn-gold" style="display:inline-block;max-width:260px">Read All Reviews</a>
     </div>
   </div>
 </section>
 
-<!-- ══ SEO FAQ — 50 TOP QUESTIONS ════════════════════════════ -->
-<section class="section" id="faq">
+<!-- SEO Q&A GRID -->
+<section class="section" id="guide">
   <div class="container">
     <div class="section-header centered">
-      <span class="eyebrow">Common Questions</span>
-      <h2 class="section-title">Everything You Need to Know About<br>Buying &amp; Selling in New York</h2>
-      <p class="section-sub">Answers to the most common real estate questions from Queens and Long Island homeowners and buyers.</p>
-    </div>
-
-    <!-- Two-column FAQ grid -->
-    <div class="seo-grid" style="margin-bottom:48px">
-
-      <div class="seo-card">
-        <h3>How much does it cost to sell a house in Queens, NY?</h3>
-        <p>Seller costs in Queens typically include broker commission (negotiable), NY State transfer tax (0.4% of sale price), attorney fees ($1,500–$3,000), and miscellaneous closing costs. I provide a full net proceeds estimate before you decide to list — so you know exactly what you'll walk away with.</p>
-      </div>
-
-      <div class="seo-card">
-        <h3>How long does it take to sell a home in Queens, New York?</h3>
-        <p>In the current Queens market, well-priced homes typically go under contract in 2–5 weeks. Factors include neighborhood, price point, condition, and time of year. Ozone Park, Richmond Hill, and Jamaica tend to move quickly due to strong buyer demand and limited inventory.</p>
-      </div>
-
-      <div class="seo-card">
-        <h3>What is my home worth in Queens, NY?</h3>
-        <p>Home values in Queens vary significantly by neighborhood, property type, condition, and lot size. A free Comparative Market Analysis (CMA) from Nitin — based on real OneKey MLS sold data, not automated estimates — will give you an accurate, current valuation of your specific property.</p>
-      </div>
-
-      <div class="seo-card">
-        <h3>How do I find the best real estate agent in Queens, NY?</h3>
-        <p>Look for an agent with verifiable local sales history, strong online reviews (Google, Zillow, Homes.com), and deep neighborhood knowledge. Nitin Gadura has 7+ years of Queens-specific experience, 57+ five-star reviews, $100M+ in closed volume, and multilingual service across English, Hindi, Punjabi, Gujarati, and Urdu.</p>
-      </div>
-
-      <div class="seo-card">
-        <h3>Should I sell my house before buying a new one in New York?</h3>
-        <p>In New York's competitive market, selling first gives you maximum negotiating power and eliminates financing contingency risk. Nitin specializes in coordinating simultaneous buy-sell transactions across Queens and Long Island, helping clients time both closings without being caught in between.</p>
-      </div>
-
-      <div class="seo-card">
-        <h3>What are the best neighborhoods to buy a home in Queens, NY?</h3>
-        <p>Top Queens neighborhoods for buyers depend on your priorities: Ozone Park and Richmond Hill for multi-family investment, Forest Hills and Bayside for single-family prestige, Jamaica for transit access and value, Flushing for high-density upside, and Middle Village for suburban quality at city prices.</p>
-      </div>
-
-      <div class="seo-card">
-        <h3>How do I sell a multi-family home in Queens, NY?</h3>
-        <p>Multi-family sales in Queens require specific expertise — accurate income analysis, cap rate presentation, tenant disclosure compliance, and access to a buyer pool that includes both investors and owner-occupants. I've sold dozens of 2–4 family homes across Ozone Park, Richmond Hill, Jamaica, and South Ozone Park.</p>
-      </div>
-
-      <div class="seo-card">
-        <h3>What is the OneKey MLS and why does it matter when selling?</h3>
-        <p>OneKey MLS is the primary Multiple Listing Service for Queens, Nassau, and Suffolk Counties. When I list your home on OneKey MLS, it is automatically syndicated to Zillow, Realtor.com, Homes.com, StreetEasy, Trulia, and 100+ partner sites — giving you maximum exposure from day one.</p>
-      </div>
-
-      <div class="seo-card">
-        <h3>Do I need to make repairs before selling my Queens home?</h3>
-        <p>Not always. Some sellers get a better return with targeted improvements — fresh paint, landscaping, kitchen hardware updates. Others maximize net proceeds by pricing for condition and selling as-is. I'll walk you through a cost/benefit analysis specific to your home and neighborhood before you spend a dollar.</p>
-      </div>
-
-      <div class="seo-card">
-        <h3>How do first-time home buyers qualify for a mortgage in New York?</h3>
-        <p>Most first-time buyers in New York need a minimum credit score of 620 (conventional) or 580 (FHA), 3–20% down payment, and a debt-to-income ratio under 43–50%. New York State also offers SONYMA programs with below-market rates and down payment assistance for qualifying first-time buyers.</p>
-      </div>
-
-      <div class="seo-card">
-        <h3>What is the average home price in Queens, NY?</h3>
-        <p>Queens median home prices range roughly from $550K–$700K for single-family homes, $700K–$1.3M+ for two-family homes, and $400K–$600K for co-ops and condos — though prices vary substantially by neighborhood. Ozone Park and South Ozone Park run lower; Forest Hills, Bayside, and Whitestone run higher.</p>
-      </div>
-
-      <div class="seo-card">
-        <h3>How do I sell my house fast in Queens, NY?</h3>
-        <p>To sell fast in Queens: price correctly based on real comp data, list on Thursday to capture the weekend buyer surge, use professional photography, and be ready for quick showings. Nitin's listings average under 30 days on market. A free valuation consultation is the fastest first step.</p>
-      </div>
-
-    </div>
-
-    <!-- Full accordion FAQ -->
-    <div class="faq-list" style="max-width:100%">
-      <div class="faq-item"><button class="faq-question">What are the closing costs for buyers in New York? <span class="faq-toggle">+</span></button><div class="faq-answer"><p>New York buyer closing costs typically total 2–5% of purchase price and include: mortgage recording tax (1.8% on loans under $500K, 1.925% above), title insurance, attorney fees ($1,500–$3,000), lender fees, and property tax/insurance escrow. Co-op buyers also pay flip taxes and move-in deposits. I'll give you a full closing cost estimate before you make any offer.</p></div></div>
-      <div class="faq-item"><button class="faq-question">Can I buy a house in Queens with bad credit? <span class="faq-toggle">+</span></button><div class="faq-answer"><p>FHA loans accept scores as low as 580 with 3.5% down. Scores of 500–579 may qualify with 10% down. Some portfolio lenders offer programs for non-traditional credit histories. I can connect you with lenders who specialize in Queens and Long Island buyers with credit challenges.</p></div></div>
-      <div class="faq-item"><button class="faq-question">How do I buy a two-family home in Queens, NY? <span class="faq-toggle">+</span></button><div class="faq-answer"><p>Two-family (duplex) purchases in Queens are common — many buyers live in one unit and rent the other to offset mortgage costs. You can use FHA financing with as little as 3.5% down on owner-occupied 2–4 family homes. I specialize in multi-family transactions and can walk you through the full process.</p></div></div>
-      <div class="faq-item"><button class="faq-question">What is the property transfer tax in New York when selling? <span class="faq-toggle">+</span></button><div class="faq-answer"><p>New York State real property transfer tax is 0.4% of the sale price. NYC additionally charges 1% on sales $500K and under, and 1.425% on sales above $500K. For properties over $2M, a mansion tax of 1–3.9% applies (paid by buyer). I'll provide a complete seller net proceeds sheet that accounts for all taxes.</p></div></div>
-      <div class="faq-item"><button class="faq-question">How do I buy a house in Long Island as a first-time buyer? <span class="faq-toggle">+</span></button><div class="faq-answer"><p>Long Island first-time buyers should start with mortgage pre-approval, identify their target neighborhoods by budget and commute needs, and work with an agent who knows the LIRR branch coverage areas. I specialize in helping Queens families make the move to Nassau County communities like Valley Stream, Elmont, Hempstead, and Hicksville.</p></div></div>
-      <div class="faq-item"><button class="faq-question">What documents do I need to sell my home in New York? <span class="faq-toggle">+</span></button><div class="faq-answer"><p>Key seller documents include: deed, property survey, title insurance policy, any prior inspection reports, certificate of occupancy, mortgage payoff statements, and utility/tax records. Your attorney handles most document preparation; I'll connect you with experienced Queens and Long Island real estate attorneys from day one.</p></div></div>
-      <div class="faq-item"><button class="faq-question">Is now a good time to sell a house in Queens, NY? <span class="faq-toggle">+</span></button><div class="faq-answer"><p>Queens remains a seller-favorable market in most neighborhoods due to historically low inventory relative to buyer demand. Spring and early fall are peak selling seasons. However, well-priced, well-presented homes sell in every season. I can pull current market data for your specific neighborhood and give you a precise read on timing.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ SEO CONTENT — TOP KEYWORD COVERAGE ════════════════════ -->
-<section class="section section-alt" id="seo-content" aria-label="Real estate information for Queens and Long Island">
-  <div class="container">
-    <div class="section-header centered">
-      <span class="eyebrow">Real Estate Guides</span>
+      <span class="eyebrow">Buyer &amp; Seller Guide</span>
       <h2 class="section-title">Buying &amp; Selling in Queens and Long Island</h2>
-      <p class="section-sub">Everything you need to know about the New York real estate market.</p>
+      <p class="section-sub">Everything you need to know about the New York real estate market — from pricing your home to closing day.</p>
     </div>
     <div class="seo-grid">
       <div class="seo-card">
-        <h3>How to sell a house in Queens, New York — Step by Step</h3>
-        <p>Selling a home in Queens involves: (1) getting a comparative market analysis, (2) selecting a listing price, (3) preparing the home for photos and showings, (4) listing on OneKey MLS and all major portals, (5) reviewing and negotiating offers, (6) managing inspection and attorney review, and (7) closing. I guide you through every step with zero guesswork.</p>
+        <h3>What is the average home price in Queens, NY in 2025?</h3>
+        <p>Queens home prices vary significantly by neighborhood. As of 2025, single-family homes in areas like Howard Beach and Forest Hills often exceed $900K, while multi-family properties in South Ozone Park and Richmond Hill range from $700K–$1.1M. Nitin provides precise neighborhood-level pricing based on current OneKey MLS data.</p>
       </div>
       <div class="seo-card">
-        <h3>How to buy a home in Queens, NY — A Complete Buyer's Guide</h3>
-        <p>Buying a home in Queens starts with mortgage pre-approval, followed by neighborhood selection based on commute, schools, and budget. Queens offers co-ops, condos, attached homes, and detached single- and multi-family properties. The market is competitive — having an agent with deep local knowledge and strong relationships is the single biggest advantage a buyer can have.</p>
+        <h3>How long does it take to sell a house in Queens?</h3>
+        <p>Well-priced homes in Queens typically sell within 30–60 days. Nitin's listings average significantly less than market time because of strategic pricing, professional photography, and multi-platform syndication on day one. Overpriced homes can sit 90–120 days and often sell for less than market value.</p>
       </div>
       <div class="seo-card">
-        <h3>Queens, NY multi-family home investing — what you need to know</h3>
-        <p>Queens is one of the strongest multi-family investment markets in the US. Two- and three-family homes in Ozone Park, Richmond Hill, Jamaica, and South Jamaica consistently deliver cap rates of 4–6%. Key metrics: gross rent multiplier, net operating income, and cash-on-cash return. I've helped dozens of investors analyze and acquire income-producing properties across Queens and Nassau County.</p>
+        <h3>What are closing costs for sellers in New York State?</h3>
+        <p>New York sellers typically pay: agent commission (negotiable), transfer taxes (NYC and NYS), attorney fees, outstanding liens, and any agreed-upon concessions. Nitin provides a complete net sheet before listing so you know exactly what you'll walk away with — no surprises at the closing table.</p>
       </div>
       <div class="seo-card">
-        <h3>What is a CMA (Comparative Market Analysis) and how does it work?</h3>
-        <p>A CMA is a detailed analysis of recently sold, currently active, and expired listings similar to your property. It accounts for square footage, lot size, condition, bedroom/bathroom count, garage, location within the neighborhood, and market timing. Unlike Zillow's Zestimate — which uses automated algorithms — a Nitin Gadura CMA is built from real OneKey MLS data with local interpretation.</p>
+        <h3>Is now a good time to sell in Queens or Long Island?</h3>
+        <p>Inventory remains historically low across Queens and Nassau County, which continues to favor sellers. Interest rate fluctuations have moderated buyer demand, but motivated, pre-approved buyers are active. Nitin analyzes current absorption rates by neighborhood before every listing conversation.</p>
       </div>
       <div class="seo-card">
-        <h3>How to sell a two-family home in Queens — maximizing your sale price</h3>
-        <p>Two-family homes in Queens are marketed to two distinct buyer types: owner-occupants (who live in one unit and rent the other) and pure investors (who analyze cap rates and NOI). To maximize your sale price, your listing needs to speak to both audiences simultaneously — with accurate rent rolls, expense schedules, and a clear investment story alongside the residential appeal. I've perfected this dual-market approach across hundreds of Queens multi-family transactions.</p>
+        <h3>What should I do before listing my home in Queens?</h3>
+        <p>Before listing, focus on decluttering, fresh paint in neutral tones, minor repairs, and deep cleaning. Nitin walks every seller through a pre-listing checklist and connects you with trusted contractors for cost-effective improvements that maximize your sale price without over-investing.</p>
       </div>
       <div class="seo-card">
-        <h3>How long does a real estate closing take in New York?</h3>
-        <p>New York real estate closings typically take 60–90 days from accepted offer to closing for financed transactions; all-cash closings can close in 30–45 days. The attorney review period, co-op board approval (if applicable), mortgage commitment, and title search are the primary timeline drivers. I maintain relationships with attorneys and lenders who keep transactions moving efficiently.</p>
+        <h3>How do I buy a home in Queens as a first-time buyer?</h3>
+        <p>Start with mortgage pre-approval to understand your budget. Then work with a buyer's agent (like Nitin) who can identify off-market opportunities, guide you through inspections, and negotiate effectively in a competitive multiple-offer environment. Nitin helps first-time buyers navigate every step at no cost to the buyer.</p>
       </div>
       <div class="seo-card">
-        <h3>What is the difference between a real estate agent and a real estate broker in New York?</h3>
-        <p>In New York, a real estate salesperson (agent) is licensed to represent buyers and sellers under the supervision of a licensed broker. A broker holds an independent license and can operate their own firm. Nitin Gadura is a Licensed NYS Real Estate Salesperson (License #10401383405) supervised by Vinod K. Gadura, Licensed Real Estate Broker (License #10991238487) at Gadura Real Estate, LLC.</p>
+        <h3>What is the OneKey MLS and how does it help sellers?</h3>
+        <p>OneKey MLS is the primary Multiple Listing Service for Queens, Nassau, and Suffolk County — covering over 40,000 licensed agents. Listing on OneKey MLS ensures your home is automatically syndicated to Zillow, Realtor.com, Homes.com, StreetEasy, and hundreds of partner sites, reaching the maximum number of qualified buyers.</p>
       </div>
       <div class="seo-card">
-        <h3>What neighborhoods in Queens have the highest home values?</h3>
-        <p>The highest home values in Queens are typically found in: Whitestone and Douglaston-Little Neck (premium detached homes, LIRR access), Forest Hills Gardens (landmark planned community), Bayside and Bay Terrace (suburban character, strong schools), and Howard Beach (waterfront properties). Prices in these areas regularly exceed $1M for single-family homes.</p>
+        <h3>Do I need an attorney to buy or sell a home in New York?</h3>
+        <p>Yes — New York is an attorney-closing state. Both buyers and sellers are represented by separate real estate attorneys who review contracts, handle title, and oversee the closing. Nitin works closely with experienced Queens and Long Island real estate attorneys and can provide referrals at no extra cost.</p>
+      </div>
+      <div class="seo-card">
+        <h3>What is a comparative market analysis (CMA)?</h3>
+        <p>A CMA (Comparative Market Analysis) is a detailed report of recent comparable sales in your neighborhood used to determine your home's current market value. Nitin provides free, no-obligation CMAs for any Queens, Brooklyn, or Long Island property — delivered within 24 hours of your request.</p>
+      </div>
+      <div class="seo-card">
+        <h3>How is property tax calculated in Queens and Nassau County?</h3>
+        <p>Property taxes in Queens are based on the NYC Department of Finance assessed value, which is often significantly below market value for 1–3 family homes. Nassau County reassesses annually and has higher effective tax rates than many NYC boroughs. Nitin explains the tax implications of every home before you make an offer.</p>
+      </div>
+      <div class="seo-card">
+        <h3>What is the difference between a single-family and multi-family home?</h3>
+        <p>A single-family home is designed for one household. A multi-family home (2–4 units) allows you to live in one unit and rent out others — a popular strategy in Queens and Long Island for building equity while offsetting your mortgage. Nitin specializes in both, with extensive experience in 2- and 3-family properties.</p>
+      </div>
+      <div class="seo-card">
+        <h3>How does Nitin market my home differently than other agents?</h3>
+        <p>Nitin's listings include professional photography, video walkthroughs, targeted digital advertising, multilingual outreach to Hindi, Punjabi, Gujarati, and Urdu-speaking buyer networks, and full MLS exposure from day one. Most importantly, Nitin is available 7 days a week and responds to every inquiry personally.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══ FINAL CTA BAND ═════════════════════════════════════════ -->
-<section class="section section-amber" style="text-align:center">
+<!-- FAQ ACCORDION -->
+<section class="section section-cream" id="faq">
   <div class="container">
-    <span class="eyebrow" style="color:var(--green)">Ready to Get Started?</span>
-    <h2 class="section-title">Let's Talk About Your Real Estate Goals</h2>
-    <p class="section-sub" style="margin:0 auto 36px">Whether you're selling, buying, or just exploring options — reach out today for a free, no-pressure consultation.</p>
-    <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap">
-      <button class="btn btn-green btn-lg popup-trigger" data-type="sell">Get My Free Valuation</button>
-      <button class="btn btn-green btn-lg popup-trigger" data-type="buy">Find Me a Home</button>
-      <a href="tel:9177050132" class="btn btn-outline btn-lg">Call (917) 705-0132</a>
+    <div class="section-header centered">
+      <span class="eyebrow">Frequently Asked Questions</span>
+      <h2 class="section-title">Common Questions</h2>
+    </div>
+    <div class="faq-wrap">
+      <div class="faq-item">
+        <button class="faq-q">How do I get a free home valuation from Nitin?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Simply click "Free Home Valuation" anywhere on this site, fill in your address and contact information, and Nitin will prepare a detailed comparative market analysis based on current OneKey MLS data — delivered within 24 hours at zero cost and no obligation.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Does Nitin work with buyers or only sellers?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Nitin represents both buyers and sellers across Queens, Brooklyn, and Long Island. Buyer representation is free — Nitin's commission is paid by the seller. He'll help you search, negotiate, and navigate from offer to closing, with deep knowledge of every neighborhood's market dynamics.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What neighborhoods in Queens does Nitin specialize in?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Nitin has closed transactions in Ozone Park, Richmond Hill, Howard Beach, Jamaica, Springfield Gardens, Queens Village, South Ozone Park, Woodhaven, Maspeth, Middle Village, Flushing, Forest Hills, Bayside, and many more — with genuine block-level pricing knowledge in each area.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Does Nitin serve Long Island buyers and sellers?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Yes. Nitin is licensed across Nassau and Suffolk County through OneKey MLS, serving communities including Valley Stream, Elmont, Hempstead, Garden City, Levittown, Hicksville, Massapequa, Great Neck, and many others. Long Island buyers and sellers receive the same personalized service as Queens clients.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What languages does Nitin speak?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Nitin is fluent in English, Hindi, Punjabi, and conversational in Gujarati and Urdu. This multilingual capability allows Nitin to serve Queens and Long Island's diverse immigrant communities and access buyer networks that other agents simply can't reach.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Is Nitin Gadura the listing agent or the broker?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Nitin Gadura is a licensed NYS Real Estate Salesperson (License #10401383405) operating under Gadura Real Estate, LLC — a licensed NYS real estate brokerage. All transactions are conducted in accordance with New York State real estate law and OneKey MLS rules. NY RPL §443 agency disclosure is provided at first substantive contact.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How quickly can Nitin list my home for sale?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Once the listing agreement is signed and photography is completed, Nitin can have your home live on OneKey MLS and syndicated to Zillow, Realtor.com, Homes.com, and StreetEasy within 24–48 hours. He coordinates professional photography, floor plans, and all marketing materials before the listing goes live.</div></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ══ FOOTER ═════════════════════════════════════════════════ -->
-<footer class="site-footer">
+<!-- FOOTER -->
+<footer class="footer">
   <div class="container">
-    <div class="footer-main">
-      <div class="footer-brand">
-        <img src="logo-full.png" alt="Gadura Real Estate LLC">
-        <p>Nitin Gadura is a Licensed NYS Real Estate Salesperson at Gadura Real Estate, LLC — serving Queens, Brooklyn, and Long Island with expertise, integrity, and multilingual service.</p>
-        <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">
-          <a href="https://www.zillow.com/profile/NitinGadura/" target="_blank" rel="noopener" style="font-size:0.65rem;color:rgba(255,255,255,0.45);transition:color 0.18s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Zillow Profile</a>
-          <span style="color:rgba(255,255,255,0.2)">·</span>
-          <a href="https://www.homes.com/real-estate-agents/nitin-k-gadura-6dpbd3k/" target="_blank" rel="noopener" style="font-size:0.65rem;color:rgba(255,255,255,0.45);transition:color 0.18s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Homes.com Profile</a>
-          <span style="color:rgba(255,255,255,0.2)">·</span>
-          <a href="https://www.gadurarealestate.com" target="_blank" rel="noopener" style="font-size:0.65rem;color:rgba(255,255,255,0.45);transition:color 0.18s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Gadura Real Estate</a>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Nitin Gadura</div>
+        <div class="footer-brand-sub">Licensed Real Estate Salesperson · New York</div>
+        <p class="footer-brand-desc">Serving Queens, Brooklyn, and Long Island with hyperlocal expertise since 2018. Fluent in English, Hindi, Punjabi, Gujarati, and Urdu. OneKey® MLS member. Licensed by Gadura Real Estate, LLC.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Markets</div>
+        <div class="footer-links">
+          <a href="/queens.html">Queens, NY</a>
+          <a href="/brooklyn.html">Brooklyn, NY</a>
+          <a href="/long-island.html">Long Island, NY</a>
+          <a href="/queens.html#flushing">Flushing</a>
+          <a href="/queens.html#ozone-park">Ozone Park</a>
+          <a href="/long-island.html#valley-stream">Valley Stream</a>
         </div>
       </div>
-      <div class="footer-col">
-        <h4>Neighborhoods</h4>
-        <ul>
-          <li><a href="/queens.html">Queens</a></li>
-          <li><a href="/brooklyn.html">Brooklyn</a></li>
-          <li><a href="/long-island.html">Long Island</a></li>
-          <li><a href="/queens.html#ozone-park">Ozone Park</a></li>
-          <li><a href="/queens.html#jamaica">Jamaica</a></li>
-          <li><a href="/queens.html#flushing">Flushing</a></li>
-        </ul>
+      <div>
+        <div class="footer-col-title">Services</div>
+        <div class="footer-links">
+          <a href="#valuation">Free Home Valuation</a>
+          <a href="#listings">Active Listings</a>
+          <a href="#listings">Recently Sold</a>
+          <a href="https://www.gadurarealestate.com" rel="noopener">Search MLS Listings</a>
+          <a href="#faq">Buyer's Guide</a>
+          <a href="#faq">Seller's Guide</a>
+        </div>
       </div>
-      <div class="footer-col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="#valuation">Free Home Valuation</a></li>
-          <li><a href="#listings">Current Listings</a></li>
-          <li><a href="https://www.gadurarealestate.com" rel="noopener">Full Brokerage</a></li>
-          <li><a href="#why">For Sellers</a></li>
-          <li><a href="#why">For Buyers</a></li>
-          <li><a href="#profiles">Reviews &amp; Profiles</a></li>
-        </ul>
-      </div>
-      <div class="footer-col footer-contact">
-        <h4>Contact Nitin</h4>
-        <p><a href="tel:9177050132">(917) 705-0132</a></p>
-        <p><a href="mailto:info@gadurarealestate.com">info@gadurarealestate.com</a></p>
-        <p>106-09 101st Ave<br>Ozone Park, NY 11416</p>
-        <p style="margin-top:12px"><a href="https://www.gadurarealestate.com" rel="noopener">gadurarealestate.com</a></p>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <div class="footer-links">
+          <a href="tel:9177050132">(917) 705-0132</a>
+          <a href="mailto:info@gadurarealestate.com">info@gadurarealestate.com</a>
+          <a href="https://www.zillow.com/profile/NitinGadura/" rel="noopener">Zillow Profile</a>
+          <a href="https://www.homes.com/real-estate-agents/nitin-k-gadura-6dpbd3k/" rel="noopener">Homes.com Profile</a>
+          <a href="https://www.gadurarealestate.com" rel="noopener">Gadura Real Estate, LLC</a>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="footer-legal">
-        Nitin K. Gadura (License #10401383405) is a Licensed NYS Real Estate Salesperson supervised by Vinod K. Gadura, Licensed Real Estate Broker (License #10991238487) — Gadura Real Estate, LLC, 106-09 101st Ave, Ozone Park, NY 11416. Member: OneKey® MLS. All information is deemed reliable but not guaranteed. Subject to errors, omissions, price changes, and withdrawal without notice. New York Real Property Law §443 Agency Disclosure: Gadura Real Estate, LLC may represent buyers, sellers, or both parties in a real estate transaction as disclosed buyers agent, sellers agent, or dual agent. A written Agency Disclosure Form will be provided at or prior to the first substantive meeting as required by New York State law. Equal Housing Opportunity.
-      </div>
-      <div class="eho-badge"><span>⊕</span> Equal Housing Opportunity</div>
+      <p class="footer-legal">Nitin Gadura · Licensed NYS Real Estate Salesperson · License #10401383405 · Operating under Gadura Real Estate, LLC · 106-09 101st Ave, Ozone Park, NY 11416 · Member of OneKey® MLS · Equal Housing Opportunity · NY RPL §443 Agency Disclosure provided at first substantive contact. Information deemed reliable but not guaranteed. All listings subject to change. This website is for informational purposes only and does not constitute legal, financial, or investment advice.</p>
+      <p style="font-size:0.58rem;color:rgba(255,255,255,0.15);flex-shrink:0">© 2025 Nitin Gadura</p>
     </div>
   </div>
 </footer>
 
-<script>
-(function() {
-  'use strict';
+<!-- HIDDEN SEO KEYWORDS -->
+<div aria-hidden="true" style="position:absolute;width:1px;height:1px;overflow:hidden;left:-9999px">
+Queens real estate agent, Long Island realtor, Ozone Park homes for sale, Richmond Hill real estate, Howard Beach realtor, Jamaica NY homes, Flushing real estate agent, Forest Hills homes, Bayside realtor, Astoria NY agent, sell my house Queens, buy a home Long Island, Nassau County real estate, Valley Stream homes, Elmont realtor, Hempstead NY agent, Garden City real estate, Levittown homes for sale, Hicksville realtor, Great Neck real estate, multi-family homes Queens NY, 2 family house Queens, investment property Queens, first time home buyer Queens, home valuation Queens NY, what is my home worth Queens, OneKey MLS Queens, top realtor Queens NY, best real estate agent Long Island, sell house fast New York, cash offer Queens NY, mortgage help Queens, closing costs New York, NY real estate attorney, home inspection Queens, comparative market analysis Queens, CMA Queens NY, property tax Queens, Queens school zones real estate, Ozone Park 11416, Richmond Hill 11418, Howard Beach 11414, Jamaica 11432, Springfield Gardens 11413, Laurelton 11413, St Albans 11412, Hollis 11423, Queens Village 11427, Cambria Heights 11411, Rosedale 11422, Far Rockaway 11691, Valley Stream 11580, Elmont 11003, Hempstead 11550, Garden City 11530, Levittown 11756, Hicksville 11801, Massapequa 11758, Great Neck 11021
+</div>
 
-  // ── Popup ─────────────────────────────────────────────────
+<script>
+  // NAV scroll
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  }, {passive:true});
+
+  // POPUP
   const overlay = document.getElementById('popup');
   const step1 = document.getElementById('popup-step1');
   const step2 = document.getElementById('popup-step2');
   const step3 = document.getElementById('popup-step3');
-  const TITLES = { sell: 'Get Your Free Home Valuation', buy: 'Find Your Perfect Home', question: 'Ask Nitin Anything' };
+  const formTitle = document.getElementById('popup-form-title');
+  const formSub = document.getElementById('popup-form-sub');
 
-  function openPopup(type) { overlay.classList.add('active'); document.body.style.overflow = 'hidden'; type ? showForm(type) : showCards(); }
-  function closePopup() { overlay.classList.remove('active'); document.body.style.overflow = ''; setTimeout(showCards, 350); }
-  function showCards() { step1.style.display = ''; step2.classList.remove('visible'); step3.style.display = 'none'; }
-  function showForm(type) { step1.style.display = 'none'; step2.classList.add('visible'); step3.style.display = 'none'; document.getElementById('popup-form-title').textContent = TITLES[type] || 'Get in Touch'; document.getElementById('p-type').value = type; }
-
-  document.querySelectorAll('.popup-trigger').forEach(btn => btn.addEventListener('click', () => openPopup(btn.dataset.type || '')));
-  document.querySelectorAll('.popup-card').forEach(card => { const a = () => showForm(card.dataset.type); card.addEventListener('click', a); card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') a(); }); });
-  document.getElementById('popup-close').addEventListener('click', closePopup);
-  document.getElementById('popup-back').addEventListener('click', showCards);
-  overlay.addEventListener('click', e => { if (e.target === overlay) closePopup(); });
-  document.getElementById('popup-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const fd = new FormData(this);
-    window.location.href = 'mailto:info@gadurarealestate.com?subject=New Inquiry - nitingadura.com (' + fd.get('type') + ')&body=' + encodeURIComponent(['Name: ' + fd.get('name'), 'Phone: ' + fd.get('phone'), 'Email: ' + fd.get('email'), 'Address: ' + (fd.get('address')||'N/A'), 'Message: ' + (fd.get('message')||'N/A'), 'Type: ' + fd.get('type')].join('\n'));
-    step2.classList.remove('visible'); step3.style.display = 'block';
-  });
-
-  // Valuation form
-  const vf = document.getElementById('val-form');
-  if (vf) vf.addEventListener('submit', function(e) {
-    e.preventDefault();
-    const fd = new FormData(this);
-    window.location.href = 'mailto:info@gadurarealestate.com?subject=Free Home Valuation Request&body=' + encodeURIComponent(['Address: '+fd.get('address'),'Name: '+fd.get('name'),'Phone: '+fd.get('phone'),'Email: '+fd.get('email'),'Type: '+fd.get('type')].join('\n'));
-    this.style.display = 'none'; document.getElementById('val-success').style.display = 'block';
-  });
-
-  // Auto-popup
-  if (!sessionStorage.getItem('popup-shown')) {
-    setTimeout(() => { openPopup(''); sessionStorage.setItem('popup-shown', '1'); }, 5500);
+  function openPopup(type) {
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    if(type) showForm(type);
+    else { step1.style.display=''; step2.style.display='none'; step3.style.display='none'; }
+  }
+  function closePopup() {
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  function showForm(type) {
+    step1.style.display='none'; step2.style.display=''; step3.style.display='none';
+    if(type==='sell'){ formTitle.textContent='Free Home Valuation'; formSub.textContent='Get a precise market analysis for your home — delivered within 24 hours, zero obligation.'; }
+    else if(type==='buy'){ formTitle.textContent='Buyer Consultation'; formSub.textContent='Tell Nitin what you\'re looking for and get a free buyer strategy session.'; }
+    else { formTitle.textContent='Ask Nitin a Question'; formSub.textContent='Any question about buying or selling in Queens or Long Island — Nitin responds personally.'; }
   }
 
-  // FAQ
-  document.querySelectorAll('.faq-question').forEach(q => q.addEventListener('click', function() {
-    const item = this.closest('.faq-item');
-    const answer = item.querySelector('.faq-answer');
-    const isOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item.open').forEach(o => { o.classList.remove('open'); o.querySelector('.faq-answer').style.maxHeight = '0'; });
-    if (!isOpen) { item.classList.add('open'); answer.style.maxHeight = answer.scrollHeight + 'px'; }
-  }));
-
-  // Listings tabs
-  document.querySelectorAll('.listings-tab').forEach(tab => tab.addEventListener('click', function() {
-    document.querySelectorAll('.listings-tab').forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected','false'); });
-    document.querySelectorAll('.listings-panel').forEach(p => p.classList.remove('active'));
-    this.classList.add('active'); this.setAttribute('aria-selected','true');
-    document.getElementById('panel-' + this.dataset.panel).classList.add('active');
-  }));
-
-  // Mobile nav
-  const mobileBtn = document.getElementById('mobile-menu-btn');
-  const nav = document.querySelector('.header-nav');
-  if (mobileBtn && nav) mobileBtn.addEventListener('click', () => {
-    const isOpen = nav.style.display === 'flex';
-    nav.style.cssText = isOpen ? '' : 'display:flex;flex-direction:column;position:absolute;top:72px;left:0;right:0;background:var(--cream);padding:16px 24px;border-bottom:1px solid var(--border);z-index:99;gap:16px';
+  document.querySelectorAll('.popup-trigger').forEach(el => {
+    el.addEventListener('click', () => openPopup(el.dataset.type || null));
+  });
+  document.getElementById('popup-close').addEventListener('click', closePopup);
+  overlay.addEventListener('click', e => { if(e.target===overlay) closePopup(); });
+  document.querySelectorAll('.popup-opt').forEach(btn => {
+    btn.addEventListener('click', () => showForm(btn.dataset.type));
+  });
+  document.getElementById('popup-back').addEventListener('click', () => {
+    step1.style.display=''; step2.style.display='none';
+  });
+  document.getElementById('popup-submit').addEventListener('click', () => {
+    step2.style.display='none'; step3.style.display='';
   });
 
-})();
+  // TABS
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active'); btn.setAttribute('aria-selected','true');
+      document.getElementById('panel-'+btn.dataset.panel).classList.add('active');
+    });
+  });
+
+  // FAQ
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if(!isOpen) item.classList.add('open');
+    });
+  });
+
+  // VALUATION FORM
+  document.getElementById('val-form').addEventListener('submit', e => {
+    e.preventDefault();
+    document.getElementById('val-form').style.display='none';
+    document.getElementById('val-success').style.display='block';
+  });
+
+  // POPUP once per session
+  if(!sessionStorage.getItem('popup_shown')) {
+    setTimeout(() => { openPopup(); sessionStorage.setItem('popup_shown','1'); }, 8000);
+  }
 </script>
-
-<!-- ══ SEO HIDDEN KEYWORD CONTENT (screen-reader accessible) ═ -->
-<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true">
-Queens NY real estate agent, Long Island realtor, sell my home Queens, buy house Queens NY, Ozone Park real estate agent, Jamaica NY homes for sale, Richmond Hill NY realtor, Howard Beach homes, Flushing real estate, Forest Hills agent, Bayside NY homes, Queens Village real estate, South Jamaica homes, Rosedale NY realtor, Springfield Gardens real estate, St Albans homes for sale, Hollis NY agent, Cambria Heights realtor, Laurelton NY real estate, South Ozone Park homes, Woodhaven NY agent, Kew Gardens real estate, Rego Park homes, Sunnyside NY realtor, Astoria Queens homes, LIC real estate, Woodside NY agent, Jackson Heights homes for sale, Elmhurst NY real estate, Corona Queens homes, Middle Village realtor, Maspeth NY agent, Ridgewood Queens real estate, Glendale NY homes, Glen Oaks Queens realtor, Bellerose NY agent, Far Rockaway homes for sale, Rockaway Beach NY real estate, Valley Stream NY realtor, Elmont homes for sale, Hempstead real estate agent, Nassau County realtor, Suffolk County homes, Long Island real estate agent, Great Neck NY homes, Manhasset NY realtor, Port Washington homes, Hicksville real estate, Levittown NY agent, Freeport NY homes for sale, Rockville Centre realtor, Garden City NY homes, Mineola real estate, Westbury NY agent, New Hyde Park homes, Floral Park NY realtor, Bethpage real estate, Wantagh NY homes, Massapequa agent, Plainview NY real estate, Syosset NY realtor, Bay Shore Long Island, Huntington NY real estate, how to sell a house in New York, what is my home worth Queens, Queens home valuation, free home valuation Queens NY, how much does it cost to sell a house in NY, Queens real estate market 2024, Queens NY housing market, Long Island housing market, best neighborhoods Queens NY, multi-family homes Queens NY for sale, two family house Queens NY, investment property Queens NY, Queens NY first time home buyer, how to buy a house in New York, Queens real estate listings, homes for sale Queens NY, OneKey MLS Queens, sell home fast Queens NY, real estate agent near me Queens NY, realtor Ozone Park NY, realtor Jamaica NY, realtor Richmond Hill NY, realtor Flushing NY, realtor Forest Hills NY, what is a CMA real estate, comparative market analysis Queens NY, real estate closing costs NY, NY transfer tax selling house, seller net proceeds Queens NY, co-op vs condo Queens NY, single family vs multi family Queens, Queens NY zoning R1 R2 R3, SONYMA first time buyer NY, FHA loan Queens NY, mortgage pre-approval New York, real estate attorney Queens NY, title insurance New York, home inspection Queens NY, property taxes Queens NY, NYC mansion tax, NY RPL 443 agency disclosure, equal housing opportunity Queens
-</div>
-
 </body>
 </html>
