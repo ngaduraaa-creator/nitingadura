@@ -154,9 +154,21 @@
     /* RESPONSIVE */
     @media(max-width:900px){.featured-grid{grid-template-columns:repeat(2,1fr)}.nav-links{display:none}.footer-grid{grid-template-columns:1fr 1fr}}
     @media(max-width:520px){.container{padding:0 20px}.featured-grid{grid-template-columns:1fr}.hero-stat-row{gap:24px}.cw{bottom:16px;right:16px}}
+
+    /* GOOGLE TRANSLATE — hide default bar */
+    .goog-te-banner-frame,.goog-te-gadget,.goog-te-balloon-frame{display:none!important}
+    .goog-text-highlight{background:none!important;box-shadow:none!important}
+    body{top:0!important}
+    iframe.goog-te-menu-frame{display:none!important}
+    /* LANG SWITCHER */
+    .lang-sw{display:flex;align-items:center;gap:3px;margin-right:4px}
+    .lang-btn{font-size:0.52rem;font-weight:600;letter-spacing:0.06em;color:rgba(255,255,255,0.3);background:none;border:none;cursor:pointer;padding:4px 5px;border-radius:3px;transition:all 0.18s;font-family:var(--sans);line-height:1}
+    .lang-btn:hover,.lang-btn.active{color:var(--gold)}
+    .lang-sep{color:rgba(255,255,255,0.1);font-size:0.45rem;pointer-events:none;padding:0 1px}
   </style>
 </head>
 <body>
+<div id="google_translate_element" style="display:none" aria-hidden="true"></div>
 
 <!-- POPUP -->
 <div class="popup-overlay" id="popup" role="dialog" aria-modal="true">
@@ -216,6 +228,19 @@
   </div>
   <div class="nav-actions">
     <a href="tel:9177050132" class="nav-phone">(917) 705-0132</a>
+        <div class="lang-sw" id="lang-sw">
+      <button class="lang-btn" data-lang="en">EN</button>
+      <span class="lang-sep">|</span>
+      <button class="lang-btn" data-lang="es">ES</button>
+      <span class="lang-sep">|</span>
+      <button class="lang-btn" data-lang="hi">हिं</button>
+      <span class="lang-sep">|</span>
+      <button class="lang-btn" data-lang="pa">ਪੰ</button>
+      <span class="lang-sep">|</span>
+      <button class="lang-btn" data-lang="ur">اردو</button>
+      <span class="lang-sep">|</span>
+      <button class="lang-btn" data-lang="bn">বাং</button>
+    </div>
     <button class="nav-cta popup-trigger">Sell My Home</button>
   </div>
 </nav>
@@ -638,5 +663,24 @@
   document.getElementById('popup-back').addEventListener('click',()=>{step1.style.display='';step2.style.display='none';});
   document.getElementById('popup-submit').addEventListener('click',()=>{step2.style.display='none';step3.style.display='';});
 </script>
+  <script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en',includedLanguages:'en,es,hi,pa,ur,bn',autoDisplay:false},'google_translate_element');}</script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
 </body>
 </html>
+<script>
+  // LANGUAGE SWITCHER
+  (function(){
+    function setLang(l){
+      var d=location.hostname;
+      document.cookie='googtrans=/en/'+l+'; path=/; domain='+d;
+      document.cookie='googtrans=/en/'+l+'; path=/';
+      location.reload();
+    }
+    var m=document.cookie.match(/googtrans=\/en\/([a-z]+)/);
+    var cur=(m&&m[1]&&m[1]!=='en')?m[1]:'en';
+    document.querySelectorAll('#lang-sw .lang-btn').forEach(function(btn){
+      btn.classList.toggle('active',btn.dataset.lang===cur);
+      btn.addEventListener('click',function(){setLang(btn.dataset.lang);});
+    });
+  })();
+</script>

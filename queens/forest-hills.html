@@ -259,9 +259,21 @@
     @media (max-width: 1024px) { .about-grid { grid-template-columns: 1fr; } .about-sidebar { position: static; } .contact-grid { grid-template-columns: 1fr; } .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; } }
     @media (max-width: 768px) { .nav-links { display: none; } .nav-phone { display: none; } .stats-band { grid-template-columns: repeat(2, 1fr); } .prop-grid { grid-template-columns: 1fr; } .why-grid { grid-template-columns: 1fr; } .footer-top { grid-template-columns: 1fr; } .form-row-2 { grid-template-columns: 1fr; } .float-btn span:last-child { display: none; } .float-btn { padding: 14px; border-radius: 50%; width: 52px; height: 52px; justify-content: center; } }
     @media (max-width: 480px) { .nav-inner { padding: 0 20px; } .hero-inner, .container { padding: 0 20px; } .breadcrumb-inner { padding: 0 20px; } .hero { padding: calc(var(--nav-h) + 48px) 0 48px; } }
+
+    /* GOOGLE TRANSLATE — hide default bar */
+    .goog-te-banner-frame,.goog-te-gadget,.goog-te-balloon-frame{display:none!important}
+    .goog-text-highlight{background:none!important;box-shadow:none!important}
+    body{top:0!important}
+    iframe.goog-te-menu-frame{display:none!important}
+    /* LANG SWITCHER */
+    .lang-sw{display:flex;align-items:center;gap:3px;margin-right:4px}
+    .lang-btn{font-size:0.52rem;font-weight:600;letter-spacing:0.06em;color:rgba(255,255,255,0.3);background:none;border:none;cursor:pointer;padding:4px 5px;border-radius:3px;transition:all 0.18s;font-family:var(--sans);line-height:1}
+    .lang-btn:hover,.lang-btn.active{color:var(--gold)}
+    .lang-sep{color:rgba(255,255,255,0.1);font-size:0.45rem;pointer-events:none;padding:0 1px}
   </style>
 </head>
 <body>
+<div id="google_translate_element" style="display:none" aria-hidden="true"></div>
 
 <nav class="site-nav" id="site-nav" aria-label="Main navigation">
   <div class="nav-inner">
@@ -612,5 +624,24 @@
   (function() { var items = document.querySelectorAll('.faq-item'); items.forEach(function(item) { item.querySelector('.faq-question').addEventListener('click', function() { var isOpen = item.classList.contains('open'); items.forEach(function(i) { i.classList.remove('open'); i.querySelector('.faq-question').setAttribute('aria-expanded', 'false'); i.querySelector('.faq-answer').style.maxHeight = '0'; }); if (!isOpen) { item.classList.add('open'); this.setAttribute('aria-expanded', 'true'); item.querySelector('.faq-answer').style.maxHeight = item.querySelector('.faq-answer').scrollHeight + 'px'; } }); }); })();
   (function() { var form = document.getElementById('contact-form'); var success = document.getElementById('form-success'); if (!form) return; form.addEventListener('submit', function(e) { e.preventDefault(); if (!form.querySelector('#cf-name').value.trim() || !form.querySelector('#cf-phone').value.trim() || !form.querySelector('#cf-email').value.trim()) { alert('Please fill in your name, phone, and email.'); return; } form.style.display = 'none'; success.style.display = 'block'; }); })();
 </script>
+  <script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en',includedLanguages:'en,es,hi,pa,ur,bn',autoDisplay:false},'google_translate_element');}</script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
 </body>
 </html>
+<script>
+  // LANGUAGE SWITCHER
+  (function(){
+    function setLang(l){
+      var d=location.hostname;
+      document.cookie='googtrans=/en/'+l+'; path=/; domain='+d;
+      document.cookie='googtrans=/en/'+l+'; path=/';
+      location.reload();
+    }
+    var m=document.cookie.match(/googtrans=\/en\/([a-z]+)/);
+    var cur=(m&&m[1]&&m[1]!=='en')?m[1]:'en';
+    document.querySelectorAll('#lang-sw .lang-btn').forEach(function(btn){
+      btn.classList.toggle('active',btn.dataset.lang===cur);
+      btn.addEventListener('click',function(){setLang(btn.dataset.lang);});
+    });
+  })();
+</script>
