@@ -130,16 +130,19 @@
     .section--dark{background:var(--black)}
     .section--gray{background:var(--gray)}
 
+    /* GOOGLE TRANSLATE */
     .goog-te-banner-frame,.goog-te-gadget,.goog-te-balloon-frame{display:none!important}
     .goog-text-highlight{background:none!important;box-shadow:none!important}
     body{top:0!important}
     iframe.goog-te-menu-frame{display:none!important}
 
+    /* LANG SWITCHER */
     .lang-sw{display:flex;align-items:center;gap:3px;margin-right:6px}
     .lang-btn{font-size:0.52rem;font-weight:600;letter-spacing:0.06em;color:rgba(255,255,255,0.3);background:none;border:none;cursor:pointer;padding:4px 5px;border-radius:3px;transition:color 0.18s;font-family:var(--sans);line-height:1}
     .lang-btn:hover,.lang-btn.active{color:var(--gold)}
     .lang-sep{color:rgba(255,255,255,0.1);font-size:0.45rem;pointer-events:none;padding:0 1px}
 
+    /* NAV */
     .nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;padding:22px 40px;background:rgba(10,9,8,0.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--bd);transition:padding 0.3s var(--ease)}
     .nav-logo{flex-shrink:0;display:flex;flex-direction:column;gap:3px}
     .nav-logo-name{font-size:0.9rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#fff;line-height:1}
@@ -153,6 +156,7 @@
     .nav-cta{border:1px solid var(--gold);color:var(--gold);font-size:0.62rem;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;padding:9px 18px;border-radius:2px;transition:all 0.2s;cursor:pointer}
     .nav-cta:hover{background:var(--gold);color:var(--black)}
 
+    /* BREADCRUMB */
     .breadcrumb{background:var(--gray);padding:11px 0;border-bottom:1px solid rgba(255,255,255,0.05)}
     .breadcrumb-inner{display:flex;align-items:center;gap:10px;font-size:0.62rem;color:rgba(255,255,255,0.28)}
     .breadcrumb-inner a{color:rgba(255,255,255,0.38);transition:color 0.2s}
@@ -160,6 +164,7 @@
     .breadcrumb-sep{color:rgba(255,255,255,0.16)}
     .breadcrumb-current{color:rgba(255,255,255,0.52)}
 
+    /* HERO */
     .hero{background:var(--black);padding:clamp(110px,13vw,150px) 0 clamp(72px,9vw,96px);position:relative;overflow:hidden}
     .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 60% at 80% 10%,rgba(200,149,58,0.06) 0%,transparent 65%);pointer-events:none}
     .hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(to right,transparent,rgba(200,149,58,0.28),transparent)}
@@ -175,6 +180,7 @@
     .hero-stat-num{display:block;font-family:var(--serif);font-size:1.8rem;font-weight:700;color:var(--gold);line-height:1;margin-bottom:6px}
     .hero-stat-lbl{font-size:0.55rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.32);line-height:1.4}
 
+    /* SECTION HEADERS */
     .section-eyebrow{display:block;font-size:0.58rem;font-weight:600;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
     .section-h2{font-family:var(--serif);font-size:clamp(1.8rem,3vw,2.6rem);font-weight:700;line-height:1.12;color:var(--gold);margin-bottom:14px}
     .section-h3{font-family:var(--serif);font-size:1.3rem;font-weight:700;color:var(--gold);margin-bottom:10px;line-height:1.25}
@@ -182,6 +188,7 @@
     .section-header{margin-bottom:52px}
     .divider{height:1px;background:linear-gradient(to right,transparent,rgba(200,149,58,0.22),transparent);margin:0}
 
+    /* OVERVIEW GRID */
     .overview-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
     .overview-prose p{font-size:0.9rem;font-weight:300;line-height:1.9;color:rgba(255,255,255,0.6);margin-bottom:20px}
     .overview-prose p:last-child{margin-bottom:0}
@@ -192,6 +199,7 @@
     .metric-lbl{font-size:0.57rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.3);line-height:1.5}
     .metric-note{display:block;font-size:0.72rem;font-weight:300;color:rgba(255,255,255,0.35);margin-top:6px}
 
+    /* DATA TABLE */
     .table-wrap{overflow-x:auto;border:1px solid rgba(200,149,58,0.18);border-radius:2px}
     .data-table{width:100%;border-collapse:collapse;min-width:680px}
     .data-table thead tr{background:rgba(200,149,58,0.07);border-bottom:1px solid rgba(200,149,58,0.22)}
@@ -209,6 +217,7 @@
     .badge-seller{background:rgba(200,149,58,0.14);border:1px solid rgba(200,149,58,0.28);color:var(--gold)}
     .badge-balanced{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.5)}
 
+    /* DRIVER CARDS */
     .drivers-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
     .driver-card{background:var(--gray);border:1px solid rgba(255,255,255,0.06);padding:30px 28px;position:relative}
     .driver-card::after{content:'';position:absolute;bottom:0;left:28px;right:28px;height:1px;background:linear-gradient(to right,var(--gold-bd),transparent)}
@@ -216,6 +225,7 @@
     .driver-card h3{font-family:var(--serif);font-size:1.1rem;font-weight:700;color:var(--gold);margin-bottom:10px;line-height:1.3}
     .driver-card p{font-size:0.84rem;font-weight:300;color:rgba(255,255,255,0.46);line-height:1.85}
 
+    /* CONDITIONS */
     .conditions-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,0.05)}
     .condition-panel{background:var(--black);padding:40px 36px}
     .condition-panel h3{font-family:var(--serif);font-size:1.3rem;font-weight:700;color:var(--gold);margin-bottom:18px;line-height:1.25}
@@ -226,6 +236,7 @@
     .condition-note{background:var(--gray);border-left:2px solid var(--gold);padding:16px 18px;margin-top:20px;font-size:0.8rem;font-weight:300;color:rgba(255,255,255,0.44);line-height:1.8}
     .condition-note strong{color:var(--cream);font-weight:500}
 
+    /* MULTIFAMILY */
     .mf-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:rgba(255,255,255,0.05)}
     .mf-cell{background:var(--gray);padding:32px 28px;text-align:center}
     .mf-num{display:block;font-family:var(--serif);font-size:2rem;font-weight:700;color:var(--gold);line-height:1;margin-bottom:8px}
@@ -239,6 +250,7 @@
     .mf-hoods .hood-name{font-weight:500;color:var(--cream)}
     .mf-hoods .hood-note{font-weight:300;color:rgba(255,255,255,0.38);font-size:0.78rem}
 
+    /* FORECAST */
     .forecast-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-bottom:40px}
     .forecast-card{background:var(--gray);border:1px solid rgba(255,255,255,0.06);padding:30px 28px}
     .forecast-card h3{font-family:var(--serif);font-size:1.1rem;font-weight:700;color:var(--gold);margin-bottom:12px;line-height:1.3}
@@ -250,6 +262,7 @@
     .reco-box h3{font-family:var(--serif);font-size:1.15rem;font-weight:700;color:#fff;margin-bottom:12px}
     .reco-box p{font-size:0.84rem;font-weight:300;color:rgba(255,255,255,0.46);line-height:1.85}
 
+    /* ABOUT / CTA */
     .about-inner{max-width:760px;margin:0 auto;text-align:center}
     .about-inner p{font-size:0.9rem;font-weight:300;line-height:1.9;color:rgba(255,255,255,0.46);margin-bottom:18px}
     .about-disclaimer{font-size:0.75rem;font-weight:300;color:rgba(255,255,255,0.28);line-height:1.8;padding:18px 24px;border:1px solid rgba(255,255,255,0.06);margin-top:28px;text-align:left}
@@ -259,6 +272,7 @@
     .btn-outline{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--gold);color:var(--gold);font-size:0.62rem;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;padding:14px 28px;border-radius:2px;transition:all 0.2s}
     .btn-outline:hover{background:var(--gold);color:var(--black)}
 
+    /* FAQ */
     .faq-wrap{max-width:820px;margin:0 auto}
     .faq-item{border-bottom:1px solid rgba(255,255,255,0.07)}
     .faq-q{width:100%;padding:22px 0;display:flex;justify-content:space-between;align-items:center;font-size:0.9rem;font-weight:500;color:var(--cream);text-align:left;gap:20px;cursor:pointer;background:none;font-family:var(--sans)}
@@ -268,15 +282,18 @@
     .faq-item.open .faq-a{max-height:400px}
     .faq-a-inner{padding-bottom:22px}
 
+    /* SHARE */
     .share-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:16px}
     .share-lbl{font-size:0.58rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.28);margin-right:4px}
     .share-btn{display:inline-flex;align-items:center;gap:6px;font-size:0.66rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.45);border:1px solid rgba(255,255,255,0.1);padding:8px 16px;border-radius:2px;transition:all 0.2s}
     .share-btn:hover{border-color:var(--gold);color:var(--gold)}
 
+    /* NEIGHBORHOOD LINKS */
     .neighborhood-links-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
     .nh-link{display:block;background:var(--gray);border:1px solid rgba(255,255,255,0.06);padding:16px 14px;text-align:center;font-size:0.72rem;font-weight:500;color:rgba(255,255,255,0.5);letter-spacing:0.06em;transition:all 0.2s;border-radius:2px}
     .nh-link:hover{border-color:var(--gold-bd);color:var(--gold);background:var(--gold-lt)}
 
+    /* FLOATING CONTACT */
     .float-contact{position:fixed;bottom:32px;right:32px;z-index:90;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
     .float-main{width:52px;height:52px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(200,149,58,0.35);transition:transform 0.2s var(--ease);cursor:pointer;border:none}
     .float-main:hover{transform:scale(1.08)}
@@ -290,6 +307,7 @@
     .dot-text{background:var(--gold)}
     .dot-wa{background:#25D366}
 
+    /* FOOTER */
     .footer{background:#070605;padding:64px 0 32px;border-top:1px solid rgba(255,255,255,0.05)}
     .footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
     .footer-brand-name{font-size:0.88rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#fff;margin-bottom:5px}
@@ -303,6 +321,7 @@
     .footer-legal{font-size:0.58rem;font-weight:300;color:rgba(255,255,255,0.18);line-height:1.85;max-width:680px}
     .footer-mark{font-size:0.58rem;color:rgba(255,255,255,0.16);flex-shrink:0}
 
+    /* RESPONSIVE */
     @media(max-width:1000px){
       .overview-grid{grid-template-columns:1fr}
       .mf-prose{grid-template-columns:1fr}
@@ -334,6 +353,7 @@
 <body>
 <div id="google_translate_element" style="display:none" aria-hidden="true"></div>
 
+<!-- NAV -->
 <nav class="nav" id="mainNav" aria-label="Main navigation">
   <a href="../index.html" class="nav-logo" aria-label="Nitin Gadura Real Estate — Home">
     <span class="nav-logo-name">Nitin Gadura</span>
@@ -366,6 +386,7 @@
   </div>
 </nav>
 
+<!-- BREADCRUMB -->
 <div class="breadcrumb" style="margin-top:61px">
   <div class="container">
     <nav class="breadcrumb-inner" aria-label="Breadcrumb">
@@ -378,6 +399,7 @@
   </div>
 </div>
 
+<!-- HERO -->
 <section class="hero" aria-labelledby="hero-heading">
   <div class="container">
     <div class="hero-badge">
@@ -409,6 +431,7 @@
 
 <div class="divider"></div>
 
+<!-- SECTION 1: OVERVIEW -->
 <section class="section section--dark" id="overview" aria-labelledby="overview-heading">
   <div class="container">
     <header class="section-header">
@@ -416,6 +439,7 @@
       <h2 class="section-h2" id="overview-heading">Queens Market Overview</h2>
       <p class="section-sub">Queens remains one of NYC's most active real estate markets — driven by population diversity, multi-family demand, and constrained new construction.</p>
     </header>
+
     <div class="overview-grid">
       <div class="overview-prose">
         <p>Queens continues to attract consistent demand from first-time buyers, multi-generational families, and investors seeking income-producing properties. Despite a rate environment that slowed transaction volume from the 2021–2022 peak, the fundamentals of the Queens market remain strong.</p>
@@ -424,12 +448,36 @@
         <p>Cash purchases now account for 28% of all Queens transactions, up from historical averages, reflecting both investor activity and buyers circumventing rate headwinds. This cash presence sets a floor on prices and keeps competition elevated.</p>
       </div>
       <div class="overview-metrics" role="region" aria-label="Market metrics">
-        <div class="metric-card"><span class="metric-num">8,200</span><span class="metric-lbl">Homes Sold in Queens<br>2024</span><span class="metric-note">Down from 9,800 in 2022</span></div>
-        <div class="metric-card"><span class="metric-num">$768K</span><span class="metric-lbl">Median Home Price<br>Q1 2025</span><span class="metric-note">+4.2% year-over-year</span></div>
-        <div class="metric-card"><span class="metric-num">47</span><span class="metric-lbl">Average Days<br>on Market</span><span class="metric-note">Borough-wide average</span></div>
-        <div class="metric-card"><span class="metric-num">3.1</span><span class="metric-lbl">Months of Supply</span><span class="metric-note">Seller's market &lt; 4 months</span></div>
-        <div class="metric-card"><span class="metric-num">28%</span><span class="metric-lbl">Cash Purchases</span><span class="metric-note">Of all 2024 transactions</span></div>
-        <div class="metric-card"><span class="metric-num">1,200</span><span class="metric-lbl">New Units Added<br>in 2024</span><span class="metric-note">Well below demand levels</span></div>
+        <div class="metric-card">
+          <span class="metric-num">8,200</span>
+          <span class="metric-lbl">Homes Sold in Queens<br>2024</span>
+          <span class="metric-note">Down from 9,800 in 2022</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-num">$768K</span>
+          <span class="metric-lbl">Median Home Price<br>Q1 2025</span>
+          <span class="metric-note">+4.2% year-over-year</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-num">47</span>
+          <span class="metric-lbl">Average Days<br>on Market</span>
+          <span class="metric-note">Borough-wide average</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-num">3.1</span>
+          <span class="metric-lbl">Months of Supply</span>
+          <span class="metric-note">Seller's market &lt; 4 months</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-num">28%</span>
+          <span class="metric-lbl">Cash Purchases</span>
+          <span class="metric-note">Of all 2024 transactions</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-num">1,200</span>
+          <span class="metric-lbl">New Units Added<br>in 2024</span>
+          <span class="metric-note">Well below demand levels</span>
+        </div>
       </div>
     </div>
   </div>
@@ -437,36 +485,108 @@
 
 <div class="divider"></div>
 
+<!-- SECTION 2: NEIGHBORHOOD TABLE -->
 <section class="section section--gray" id="neighborhood-prices" aria-labelledby="prices-heading">
   <div class="container">
     <header class="section-header">
       <span class="section-eyebrow">Neighborhood Data — Q1 2025</span>
       <h2 class="section-h2" id="prices-heading">Median Prices by Neighborhood</h2>
-      <p class="section-sub">Price, year-over-year change, average days on market, and market type across 10 Queens neighborhoods.</p>
+      <p class="section-sub">Price, year-over-year change, average days on market, and market type across 10 Queens neighborhoods. Data based on MLS sold comparables through Q1 2025.</p>
     </header>
+
     <div class="table-wrap" role="region" aria-label="Queens neighborhood price data table">
       <table class="data-table">
-        <thead><tr><th scope="col">Neighborhood</th><th scope="col">Median Price</th><th scope="col">YoY Change</th><th scope="col">Avg DOM</th><th scope="col">Market Type</th></tr></thead>
+        <thead>
+          <tr>
+            <th scope="col">Neighborhood</th>
+            <th scope="col">Median Price</th>
+            <th scope="col">YoY Change</th>
+            <th scope="col">Avg DOM</th>
+            <th scope="col">Market Type</th>
+          </tr>
+        </thead>
         <tbody>
-          <tr><td class="td-name"><a href="../queens/ozone-park.html">Ozone Park</a></td><td class="td-price">$620,000</td><td class="td-yoy up">+3.8%</td><td>41 days</td><td><span class="market-badge badge-seller">Seller's Market</span></td></tr>
-          <tr><td class="td-name"><a href="../queens/richmond-hill.html">Richmond Hill</a></td><td class="td-price">$645,000</td><td class="td-yoy up">+4.1%</td><td>38 days</td><td><span class="market-badge badge-seller">Seller's Market</span></td></tr>
-          <tr><td class="td-name"><a href="../queens/howard-beach.html">Howard Beach</a></td><td class="td-price">$710,000</td><td class="td-yoy up">+5.2%</td><td>52 days</td><td><span class="market-badge badge-balanced">Balanced</span></td></tr>
-          <tr><td class="td-name"><a href="../queens/jamaica.html">Jamaica</a></td><td class="td-price">$540,000</td><td class="td-yoy up">+6.3%</td><td>34 days</td><td><span class="market-badge badge-seller">Seller's Market</span></td></tr>
-          <tr><td class="td-name"><a href="../queens/flushing.html">Flushing</a></td><td class="td-price">$890,000</td><td class="td-yoy up">+2.1%</td><td>61 days</td><td><span class="market-badge badge-balanced">Balanced</span></td></tr>
-          <tr><td class="td-name"><a href="../queens/astoria.html">Astoria</a></td><td class="td-price">$995,000</td><td class="td-yoy up">+1.8%</td><td>55 days</td><td><span class="market-badge badge-balanced">Balanced</span></td></tr>
-          <tr><td class="td-name"><a href="../queens/forest-hills.html">Forest Hills</a></td><td class="td-price">$875,000</td><td class="td-yoy up">+3.4%</td><td>49 days</td><td><span class="market-badge badge-balanced">Balanced</span></td></tr>
-          <tr><td class="td-name"><a href="../queens/bayside.html">Bayside</a></td><td class="td-price">$980,000</td><td class="td-yoy up">+2.9%</td><td>58 days</td><td><span class="market-badge badge-balanced">Balanced</span></td></tr>
-          <tr><td class="td-name"><a href="../queens/jackson-heights.html">Jackson Heights</a></td><td class="td-price">$655,000</td><td class="td-yoy up">+5.7%</td><td>36 days</td><td><span class="market-badge badge-seller">Seller's Market</span></td></tr>
-          <tr><td class="td-name"><a href="../queens/woodside.html">Woodside</a></td><td class="td-price">$720,000</td><td class="td-yoy up">+4.4%</td><td>43 days</td><td><span class="market-badge badge-seller">Seller's Market</span></td></tr>
+          <tr>
+            <td class="td-name"><a href="../queens/ozone-park.html">Ozone Park</a></td>
+            <td class="td-price">$620,000</td>
+            <td class="td-yoy up">+3.8%</td>
+            <td>41 days</td>
+            <td><span class="market-badge badge-seller">Seller's Market</span></td>
+          </tr>
+          <tr>
+            <td class="td-name"><a href="../queens/richmond-hill.html">Richmond Hill</a></td>
+            <td class="td-price">$645,000</td>
+            <td class="td-yoy up">+4.1%</td>
+            <td>38 days</td>
+            <td><span class="market-badge badge-seller">Seller's Market</span></td>
+          </tr>
+          <tr>
+            <td class="td-name"><a href="../queens/howard-beach.html">Howard Beach</a></td>
+            <td class="td-price">$710,000</td>
+            <td class="td-yoy up">+5.2%</td>
+            <td>52 days</td>
+            <td><span class="market-badge badge-balanced">Balanced</span></td>
+          </tr>
+          <tr>
+            <td class="td-name"><a href="../queens/jamaica.html">Jamaica</a></td>
+            <td class="td-price">$540,000</td>
+            <td class="td-yoy up">+6.3%</td>
+            <td>34 days</td>
+            <td><span class="market-badge badge-seller">Seller's Market</span></td>
+          </tr>
+          <tr>
+            <td class="td-name"><a href="../queens/flushing.html">Flushing</a></td>
+            <td class="td-price">$890,000</td>
+            <td class="td-yoy up">+2.1%</td>
+            <td>61 days</td>
+            <td><span class="market-badge badge-balanced">Balanced</span></td>
+          </tr>
+          <tr>
+            <td class="td-name"><a href="../queens/astoria.html">Astoria</a></td>
+            <td class="td-price">$995,000</td>
+            <td class="td-yoy up">+1.8%</td>
+            <td>55 days</td>
+            <td><span class="market-badge badge-balanced">Balanced</span></td>
+          </tr>
+          <tr>
+            <td class="td-name"><a href="../queens/forest-hills.html">Forest Hills</a></td>
+            <td class="td-price">$875,000</td>
+            <td class="td-yoy up">+3.4%</td>
+            <td>49 days</td>
+            <td><span class="market-badge badge-balanced">Balanced</span></td>
+          </tr>
+          <tr>
+            <td class="td-name"><a href="../queens/bayside.html">Bayside</a></td>
+            <td class="td-price">$980,000</td>
+            <td class="td-yoy up">+2.9%</td>
+            <td>58 days</td>
+            <td><span class="market-badge badge-balanced">Balanced</span></td>
+          </tr>
+          <tr>
+            <td class="td-name"><a href="../queens/jackson-heights.html">Jackson Heights</a></td>
+            <td class="td-price">$655,000</td>
+            <td class="td-yoy up">+5.7%</td>
+            <td>36 days</td>
+            <td><span class="market-badge badge-seller">Seller's Market</span></td>
+          </tr>
+          <tr>
+            <td class="td-name"><a href="../queens/woodside.html">Woodside</a></td>
+            <td class="td-price">$720,000</td>
+            <td class="td-yoy up">+4.4%</td>
+            <td>43 days</td>
+            <td><span class="market-badge badge-seller">Seller's Market</span></td>
+          </tr>
         </tbody>
       </table>
     </div>
-    <p style="font-size:0.72rem;font-weight:300;color:rgba(255,255,255,0.28);margin-top:14px;line-height:1.7">Data based on OneKey MLS closed sales through Q1 2025. Median prices reflect all property types. Days on market calculated from original list date to contract date.</p>
+
+    <p style="font-size:0.72rem;font-weight:300;color:rgba(255,255,255,0.28);margin-top:14px;line-height:1.7">Data based on OneKey MLS closed sales through Q1 2025. Median prices reflect all property types. Days on market is calculated from original list date to contract date. Market type determined by months of available supply.</p>
   </div>
 </section>
 
 <div class="divider"></div>
 
+<!-- SECTION 3: PRICE DRIVERS -->
 <section class="section section--dark" id="drivers" aria-labelledby="drivers-heading">
   <div class="container">
     <header class="section-header">
@@ -474,17 +594,35 @@
       <h2 class="section-h2" id="drivers-heading">What's Driving Queens Prices in 2025</h2>
       <p class="section-sub">Four structural forces are sustaining price growth despite an elevated rate environment.</p>
     </header>
+
     <div class="drivers-grid">
-      <div class="driver-card"><div class="driver-num">01</div><h3>Mortgage Rate Adjustment</h3><p>After peaking at 7.8% in late 2023, 30-year fixed rates have settled around 6.8–7.2% in Q1 2025. Buyers have adjusted expectations and are purchasing now with plans to refinance if rates decline.</p></div>
-      <div class="driver-card"><div class="driver-num">02</div><h3>Chronic Inventory Shortage</h3><p>New construction in Queens is minimal relative to demand. The borough added only approximately 1,200 new residential units in 2024. Existing homeowners holding 3–4% mortgages have little incentive to sell, further suppressing resale supply.</p></div>
-      <div class="driver-card"><div class="driver-num">03</div><h3>Immigration &amp; Population Growth</h3><p>Queens continues to receive new residents from South Asia, Southeast Asia, Latin America, and the Caribbean — driving consistent demand particularly in Ozone Park, Richmond Hill, Flushing, and Jackson Heights. This demographic demand is structural, not cyclical.</p></div>
-      <div class="driver-card"><div class="driver-num">04</div><h3>Multi-Family Premium</h3><p>Two-family and three-family homes command a significant premium as buyers seek to offset mortgage costs with rental income. A typical 2-family in Ozone Park or Richmond Hill generates $2,200–$2,800 per month from one rental unit.</p></div>
+      <div class="driver-card">
+        <div class="driver-num">01</div>
+        <h3>Mortgage Rate Adjustment</h3>
+        <p>After peaking at 7.8% in late 2023, 30-year fixed rates have settled around 6.8–7.2% in Q1 2025. While elevated compared to 2021 lows, buyers have adjusted expectations. Many are purchasing now with plans to refinance if rates decline — a strategy the market calls "marry the house, date the rate." Purchase volume has stabilized as a result.</p>
+      </div>
+      <div class="driver-card">
+        <div class="driver-num">02</div>
+        <h3>Chronic Inventory Shortage</h3>
+        <p>New construction in Queens is minimal relative to demand. The borough added only approximately 1,200 new residential units in 2024 — a fraction of what is needed to meet annual household formation. Existing homeowners who locked in 3–4% mortgages during 2020–2021 have little incentive to sell into a 7% rate environment, further suppressing resale supply.</p>
+      </div>
+      <div class="driver-card">
+        <div class="driver-num">03</div>
+        <h3>Immigration &amp; Population Growth</h3>
+        <p>Queens continues to receive new residents from South Asia, Southeast Asia, Latin America, and the Caribbean — driving consistent demand particularly in Ozone Park, Richmond Hill, Flushing, and Jackson Heights. These communities favor homeownership, multi-family configurations, and price points that align with Queens' middle-tier inventory. This demographic demand is structural, not cyclical.</p>
+      </div>
+      <div class="driver-card">
+        <div class="driver-num">04</div>
+        <h3>Multi-Family Premium</h3>
+        <p>Two-family and three-family homes in Queens command a significant premium as buyers seek to offset mortgage costs with rental income. A typical 2-family in Ozone Park or Richmond Hill generates $2,200–$2,800 per month from one rental unit, effectively reducing the buyer's out-of-pocket carrying cost to a level competitive with renting. This income-driven demand has a structural floor that single-family markets do not.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <div class="divider"></div>
 
+<!-- SECTION 4: BUYER vs SELLER CONDITIONS -->
 <section class="section section--gray" id="conditions" aria-labelledby="conditions-heading">
   <div class="container">
     <header class="section-header">
@@ -492,6 +630,7 @@
       <h2 class="section-h2" id="conditions-heading">Buyer vs. Seller Conditions by Neighborhood</h2>
       <p class="section-sub">Market type is determined by months of available supply. Understanding where your target neighborhood sits is critical for offer strategy.</p>
     </header>
+
     <div class="conditions-grid">
       <div class="condition-panel">
         <h3>Seller's Markets</h3>
@@ -503,11 +642,13 @@
           <li>Ozone Park — 41 avg days on market</li>
           <li>Woodside — 43 avg days on market</li>
         </ul>
-        <div class="condition-note"><strong>For buyers:</strong> Expect to offer at or above asking price. Get pre-approval before touring. Move quickly.</div>
+        <div class="condition-note">
+          <strong>For buyers:</strong> Expect to offer at or above asking price. Waive contingencies where you can do so responsibly. Get pre-approval before touring. Move quickly — homes in these markets that sit for more than 3 weeks usually have pricing or condition issues.
+        </div>
       </div>
       <div class="condition-panel">
         <h3>Balanced Markets</h3>
-        <p>These neighborhoods have 3–6 months of available supply. Buyers have more room to negotiate, inspect, and take time.</p>
+        <p>These neighborhoods have 3–6 months of available supply. Buyers have more room to negotiate, inspect, and take time. Sellers still achieve good results when homes are properly prepared and priced.</p>
         <ul class="neighborhood-list" aria-label="Balanced market neighborhoods">
           <li>Howard Beach — 52 avg days on market</li>
           <li>Astoria — 55 avg days on market</li>
@@ -515,7 +656,9 @@
           <li>Flushing — 61 avg days on market</li>
           <li>Forest Hills — 49 avg days on market</li>
         </ul>
-        <div class="condition-note"><strong>For sellers:</strong> Pricing precision and presentation matter more. Overpriced homes in balanced neighborhoods sit 90+ days and require price cuts.</div>
+        <div class="condition-note">
+          <strong>For sellers:</strong> Homes priced correctly in Ozone Park, Richmond Hill, and Jackson Heights are receiving multiple offers within 2 weeks. In balanced markets, pricing precision and presentation matter more. Overpriced homes in balanced neighborhoods sit 90+ days and require price cuts.
+        </div>
       </div>
     </div>
   </div>
@@ -523,31 +666,59 @@
 
 <div class="divider"></div>
 
+<!-- SECTION 5: MULTI-FAMILY -->
 <section class="section section--dark" id="multifamily" aria-labelledby="mf-heading">
   <div class="container">
     <header class="section-header">
       <span class="section-eyebrow">Investment &amp; Owner-Occupant Analysis</span>
       <h2 class="section-h2" id="mf-heading">Multi-Family Market: The Queens Advantage</h2>
-      <p class="section-sub">Queens has one of the highest concentrations of 2-family and 3-family homes in New York City.</p>
+      <p class="section-sub">Queens has one of the highest concentrations of 2-family and 3-family homes in New York City — creating a market dynamic that benefits both owner-occupants and investors.</p>
     </header>
+
     <div class="mf-grid">
-      <div class="mf-cell"><span class="mf-num">4.5–6.5%</span><span class="mf-lbl">Typical Cap Rates</span></div>
-      <div class="mf-cell"><span class="mf-num">$2–$3.5K</span><span class="mf-lbl">Monthly Mortgage Offset</span></div>
-      <div class="mf-cell"><span class="mf-num">High</span><span class="mf-lbl">Investor + Owner-Occupant Competition</span></div>
+      <div class="mf-cell">
+        <span class="mf-num">4.5–6.5%</span>
+        <span class="mf-lbl">Typical Cap Rates<br>by Location &amp; Condition</span>
+      </div>
+      <div class="mf-cell">
+        <span class="mf-num">$2–$3.5K</span>
+        <span class="mf-lbl">Monthly Mortgage Offset<br>from Rental Income</span>
+      </div>
+      <div class="mf-cell">
+        <span class="mf-num">High</span>
+        <span class="mf-lbl">Investor + Owner-Occupant<br>Competition</span>
+      </div>
     </div>
+
     <div class="mf-prose">
       <div>
         <p>Queens two-family and three-family homes attract both investors seeking cash flow and owner-occupants who want to offset their mortgage with rental income. This dual-demand dynamic creates consistent competition and supports strong pricing even in rate-elevated environments.</p>
+        <p>Typical cap rates range from 4.5% to 6.5% depending on location, condition, and current rents. Investors competing in Jamaica, Ozone Park, and Richmond Hill are pricing aggressively because rental demand in those neighborhoods remains very strong — vacancy rates near zero in quality units.</p>
         <p>For owner-occupants, rental income from one unit of a 2-family can offset $2,000–$3,500 per month in mortgage carrying cost, effectively enabling buyers to purchase at a price point that would be unaffordable as a pure single-family.</p>
       </div>
       <div>
         <p style="font-size:0.72rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:18px">Hottest Multi-Family Neighborhoods</p>
         <ul class="mf-hoods">
-          <li><span class="hood-name">Ozone Park</span><span class="hood-note">Near JFK — strong rental base</span></li>
-          <li><span class="hood-name">Richmond Hill</span><span class="hood-note">Deep community demand</span></li>
-          <li><span class="hood-name">Jamaica</span><span class="hood-note">Transit hub — highest YoY growth</span></li>
-          <li><span class="hood-name">Woodside</span><span class="hood-note">7 train — commuter premium</span></li>
-          <li><span class="hood-name">Jackson Heights</span><span class="hood-note">Dense demand, fast absorption</span></li>
+          <li>
+            <span class="hood-name">Ozone Park</span>
+            <span class="hood-note">Near JFK — strong rental base</span>
+          </li>
+          <li>
+            <span class="hood-name">Richmond Hill</span>
+            <span class="hood-note">Deep community demand</span>
+          </li>
+          <li>
+            <span class="hood-name">Jamaica</span>
+            <span class="hood-note">Transit hub — highest YoY growth</span>
+          </li>
+          <li>
+            <span class="hood-name">Woodside</span>
+            <span class="hood-note">7 train — commuter premium</span>
+          </li>
+          <li>
+            <span class="hood-name">Jackson Heights</span>
+            <span class="hood-note">Dense demand, fast absorption</span>
+          </li>
         </ul>
       </div>
     </div>
@@ -556,6 +727,7 @@
 
 <div class="divider"></div>
 
+<!-- SECTION 6: FORECAST -->
 <section class="section section--gray" id="forecast" aria-labelledby="forecast-heading">
   <div class="container">
     <header class="section-header">
@@ -563,36 +735,65 @@
       <h2 class="section-h2" id="forecast-heading">Forecast: Rest of 2025 and Into 2026</h2>
       <p class="section-sub">What the data and rate environment suggest for Queens real estate over the next 12–18 months.</p>
     </header>
+
     <div class="forecast-grid">
-      <div class="forecast-card"><h3>Rate Environment</h3><p>Markets are currently pricing in 1–2 Federal Reserve rate cuts before end of 2025. If the 30-year fixed drops to 6.0–6.5%, expect a meaningful surge in buyer demand from sidelined purchasers — likely pushing prices up an additional 3–5%.</p></div>
-      <div class="forecast-card"><h3>Inventory Constraints</h3><p>The pipeline of new Queens residential construction is insufficient to meet demand. The “lock-in effect” of homeowners holding 3–4% mortgages continues to suppress resale supply, and there is no credible policy mechanism to reverse that dynamic quickly.</p></div>
-      <div class="forecast-card"><h3>First-Time Buyer Programs</h3><p>SONYMA and the NYC HomeFirst Down Payment Assistance program are currently active and significantly underutilized in Queens. Buyers who qualify gain a material competitive advantage — particularly in the $500K–$700K price range.</p></div>
-      <div class="forecast-card"><h3>Buyer Psychology Shift</h3><p>The “wait for prices to drop” thesis has not materialized in Queens. Buyers who purchased in 2023 despite 7%+ rates built equity faster than expected as prices continued rising.</p></div>
+      <div class="forecast-card">
+        <h3>Rate Environment</h3>
+        <p>Markets are currently pricing in 1–2 Federal Reserve rate cuts before the end of 2025. If the 30-year fixed rate drops to the 6.0–6.5% range, expect a meaningful surge in buyer demand from sidelined purchasers. That demand surge would likely push Queens prices up an additional 3–5% beyond current trajectory — with seller's market neighborhoods seeing the most acute compression.</p>
+      </div>
+      <div class="forecast-card">
+        <h3>Inventory Constraints</h3>
+        <p>The pipeline of new Queens residential construction is insufficient to meet demand. Even in a modest economic slowdown, inventory constraints will keep prices supported. The "lock-in effect" of homeowners holding 3–4% mortgages continues to suppress resale supply, and there is no credible policy mechanism to reverse that dynamic quickly.</p>
+      </div>
+      <div class="forecast-card">
+        <h3>First-Time Buyer Programs</h3>
+        <p>SONYMA (State of New York Mortgage Agency) and the NYC HomeFirst Down Payment Assistance program are currently active and significantly underutilized in Queens. Buyers who qualify for these programs gain a material competitive advantage — particularly in the $500K–$700K price range where program caps align with strong Queens inventory. Most buyers are not aware these programs are available.</p>
+      </div>
+      <div class="forecast-card">
+        <h3>Buyer Psychology Shift</h3>
+        <p>The "wait for prices to drop" thesis has not materialized in Queens. Buyers who purchased in 2023 despite 7%+ rates built equity faster than expected as prices continued rising. Those who waited are now competing in 2025 at higher price points with rates that have not materially improved. The data does not support waiting as a strategy in Queens' constrained-inventory environment.</p>
+      </div>
     </div>
+
     <div class="forecast-reco" style="margin-top:32px">
-      <div class="reco-box"><span class="reco-label">For Buyers</span><h3>The Window Is Open — Not Forever</h3><p>If you're waiting for prices to drop, the Queens data doesn't support that thesis. Get pre-approved, understand the programs available to you, and work with an agent who knows how to compete in a multiple-offer environment.</p></div>
-      <div class="reco-box"><span class="reco-label">For Sellers</span><h3>2025 Remains a Strong Seller's Market</h3><p>Most Queens neighborhoods continue to favor sellers. Properly prepared and correctly priced homes are selling. Price at market, present well, and you will see competitive activity within 2–3 weeks in any seller's market neighborhood.</p></div>
+      <div class="reco-box">
+        <span class="reco-label">For Buyers</span>
+        <h3>The Window Is Open — Not Forever</h3>
+        <p>If you're waiting for prices to drop, the Queens data doesn't support that thesis. Buyers who purchased in 2023 despite high rates refinanced or built equity faster than they expected. Get pre-approved, understand the programs available to you, and work with an agent who knows how to compete in a multiple-offer environment without reckless escalation.</p>
+      </div>
+      <div class="reco-box">
+        <span class="reco-label">For Sellers</span>
+        <h3>2025 Remains a Strong Seller's Market</h3>
+        <p>Most Queens neighborhoods continue to favor sellers. Properly prepared and correctly priced homes are selling. Overpriced homes are sitting — and sitting homes create the perception of problems, leading to deeper discounts than necessary. Price at market, present well, and you will see competitive activity within 2–3 weeks in any seller's market neighborhood.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <div class="divider"></div>
 
+<!-- SECTION 7: ABOUT THIS REPORT + CTA -->
 <section class="section section--dark" id="about" aria-labelledby="about-heading">
   <div class="container">
     <div class="about-inner">
       <span class="section-eyebrow" style="text-align:center;display:block">About This Report</span>
       <h2 class="section-h2" id="about-heading" style="text-align:center">Nitin Gadura — Queens Real Estate</h2>
-      <p>Nitin Gadura has sold homes across Queens and Long Island, working with first-time buyers, seasoned investors, multi-family owners, and sellers navigating complex transitions. This report is based on OneKey MLS data, public records, and direct market observations.</p>
+
+      <p>Nitin Gadura has sold homes across Queens and Long Island, working with first-time buyers, seasoned investors, multi-family owners, and sellers navigating complex transitions. This report is based on OneKey MLS data, public records, and direct market observations gathered from active transactions in the neighborhoods covered.</p>
+
+      <p>The analysis reflects conditions as of Q1 2025. Market dynamics change. Neighborhood-level nuances matter enormously — what is true for Ozone Park at one price point may not apply to a co-op in Forest Hills. For a conversation specific to your situation, call directly.</p>
+
       <p>Have questions about what your home is worth in today's market? Request a free, no-obligation home valuation backed by current MLS data.</p>
+
       <div class="cta-buttons">
         <a href="tel:9177050132" class="btn-gold">Call (917) 705-0132</a>
         <a href="sms:9177050132" class="btn-outline">Text Nitin</a>
         <a href="home-valuation-queens.html" class="btn-outline">Get Free Valuation</a>
       </div>
+
       <div class="about-disclaimer">
         <strong style="color:rgba(255,255,255,0.4);font-size:0.65rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase">Disclaimer:</strong><br>
-        Market data is provided for informational purposes only. Statistics represent aggregate trends and may not reflect conditions for any specific property. Past market performance does not guarantee future results. Nitin Gadura is a licensed real estate salesperson in New York State.
+        Market data is provided for informational purposes only. Statistics represent aggregate trends and may not reflect conditions for any specific property. Past market performance does not guarantee future results. Individual property values depend on condition, specific location, legal status, and current market dynamics. Contact a licensed real estate agent before making any real estate decision. Nitin Gadura is a licensed real estate salesperson in New York State.
       </div>
     </div>
   </div>
@@ -600,30 +801,100 @@
 
 <div class="divider"></div>
 
+<!-- SECTION 8: FAQ -->
 <section class="section section--gray" id="faq" aria-labelledby="faq-heading">
   <div class="container">
     <header class="section-header" style="text-align:center">
       <span class="section-eyebrow">Frequently Asked Questions</span>
       <h2 class="section-h2" id="faq-heading" style="text-align:center">Queens Real Estate — Common Questions</h2>
     </header>
+
     <div class="faq-wrap" role="list">
-      <div class="faq-item" role="listitem"><button class="faq-q" aria-expanded="false">Is Queens a buyer's or seller's market in 2025?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a" aria-hidden="true"><div class="faq-a-inner">Most Queens neighborhoods favor sellers in 2025, with under 3 months of inventory across the borough. Jamaica, Richmond Hill, and Ozone Park see the most competitive conditions, with multiple offers common and homes going under contract within 2 weeks.</div></div></div>
-      <div class="faq-item" role="listitem"><button class="faq-q" aria-expanded="false">Are Queens home prices going up or down in 2025?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a" aria-hidden="true"><div class="faq-a-inner">Prices are up 4–6% year-over-year in most neighborhoods as of Q1 2025. Jamaica leads with 6.3% YoY growth, while Astoria and Flushing are seeing more modest increases of 1.8–2.1%. No Queens neighborhood is showing year-over-year price declines.</div></div></div>
-      <div class="faq-item" role="listitem"><button class="faq-q" aria-expanded="false">What is the median home price in Queens in 2025?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a" aria-hidden="true"><div class="faq-a-inner">The borough-wide median is approximately $768,000 as of Q1 2025, ranging from $540,000 in Jamaica to $995,000 in Astoria. Multi-family homes in Ozone Park and Richmond Hill typically command a premium over the neighborhood median due to rental income potential.</div></div></div>
-      <div class="faq-item" role="listitem"><button class="faq-q" aria-expanded="false">Is now a good time to sell a home in Queens?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a" aria-hidden="true"><div class="faq-a-inner">For most Queens neighborhoods, yes. Inventory is low and properly priced, well-presented homes are receiving multiple offers. Overpriced homes in any Queens neighborhood are sitting 90+ days regardless of market type.</div></div></div>
-      <div class="faq-item" role="listitem"><button class="faq-q" aria-expanded="false">How long does it take to sell a home in Queens?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a" aria-hidden="true"><div class="faq-a-inner">Correctly priced homes in Queens are selling in 34–61 days depending on neighborhood. Jamaica has the fastest absorption at 34 days average, while Flushing and Bayside take closer to 58–61 days.</div></div></div>
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">
+          Is Queens a buyer's or seller's market in 2025?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" aria-hidden="true">
+          <div class="faq-a-inner">Most Queens neighborhoods favor sellers in 2025, with under 3 months of inventory across the borough. Jamaica, Richmond Hill, and Ozone Park see the most competitive conditions, with multiple offers common and homes going under contract within 2 weeks. Balanced markets like Astoria, Bayside, and Flushing offer buyers more time and negotiating room, though they are not buyer's markets.</div>
+        </div>
+      </div>
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">
+          Are Queens home prices going up or down in 2025?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" aria-hidden="true">
+          <div class="faq-a-inner">Prices are up 4–6% year-over-year in most neighborhoods as of Q1 2025, driven by low inventory and steady demand. Jamaica leads borough-wide with 6.3% YoY growth, while Astoria and Flushing are seeing more modest increases of 1.8–2.1% reflecting their higher absolute price points and more balanced supply. No Queens neighborhood is showing year-over-year price declines.</div>
+        </div>
+      </div>
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">
+          What is the median home price in Queens in 2025?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" aria-hidden="true">
+          <div class="faq-a-inner">The borough-wide median is approximately $768,000 as of Q1 2025, ranging from $540,000 in Jamaica to $995,000 in Astoria. Multi-family homes in Ozone Park and Richmond Hill typically command a premium over the neighborhood median due to rental income potential. The wide range across the borough reflects Queens' exceptional diversity of housing stock and neighborhood character.</div>
+        </div>
+      </div>
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">
+          Is now a good time to sell a home in Queens?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" aria-hidden="true">
+          <div class="faq-a-inner">For most Queens neighborhoods, yes. Inventory is low and properly priced, well-presented homes are receiving multiple offers. Homes in Ozone Park, Richmond Hill, and Jackson Heights that are accurately priced are receiving competitive offers within 2 weeks. In balanced market neighborhoods like Astoria and Bayside, sellers still achieve strong results — pricing and presentation simply carry more weight. Overpriced homes in any Queens neighborhood are sitting 90+ days regardless of market type.</div>
+        </div>
+      </div>
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">
+          How long does it take to sell a home in Queens?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a" aria-hidden="true">
+          <div class="faq-a-inner">Correctly priced homes in Queens are selling in 34–61 days depending on neighborhood. Jamaica has the fastest absorption at 34 days average, while Flushing and Bayside take closer to 58–61 days. These figures represent days from original list date to executed contract. Over-priced homes in any neighborhood consistently take 90+ days and ultimately sell for less than they would have at a well-researched initial price.</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <div class="divider"></div>
 
+<!-- SHARE THIS REPORT -->
+<section class="section section--dark" style="padding:52px 0">
+  <div class="container" style="text-align:center">
+    <span class="section-eyebrow" style="display:block;margin-bottom:8px">Spread the Knowledge</span>
+    <p style="font-size:0.88rem;font-weight:300;color:rgba(255,255,255,0.38);margin-bottom:24px">If this report was useful to you, share it with neighbors, colleagues, or anyone navigating the Queens market.</p>
+    <div class="share-row" role="group" aria-label="Share this report">
+      <span class="share-lbl">Share this report:</span>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnitingadura.com%2Fresources%2Fqueens-market-report-2026.html" target="_blank" rel="noopener noreferrer" class="share-btn" aria-label="Share on Facebook">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        Facebook
+      </a>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fnitingadura.com%2Fresources%2Fqueens-market-report-2026.html&title=Queens+NY+Real+Estate+Market+Report+2025%E2%80%932026" target="_blank" rel="noopener noreferrer" class="share-btn" aria-label="Share on LinkedIn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://wa.me/?text=Queens+NY+Real+Estate+Market+Report+2025%E2%80%932026+%E2%80%94+https%3A%2F%2Fnitingadura.com%2Fresources%2Fqueens-market-report-2026.html" target="_blank" rel="noopener noreferrer" class="share-btn" aria-label="Share on WhatsApp">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- NEIGHBORHOOD LINKS -->
 <section class="section section--gray" aria-labelledby="neighborhoods-heading">
   <div class="container">
     <header class="section-header" style="text-align:center">
       <span class="section-eyebrow">Explore by Neighborhood</span>
       <h2 class="section-h2" id="neighborhoods-heading" style="text-align:center">Queens Neighborhood Pages</h2>
+      <p class="section-sub" style="margin:0 auto;text-align:center">Deep-dive guides for every major Queens neighborhood — local pricing, school districts, transit access, and community context.</p>
     </header>
+
     <nav class="neighborhood-links-grid" aria-label="Queens neighborhood pages">
       <a href="../queens/ozone-park.html" class="nh-link">Ozone Park</a>
       <a href="../queens/richmond-hill.html" class="nh-link">Richmond Hill</a>
@@ -636,10 +907,14 @@
       <a href="../queens/jackson-heights.html" class="nh-link">Jackson Heights</a>
       <a href="../queens/woodside.html" class="nh-link">Woodside</a>
     </nav>
-    <div style="text-align:center;margin-top:32px"><a href="../queens.html" class="btn-outline">View All Queens Neighborhoods</a></div>
+
+    <div style="text-align:center;margin-top:32px">
+      <a href="../queens.html" class="btn-outline">View All Queens Neighborhoods</a>
+    </div>
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer class="footer" role="contentinfo">
   <div class="container">
     <div class="footer-grid">
@@ -650,47 +925,121 @@
       </div>
       <div>
         <div class="footer-col-title">Queens</div>
-        <nav class="footer-links"><a href="../queens/ozone-park.html">Ozone Park</a><a href="../queens/richmond-hill.html">Richmond Hill</a><a href="../queens/howard-beach.html">Howard Beach</a><a href="../queens/jamaica.html">Jamaica</a><a href="../queens/flushing.html">Flushing</a><a href="../queens.html">All Queens →</a></nav>
+        <nav class="footer-links" aria-label="Queens neighborhoods footer navigation">
+          <a href="../queens/ozone-park.html">Ozone Park</a>
+          <a href="../queens/richmond-hill.html">Richmond Hill</a>
+          <a href="../queens/howard-beach.html">Howard Beach</a>
+          <a href="../queens/jamaica.html">Jamaica</a>
+          <a href="../queens/flushing.html">Flushing</a>
+          <a href="../queens.html">All Queens →</a>
+        </nav>
       </div>
       <div>
         <div class="footer-col-title">Resources</div>
-        <nav class="footer-links"><a href="home-valuation-queens.html">Free Home Valuation</a><a href="sell-your-home-queens.html">Sell Your Home</a><a href="buy-a-home-queens.html">Buy a Home</a><a href="first-time-home-buyer-queens.html">First-Time Buyers</a><a href="queens-market-report-2026.html" aria-current="page">Market Report</a></nav>
+        <nav class="footer-links" aria-label="Resources footer navigation">
+          <a href="home-valuation-queens.html">Free Home Valuation</a>
+          <a href="sell-your-home-queens.html">Sell Your Home</a>
+          <a href="buy-a-home-queens.html">Buy a Home</a>
+          <a href="first-time-home-buyer-queens.html">First-Time Buyers</a>
+          <a href="queens-market-report-2026.html" aria-current="page">Market Report</a>
+        </nav>
       </div>
       <div>
         <div class="footer-col-title">Contact</div>
-        <nav class="footer-links"><a href="tel:9177050132">(917) 705-0132</a><a href="sms:9177050132">Text Nitin</a><a href="https://wa.me/19177050132" target="_blank" rel="noopener">WhatsApp</a><a href="mailto:info@gadurarealestate.com">info@gadurarealestate.com</a></nav>
+        <nav class="footer-links" aria-label="Contact footer navigation">
+          <a href="tel:9177050132">(917) 705-0132</a>
+          <a href="sms:9177050132">Text Nitin</a>
+          <a href="https://wa.me/19177050132" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="mailto:info@gadurarealestate.com">info@gadurarealestate.com</a>
+        </nav>
       </div>
     </div>
     <div class="footer-bottom">
-      <p class="footer-legal">© 2025 Gadura Real Estate LLC. Nitin Gadura is a licensed real estate salesperson in New York State. All market data is sourced from OneKey MLS and public records and is provided for informational purposes only. Equal Housing Opportunity.</p>
+      <p class="footer-legal">© 2025 Gadura Real Estate LLC. Nitin Gadura is a licensed real estate salesperson in New York State. All market data is sourced from OneKey MLS and public records and is provided for informational purposes only. Equal Housing Opportunity. Information deemed reliable but not guaranteed.</p>
       <span class="footer-mark">nitingadura.com</span>
     </div>
   </div>
 </footer>
 
+<!-- FLOATING CONTACT WIDGET -->
 <div class="float-contact" id="floatContact" role="complementary" aria-label="Contact options">
-  <div class="float-menu" id="floatMenu">
-    <a href="tel:9177050132" class="float-action"><span class="float-action-dot dot-call"></span>Call (917) 705-0132</a>
-    <a href="sms:9177050132" class="float-action"><span class="float-action-dot dot-text"></span>Send a Text</a>
-    <a href="https://wa.me/19177050132" target="_blank" rel="noopener noreferrer" class="float-action"><span class="float-action-dot dot-wa"></span>WhatsApp</a>
+  <div class="float-menu" id="floatMenu" aria-label="Contact methods">
+    <a href="tel:9177050132" class="float-action" aria-label="Call Nitin Gadura">
+      <span class="float-action-dot dot-call" aria-hidden="true"></span>
+      Call (917) 705-0132
+    </a>
+    <a href="sms:9177050132" class="float-action" aria-label="Text Nitin Gadura">
+      <span class="float-action-dot dot-text" aria-hidden="true"></span>
+      Send a Text
+    </a>
+    <a href="https://wa.me/19177050132" target="_blank" rel="noopener noreferrer" class="float-action" aria-label="WhatsApp Nitin Gadura">
+      <span class="float-action-dot dot-wa" aria-hidden="true"></span>
+      WhatsApp
+    </a>
   </div>
   <button class="float-main" id="floatBtn" aria-label="Open contact options" aria-expanded="false">
-    <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l1.17-.9a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l1.17-.9a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+    </svg>
   </button>
 </div>
 
+<!-- SCRIPTS -->
 <script>
-  document.querySelectorAll('.faq-item').forEach(function(item){
-    var btn=item.querySelector('.faq-q'),answer=item.querySelector('.faq-a');
-    btn.addEventListener('click',function(){
-      var isOpen=item.classList.contains('open');
-      document.querySelectorAll('.faq-item.open').forEach(function(o){o.classList.remove('open');o.querySelector('.faq-q').setAttribute('aria-expanded','false');o.querySelector('.faq-a').setAttribute('aria-hidden','true');});
-      if(!isOpen){item.classList.add('open');btn.setAttribute('aria-expanded','true');answer.setAttribute('aria-hidden','false');}
+  // FAQ accordion
+  document.querySelectorAll('.faq-item').forEach(function(item) {
+    var btn = item.querySelector('.faq-q');
+    var answer = item.querySelector('.faq-a');
+    btn.addEventListener('click', function() {
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(openItem) {
+        openItem.classList.remove('open');
+        openItem.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+        openItem.querySelector('.faq-a').setAttribute('aria-hidden', 'true');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+        answer.setAttribute('aria-hidden', 'false');
+      }
     });
   });
-  var floatBtn=document.getElementById('floatBtn'),floatContact=document.getElementById('floatContact');
-  floatBtn.addEventListener('click',function(){var isOpen=floatContact.classList.contains('open');floatContact.classList.toggle('open');floatBtn.setAttribute('aria-expanded',String(!isOpen));});
-  function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en',includedLanguages:'en,es,hi,pa,ur,bn',layout:google.translate.TranslateElement.InlineLayout.SIMPLE,autoDisplay:false},'google_translate_element');}
+
+  // Floating contact
+  var floatBtn = document.getElementById('floatBtn');
+  var floatContact = document.getElementById('floatContact');
+  floatBtn.addEventListener('click', function() {
+    var isOpen = floatContact.classList.contains('open');
+    floatContact.classList.toggle('open');
+    floatBtn.setAttribute('aria-expanded', String(!isOpen));
+  });
+
+  // Lang switcher
+  var langBtns = document.querySelectorAll('.lang-btn');
+  langBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      langBtns.forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      var lang = btn.getAttribute('data-lang');
+      if (lang === 'en') {
+        var el = document.querySelector('.goog-te-combo');
+        if (el) { el.value = ''; el.dispatchEvent(new Event('change')); }
+      } else {
+        var combo = document.querySelector('.goog-te-combo');
+        if (combo) { combo.value = lang; combo.dispatchEvent(new Event('change')); }
+      }
+    });
+  });
+
+  // Google Translate init
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'en,es,hi,pa,ur,bn',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false
+    }, 'google_translate_element');
+  }
 </script>
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async defer></script>
 </body>
