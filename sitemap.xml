@@ -153,4 +153,24 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- LINKABLE CONTENT / BACKLINK MAGNET PAGES -->
+  <url>
+    <loc>https://nitingadura.com/resources/queens-market-report-2026.html</loc>
+    <lastmod>2025-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nitingadura.com/resources/immigrant-homebuyer-guide-queens.html</loc>
+    <lastmod>2025-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nitingadura.com/resources/best-neighborhoods-queens-south-asian-families.html</loc>
+    <lastmod>2025-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
