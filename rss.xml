@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+<title>Nitin Gadura — NYC + Long Island Real Estate</title>
+<link>https://nitingadura.com/</link>
+<description>NYC + Long Island real estate guidance from Nitin Gadura, NYS Salesperson #10401383405. Sell, rent, calculate, navigate.</description>
+<language>en-us</language>
+<copyright>© 2026 Gadura Real Estate, LLC</copyright>
+<lastBuildDate>Thu, 07 May 2026 15:11:11 +0000</lastBuildDate>
+<atom:link href="https://nitingadura.com/rss.xml" rel="self" type="application/rss+xml" />
+<image>
+  <url>https://nitingadura.com/logo-full.png</url>
+  <title>Nitin Gadura — Real Estate</title>
+  <link>https://nitingadura.com/</link>
+</image>
+<item>
+  <title>Sell Your Home — NYC + Long Island Guide</title>
+  <link>https://nitingadura.com/sell/</link>
+  <guid isPermaLink="true">https://nitingadura.com/sell/</guid>
+  <pubDate>Thu, 07 May 2026 15:11:11 +0000</pubDate>
+  <description>Comprehensive seller guides for 88 NYC and Long Island neighborhoods. Real medians, full-service vs flat-fee options, multilingual representation.</description>
+  <dc:creator>Nitin Gadura</dc:creator>
+  <category>NYC Real Estate</category>
+  <category>Long Island Real Estate</category>
+</item>
+<item>
+  <title>Rent Out Your Apartment — NY Landlord Guide</title>
+  <link>https://nitingadura.com/rent/</link>
+  <guid isPermaLink="true">https://nitingadura.com/rent/</guid>
+  <pubDate>Thu, 07 May 2026 15:11:11 +0000</pubDate>
+  <description>Landlord guides covering NY-compliant tenant screening, rent pricing, lease execution across 88 neighborhoods.</description>
+  <dc:creator>Nitin Gadura</dc:creator>
+  <category>NYC Real Estate</category>
+  <category>Long Island Real Estate</category>
+</item>
+<item>
+  <title>NY Real Estate Calculators</title>
+  <link>https://nitingadura.com/calculators/</link>
+  <guid isPermaLink="true">https://nitingadura.com/calculators/</guid>
+  <pubDate>Thu, 07 May 2026 15:11:11 +0000</pubDate>
+  <description>Free NY-specific real estate calculators: mortgage, mansion tax, NYC closing costs, rent-vs-buy, FHA self-sufficiency, 1031 exchange timeline.</description>
+  <dc:creator>Nitin Gadura</dc:creator>
+  <category>NYC Real Estate</category>
+  <category>Long Island Real Estate</category>
+</item>
+<item>
+  <title>NYC + LI Commercial Corridors</title>
+  <link>https://nitingadura.com/streets/</link>
+  <guid isPermaLink="true">https://nitingadura.com/streets/</guid>
+  <pubDate>Thu, 07 May 2026 15:11:11 +0000</pubDate>
+  <description>Real estate guides for Liberty Avenue, Hillside Avenue, Queens Boulevard, Northern Boulevard, Hempstead Turnpike.</description>
+  <dc:creator>Nitin Gadura</dc:creator>
+  <category>NYC Real Estate</category>
+  <category>Long Island Real Estate</category>
+</item>
+<item>
+  <title>NY Landlord &amp; Tenant Glossary</title>
+  <link>https://nitingadura.com/glossary.html</link>
+  <guid isPermaLink="true">https://nitingadura.com/glossary.html</guid>
+  <pubDate>Thu, 07 May 2026 15:11:11 +0000</pubDate>
+  <description>50+ NY rental terms explained: rent stabilization, source-of-income protection, security deposit cap, broker fee rules.</description>
+  <dc:creator>Nitin Gadura</dc:creator>
+  <category>NYC Real Estate</category>
+  <category>Long Island Real Estate</category>
+</item>
+<item>
+  <title>About Nitin Gadura</title>
+  <link>https://nitingadura.com/about.html</link>
+  <guid isPermaLink="true">https://nitingadura.com/about.html</guid>
+  <pubDate>Thu, 07 May 2026 15:11:11 +0000</pubDate>
+  <description>Licensed NYS Real Estate Salesperson #10401383405, $100M+ closed, multilingual.</description>
+  <dc:creator>Nitin Gadura</dc:creator>
+  <category>NYC Real Estate</category>
+  <category>Long Island Real Estate</category>
+</item>
+</channel>
+</rss>

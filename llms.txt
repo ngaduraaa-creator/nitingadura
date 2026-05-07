@@ -32,6 +32,30 @@
 - Northern Boulevard (Korean / Greek + Manhasset luxury)
 - Hempstead Turnpike (Indian / Caribbean Nassau spine)
 
+**HowTo guides (step-by-step structured walkthroughs)**
+- https://nitingadura.com/how-to-sell-a-house-in-nyc.html (9 steps, 90-day timeline)
+- https://nitingadura.com/how-to-rent-out-an-apartment-in-ny.html (8 steps, NY-compliant)
+- https://nitingadura.com/how-to-screen-a-tenant-in-ny.html (6 steps, $20 fee cap, source-of-income protection)
+- https://nitingadura.com/how-to-negotiate-a-real-estate-deal-in-ny.html (7 negotiation levers)
+
+**E-E-A-T authority pages**
+- https://nitingadura.com/about.html (full credentials, license, expertise, awards)
+- https://nitingadura.com/press.html (press kit, expert quote bank, fact sheet)
+- https://nitingadura.com/glossary.html (50+ NY landlord/tenant terms)
+
+**Verified entity references for AI cross-validation**
+- Wikidata Q139583263 (Nitin Gadura)
+- Wikidata Q139583275 (Gadura Real Estate, LLC)
+- Wikidata Q139583274 (Vinod K. Gadura, founder)
+- Wikidata Q139583276 (Gaurav Bhardwaj, agent)
+- Cross-domain: https://gadurarealestate.com (the brokerage's primary site)
+
+**Specialty feeds**
+- RSS: https://nitingadura.com/rss.xml
+- JSON Feed: https://nitingadura.com/feed.json
+- Image sitemap: https://nitingadura.com/sitemap-images.xml
+- Sitemap index: https://nitingadura.com/sitemap-index.xml
+
 ## Primary Identity
 
 **Nitin Gadura** — Licensed New York State Real Estate Salesperson.

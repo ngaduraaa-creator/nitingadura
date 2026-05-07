@@ -1,0 +1,72 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Nitin Gadura — NYC + Long Island Real Estate",
+  "home_page_url": "https://nitingadura.com/",
+  "feed_url": "https://nitingadura.com/feed.json",
+  "description": "Sell, rent, and navigate NYC + Long Island real estate. By Nitin Gadura, NYS Salesperson #10401383405.",
+  "icon": "https://nitingadura.com/logo-full.png",
+  "favicon": "https://nitingadura.com/logo-icon.png",
+  "language": "en-US",
+  "authors": [
+    {
+      "name": "Nitin Gadura",
+      "url": "https://nitingadura.com/about.html",
+      "avatar": "https://nitingadura.com/nitin-gadura.jpg"
+    }
+  ],
+  "items": [
+    {
+      "id": "https://nitingadura.com/sell/",
+      "url": "https://nitingadura.com/sell/",
+      "title": "Sell Your Home — NYC + LI",
+      "summary": "88 neighborhood-specific seller guides.",
+      "date_published": "2026-05-07T09:00:00Z",
+      "tags": [
+        "seller",
+        "NYC",
+        "Long Island"
+      ]
+    },
+    {
+      "id": "https://nitingadura.com/rent/",
+      "url": "https://nitingadura.com/rent/",
+      "title": "Rent Out Your Apartment — NY Landlord Guide",
+      "summary": "NY-compliant landlord representation.",
+      "date_published": "2026-05-07T09:00:00Z",
+      "tags": [
+        "landlord",
+        "rental"
+      ]
+    },
+    {
+      "id": "https://nitingadura.com/calculators/",
+      "url": "https://nitingadura.com/calculators/",
+      "title": "NY Real Estate Calculators",
+      "summary": "Mortgage, mansion tax, closing costs, more.",
+      "date_published": "2026-05-07T09:00:00Z",
+      "tags": [
+        "calculator"
+      ]
+    },
+    {
+      "id": "https://nitingadura.com/streets/",
+      "url": "https://nitingadura.com/streets/",
+      "title": "NYC + LI Commercial Corridors",
+      "summary": "5 high-traffic streets explained.",
+      "date_published": "2026-05-07T09:00:00Z",
+      "tags": [
+        "streets"
+      ]
+    },
+    {
+      "id": "https://nitingadura.com/glossary.html",
+      "url": "https://nitingadura.com/glossary.html",
+      "title": "NY Landlord & Tenant Glossary",
+      "summary": "50+ rental terms.",
+      "date_published": "2026-05-07T09:00:00Z",
+      "tags": [
+        "glossary"
+      ]
+    }
+  ]
+}

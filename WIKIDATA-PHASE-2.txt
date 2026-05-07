@@ -1,0 +1,215 @@
+## WIKIDATA PHASE 2 FOR NITINGADURA.COM
+## ===========================================
+##
+## Existing Q-entities (already created):
+##   Q139583263 — Nitin Gadura
+##   Q139583275 — Gadura Real Estate, LLC
+##   Q139583274 — Vinod K. Gadura
+##   Q139583276 — Gaurav Bhardwaj
+##
+## This batch adds DEPTH — additional properties so Google's Knowledge Graph
+## promotes the entities to Knowledge Panels faster.
+##
+## HOW TO USE:
+## 1. Go to https://quickstatements.toolforge.org/
+## 2. Click "Authorize" with your Wikidata account
+## 3. Click "New batch" → paste EVERYTHING below the line into the textarea → click "Run"
+##
+## This is a SEPARATE batch from the gadurarealestate.com Phase 2 file.
+## You can run both files independently.
+##
+## P-properties used:
+##   P17 = country
+##   P21 = sex or gender
+##   P27 = country of citizenship
+##   P31 = instance of
+##   P39 = position held
+##   P101 = field of work
+##   P106 = occupation
+##   P108 = employer
+##   P127 = owned by
+##   P166 = award received
+##   P361 = part of
+##   P407 = language of work
+##   P452 = industry
+##   P463 = member of
+##   P488 = chairperson
+##   P551 = residence
+##   P571 = inception
+##   P625 = coordinate location
+##   P749 = parent organization
+##   P856 = official website
+##   P1128 = employees
+##   P1268 = represents
+##   P1329 = phone number
+##   P1412 = languages spoken or written
+##   P1454 = legal form
+##   P1813 = short name
+##   P2002 = X / Twitter username
+##   P2003 = Instagram username
+##   P2013 = Facebook ID
+##   P2814 = D-U-N-S Number
+##   P3320 = chief operating officer (used here for employees)
+##   P3417 = Quora topic ID
+##   P4264 = LinkedIn personal profile ID
+##   P4666 = LinkedIn company ID
+##   P7400 = LinkedIn personal profile ID
+##   P8262 = TikTok username
+##
+## Q-references used:
+##   Q30 = United States
+##   Q11797 = Queens
+##   Q1860 = English
+##   Q1568 = Hindi
+##   Q58635 = Punjabi
+##   Q9610 = Bengali
+##   Q1321 = Spanish
+##   Q35552 = Guyanese Creole
+##   Q5527 = Gujarati
+##   Q1617 = Urdu
+##   Q41176 = real estate
+##   Q691978 = real estate broker
+##   Q1043336 = family business
+##   Q15911314 = limited liability company
+##   Q170474 = residential real estate
+##   Q484876 = chief executive officer / founder
+##   Q6581097 = male
+
+## ===== BATCH START =====
+
+## ============================================
+## Q139583263 — Nitin Gadura (additional sameAs)
+## ============================================
+
+# Cross-link the website
+Q139583263	P856	"https://nitingadura.com/"
+Q139583263	P856	"https://nitingadura.com/about.html"
+
+# Add additional language proficiency
+Q139583263	P1412	Q5527
+Q139583263	P1412	Q1617
+Q139583263	P1412	Q9610
+
+# Verified residence
+Q139583263	P551	Q11797
+
+# Country of citizenship
+Q139583263	P27	Q30
+
+# Sex / gender
+Q139583263	P21	Q6581097
+
+# Field of work
+Q139583263	P101	Q41176
+Q139583263	P101	Q170474
+
+# Occupation
+Q139583263	P106	Q691978
+
+# Employer
+Q139583263	P108	Q139583275
+
+## ============================================
+## Q139583275 — Gadura Real Estate, LLC (additional)
+## ============================================
+
+# Legal form
+Q139583275	P1454	Q15911314
+
+# Industry — residential real estate specifically
+Q139583275	P452	Q170474
+
+# Founded by — link Vinod's QID
+Q139583275	P112	Q139583274
+
+# Languages of business operation
+Q139583275	P407	Q1860
+Q139583275	P407	Q1568
+Q139583275	P407	Q58635
+Q139583275	P407	Q9610
+Q139583275	P407	Q1321
+Q139583275	P407	Q35552
+Q139583275	P407	Q5527
+Q139583275	P407	Q1617
+
+# Employees (chief positions)
+Q139583275	P488	Q139583274
+Q139583275	P3320	Q139583263
+Q139583275	P3320	Q139583276
+
+# Approximate employee count
+Q139583275	P1128	+5
+
+# Short names
+Q139583275	P1813	"Gadura Real Estate"
+Q139583275	P1813	"Gadura RE"
+
+# Country
+Q139583275	P17	Q30
+
+# Coordinate location (Ozone Park office)
+Q139583275	P625	@40.6820/-73.8452
+
+## ============================================
+## Q139583274 — Vinod K. Gadura (additional)
+## ============================================
+
+# Sex / gender
+Q139583274	P21	Q6581097
+
+# Country of citizenship
+Q139583274	P27	Q30
+
+# Languages
+Q139583274	P1412	Q1860
+Q139583274	P1412	Q1568
+Q139583274	P1412	Q35552
+
+# Employer (own firm)
+Q139583274	P108	Q139583275
+
+# Field of work
+Q139583274	P101	Q41176
+
+# Occupation
+Q139583274	P106	Q691978
+
+# Position held — founder of Gadura Real Estate, LLC
+Q139583274	P39	Q484876
+
+## ============================================
+## Q139583276 — Gaurav Bhardwaj (additional)
+## ============================================
+
+# Sex / gender
+Q139583276	P21	Q6581097
+
+# Country of citizenship
+Q139583276	P27	Q30
+
+# Languages
+Q139583276	P1412	Q1860
+Q139583276	P1412	Q1568
+Q139583276	P1412	Q58635
+Q139583276	P1412	Q1617
+
+# Employer
+Q139583276	P108	Q139583275
+
+# Field of work
+Q139583276	P101	Q41176
+
+# Occupation
+Q139583276	P106	Q691978
+
+# Phone number
+Q139583276	P1329	"+1-347-261-6915"
+
+## ===== BATCH END =====
+##
+## After running:
+## 1. Each entity will have ~10–15 extra properties
+## 2. The closed-loop graph (founder ↔ founded-by, employer ↔ employee) creates
+##    machine-verifiable employer-employee relationships — strongest signal for KG
+## 3. Wait 30–45 days for Google to absorb. Search "Nitin Gadura" — Knowledge Panel
+##    sidebar should appear.

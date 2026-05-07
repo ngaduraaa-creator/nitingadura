@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://nitingadura.com/</loc>
+    <image:image>
+      <image:loc>https://nitingadura.com/nitin-gadura.jpg</image:loc>
+      <image:caption>Nitin Gadura, Licensed NYS Real Estate Salesperson — NYC + Long Island specialist</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://nitingadura.com/logo-full.png</image:loc>
+      <image:caption>Gadura Real Estate, LLC — family-owned NYS-licensed brokerage since 2006</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://nitingadura.com/about.html</loc>
+    <image:image>
+      <image:loc>https://nitingadura.com/nitin-gadura.jpg</image:loc>
+      <image:caption>Nitin Gadura, Licensed NYS Real Estate Salesperson, NYS License #10401383405</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://nitingadura.com/press.html</loc>
+    <image:image>
+      <image:loc>https://nitingadura.com/nitin-gadura.jpg</image:loc>
+      <image:caption>Nitin Gadura headshot for media use</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://nitingadura.com/logo-full.png</image:loc>
+      <image:caption>Gadura Real Estate logo</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://nitingadura.com/logo-icon.png</image:loc>
+      <image:caption>Gadura Real Estate icon</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://nitingadura.com/logo-text.png</image:loc>
+      <image:caption>Gadura Real Estate text logo</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://nitingadura.com/sell/</loc>
+    <image:image>
+      <image:loc>https://nitingadura.com/nitin-gadura.jpg</image:loc>
+      <image:caption>Nitin Gadura — selling NYC + Long Island homes since 2018</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://nitingadura.com/rent/</loc>
+    <image:image>
+      <image:loc>https://nitingadura.com/nitin-gadura.jpg</image:loc>
+      <image:caption>Nitin Gadura — landlord representation NY-compliant</image:caption>
+    </image:image>
+  </url>
+</urlset>
