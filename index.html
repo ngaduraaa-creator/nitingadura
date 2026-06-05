@@ -227,6 +227,42 @@
     .faq-item.open .faq-a{max-height:500px}
     .faq-a-inner{padding-bottom:22px}
 
+    /* AUTHORITY / VERIFIED-ON */
+    .auth-band{background:var(--off-w);padding:clamp(48px,5vw,76px) 0;border-bottom:1px solid var(--border)}
+    .auth-head{text-align:center;margin-bottom:36px}
+    .auth-eyebrow{font-size:0.56rem;font-weight:600;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;display:block}
+    .auth-title{font-family:var(--serif);font-size:clamp(1.1rem,1.6vw,1.45rem);font-weight:600;color:var(--dark);line-height:1.3}
+    .auth-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+    .auth-cell{padding:26px 14px;text-align:center;border-right:1px solid var(--border);transition:background 0.2s;display:block}
+    .auth-cell:last-child{border-right:none}
+    .auth-cell:hover{background:#fff}
+    .auth-name{font-family:var(--serif);font-size:0.92rem;font-weight:700;color:var(--black);margin-bottom:5px;letter-spacing:0.01em}
+    .auth-id{font-size:0.54rem;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--mid)}
+
+    /* RESOURCES */
+    .res-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border)}
+    .res-card{background:var(--white);padding:34px 26px;transition:all 0.22s;display:block;position:relative}
+    .res-card:hover{background:var(--off-w)}
+    .res-num{font-family:var(--serif);font-size:0.7rem;font-weight:600;color:var(--gold);letter-spacing:0.18em;margin-bottom:14px;display:block}
+    .res-card h3{font-family:var(--serif);font-size:1.05rem;font-weight:700;color:var(--black);margin-bottom:10px;line-height:1.3}
+    .res-card p{font-size:0.78rem;font-weight:300;color:var(--mid);line-height:1.78;margin-bottom:18px}
+    .res-cta{font-size:0.58rem;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold)}
+    .calc-list{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:32px}
+    .calc-link{display:block;padding:16px 18px;background:#fff;border:1px solid var(--border);text-align:center;transition:all 0.2s;font-size:0.74rem;font-weight:500;color:var(--dark);letter-spacing:0.02em}
+    .calc-link:hover{border-color:var(--gold);color:var(--black);box-shadow:0 4px 16px rgba(0,0,0,0.04)}
+    .calc-link strong{display:block;font-family:var(--serif);font-size:0.84rem;font-weight:700;margin-bottom:3px;color:var(--black)}
+    .calc-link span{font-size:0.56rem;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold)}
+
+    /* PERSONAL STATEMENT */
+    .stmt{background:var(--cream);padding:clamp(72px,8vw,120px) 0;border-top:1px solid var(--border)}
+    .stmt-inner{max-width:900px;margin:0 auto;text-align:center;padding:0 24px}
+    .stmt-mark{font-family:var(--serif);font-size:5rem;font-weight:700;color:var(--gold);line-height:0.5;margin-bottom:24px;display:inline-block}
+    .stmt-text{font-family:var(--serif);font-size:clamp(1.4rem,2.4vw,2rem);font-weight:400;font-style:italic;color:var(--dark);line-height:1.45;margin-bottom:36px}
+    .stmt-text strong{font-style:normal;font-weight:600;color:var(--black)}
+    .stmt-sig{display:flex;flex-direction:column;align-items:center;gap:6px}
+    .stmt-name{font-size:0.78rem;font-weight:600;color:var(--dark);letter-spacing:0.02em}
+    .stmt-meta{font-size:0.6rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold)}
+
     /* SEO GRID */
     .seo-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
     .seo-card{background:var(--white);border:1px solid var(--border);padding:28px 24px}
@@ -291,6 +327,11 @@
       .platform-grid{grid-template-columns:1fr}
       .why-grid{grid-template-columns:1fr}
       .markets-grid{grid-template-columns:1fr}
+      .auth-grid{grid-template-columns:repeat(2,1fr)}
+      .auth-cell{border-right:1px solid var(--border);border-bottom:1px solid var(--border)}
+      .auth-cell:nth-child(2n){border-right:none}
+      .res-grid{grid-template-columns:1fr}
+      .calc-list{grid-template-columns:repeat(2,1fr)}
       .val-inner{grid-template-columns:1fr;gap:40px}
       .testimonials-grid{grid-template-columns:1fr}
       .seo-grid{grid-template-columns:1fr}
@@ -765,6 +806,42 @@
   </div>
 </div>
 
+<!-- AUTHORITY / VERIFIED ON -->
+<section class="auth-band" aria-label="Verified authority signals">
+  <div class="container">
+    <div class="auth-head">
+      <span class="auth-eyebrow">Verified · Cited · Indexed</span>
+      <div class="auth-title">Independently verified on the registries that matter</div>
+    </div>
+    <div class="auth-grid">
+      <a href="https://appext20.dos.ny.gov/lcns_public/chk_load" target="_blank" rel="noopener" class="auth-cell">
+        <div class="auth-name">NYS DOS</div>
+        <div class="auth-id">License #10401383405</div>
+      </a>
+      <a href="https://www.wikidata.org/wiki/Q139583263" target="_blank" rel="noopener" class="auth-cell">
+        <div class="auth-name">Wikidata</div>
+        <div class="auth-id">Entity Q139583263</div>
+      </a>
+      <a href="https://www.onekeymls.com" target="_blank" rel="noopener" class="auth-cell">
+        <div class="auth-name">OneKey® MLS</div>
+        <div class="auth-id">Active Member</div>
+      </a>
+      <a href="https://www.zillow.com/profile/NitinGadura/" target="_blank" rel="noopener" class="auth-cell">
+        <div class="auth-name">Zillow</div>
+        <div class="auth-id">Verified Profile</div>
+      </a>
+      <a href="https://www.homes.com/real-estate-agents/nitin-k-gadura-6dpbd3k/" target="_blank" rel="noopener" class="auth-cell">
+        <div class="auth-name">Homes.com</div>
+        <div class="auth-id">Verified Profile</div>
+      </a>
+      <a href="https://www.google.com/search?q=Nitin+Gadura+Gadura+Real+Estate" target="_blank" rel="noopener" class="auth-cell">
+        <div class="auth-name">Google</div>
+        <div class="auth-id">4.9★ · 57+ Reviews</div>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- LISTINGS -->
 <section class="section" id="listings">
   <div class="container">
@@ -910,6 +987,55 @@
         <h3>Verified Track Record</h3>
         <p>$100M+ in closed volume. 57+ five-star reviews. 500+ families served across Queens and Long Island. Verifiable on Google, Zillow, and Homes.com — not just claims on a website.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESOURCES / TOOLS -->
+<section class="section" id="resources">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="eyebrow">Free Resources &amp; Tools</span>
+      <h2 class="section-title">Buyer &amp; Seller Playbooks — On the House</h2>
+      <p class="section-sub">Step-by-step NY-specific guides and instant calculators. Built for Queens and Long Island, written from real transactions.</p>
+    </div>
+
+    <div class="res-grid">
+      <a href="/how-to-sell-a-house-in-nyc.html" class="res-card">
+        <span class="res-num">01 · GUIDE</span>
+        <h3>How to Sell a House in NYC</h3>
+        <p>The 9-step playbook from CMA to closing — pricing strategy, photo prep, MLS exposure, offer review, and final walk-through.</p>
+        <span class="res-cta">Read the Guide →</span>
+      </a>
+      <a href="/how-to-rent-out-an-apartment-in-ny.html" class="res-card">
+        <span class="res-num">02 · GUIDE</span>
+        <h3>How to Rent Out an Apartment</h3>
+        <p>NY-compliant landlord workflow: pricing, advertising, $20 application fee cap, screening, and legal lease execution.</p>
+        <span class="res-cta">Read the Guide →</span>
+      </a>
+      <a href="/how-to-screen-a-tenant-in-ny.html" class="res-card">
+        <span class="res-num">03 · GUIDE</span>
+        <h3>How to Screen a Tenant in NY</h3>
+        <p>Source-of-income protection, written denial requirements, and the screening checklist that keeps you compliant with NY law.</p>
+        <span class="res-cta">Read the Guide →</span>
+      </a>
+      <a href="/how-to-negotiate-a-real-estate-deal-in-ny.html" class="res-card">
+        <span class="res-num">04 · GUIDE</span>
+        <h3>How to Negotiate a Real Estate Deal</h3>
+        <p>Seven negotiation levers — pre-approval, contingencies, earnest money, inspection credits, and the walk-away point.</p>
+        <span class="res-cta">Read the Guide →</span>
+      </a>
+    </div>
+
+    <div class="calc-list" aria-label="Free calculators">
+      <a href="/calculators/mortgage.html" class="calc-link"><strong>Mortgage</strong><span>Calculator</span></a>
+      <a href="/calculators/affordability.html" class="calc-link"><strong>Affordability</strong><span>Calculator</span></a>
+      <a href="/calculators/rent-vs-buy.html" class="calc-link"><strong>Rent vs Buy</strong><span>Calculator</span></a>
+      <a href="/calculators/mansion-tax.html" class="calc-link"><strong>NYC Mansion Tax</strong><span>Calculator</span></a>
+      <a href="/calculators/closing-costs.html" class="calc-link"><strong>Closing Costs</strong><span>Calculator</span></a>
+      <a href="/calculators/fha-self-sufficiency.html" class="calc-link"><strong>FHA Self-Suff.</strong><span>Calculator</span></a>
+      <a href="/calculators/1031-timeline.html" class="calc-link"><strong>1031 Exchange</strong><span>Timeline</span></a>
+      <a href="/glossary.html" class="calc-link"><strong>NY Real Estate</strong><span>Glossary · 50+ Terms</span></a>
     </div>
   </div>
 </section>
@@ -1090,6 +1216,20 @@
         <h3>How does Nitin market my home differently than other agents?</h3>
         <p>Nitin's listings include professional photography, video walkthroughs, targeted digital advertising, multilingual outreach to Hindi, Punjabi, Gujarati, and Urdu-speaking buyer networks, and full MLS exposure from day one. Most importantly, Nitin is available 7 days a week and responds to every inquiry personally.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- PERSONAL STATEMENT -->
+<section class="stmt" aria-labelledby="stmt-heading">
+  <div class="stmt-inner">
+    <span class="stmt-mark">&ldquo;</span>
+    <p class="stmt-text" id="stmt-heading">
+      I grew up in Queens. I sell homes here because I know what it took for our families to get them — <strong>and what it takes to sell one without leaving money, time, or peace of mind on the table.</strong>
+    </p>
+    <div class="stmt-sig">
+      <span class="stmt-name">— Nitin Gadura</span>
+      <span class="stmt-meta">Licensed NYS Real Estate Salesperson · #10401383405</span>
     </div>
   </div>
 </section>

@@ -51,6 +51,7 @@ User-agent: Amazonbot
 Allow: /
 
 Sitemap: https://nitingadura.com/sitemap.xml
+Sitemap: https://nitingadura.com/sitemap-market-reports-pilot.xml
 
 # AI canonical feed (llmstxt.org convention)
 # llms.txt: https://nitingadura.com/llms.txt
