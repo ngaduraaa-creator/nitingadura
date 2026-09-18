@@ -981,6 +981,35 @@
 </script>
   <script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en',includedLanguages:'en,es,hi,pa,ur,bn',autoDisplay:false},'google_translate_element');}</script>
   <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
+
+<script>
+  // CONTACT WIDGET — null-safe: pages without the markup simply no-op
+  (function () {
+    var toggle = document.getElementById('cw-toggle');
+    var options = document.getElementById('cw-options');
+    if (!toggle || !options) return;
+    toggle.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var open = options.classList.toggle('open');
+      toggle.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('#cw')) {
+        options.classList.remove('open');
+        toggle.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        options.classList.remove('open');
+        toggle.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  })();
+</script>
 </body>
 </html>
 <script>

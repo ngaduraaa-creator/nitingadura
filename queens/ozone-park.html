@@ -1132,6 +1132,47 @@
   </script>
   <script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en',includedLanguages:'en,es,hi,pa,ur,bn',autoDisplay:false},'google_translate_element');}</script>
   <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
+
+<div class="cw" id="cw">
+  <div class="cw-options" id="cw-options">
+    <a href="tel:9177050132" class="cw-option call"><span class="cw-option-dot"></span>Call Nitin</a>
+    <a href="sms:9177050132" class="cw-option sms"><span class="cw-option-dot"></span>Text Nitin</a>
+    <a href="https://wa.me/19177050132" class="cw-option wa" target="_blank" rel="noopener"><span class="cw-option-dot"></span>WhatsApp</a>
+  </div>
+  <button class="cw-toggle" id="cw-toggle" aria-label="Contact Nitin">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+  </button>
+</div>
+
+
+<script>
+  // CONTACT WIDGET — null-safe: pages without the markup simply no-op
+  (function () {
+    var toggle = document.getElementById('cw-toggle');
+    var options = document.getElementById('cw-options');
+    if (!toggle || !options) return;
+    toggle.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var open = options.classList.toggle('open');
+      toggle.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('#cw')) {
+        options.classList.remove('open');
+        toggle.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        options.classList.remove('open');
+        toggle.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  })();
+</script>
 </body>
 </html>
 <script>
