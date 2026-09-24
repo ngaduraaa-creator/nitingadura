@@ -1,5 +1,14 @@
 # Gadura Mortgage — Project CELL (Adjacent) — First Response
 
+> ## 🛑 DO NOT MERGE THIS BRANCH TO `main` WITHOUT READING THIS FIRST
+> **Added 2026-09-24 by a separate Claude Code session (local machine, `gadura-realestate`) reviewing this handoff, verified directly against this repo — not asserted.**
+>
+> This repository's `main` branch is the live, publicly-deployed source for **nitingadura.com** (GitHub Pages, `CNAME` = `nitingadura.com`, Pages source = `main`/root, "legacy" build). Confirmed via `gh api repos/ngaduraaa-creator/nitingadura/pages`. **Anything merged to `main` becomes a public page on Nitin's personal real-estate site within minutes**, and `main`'s `robots.txt` currently grants full access to every crawler including AI crawlers (`Allow: /`) — there is no partial protection.
+>
+> **This branch is also already publicly readable right now**, unmerged, because this repo's visibility is `PUBLIC`: `https://github.com/ngaduraaa-creator/nitingadura/tree/claude/gadura-mortgage-operating-model-3zgdh7` and every raw file under it (confirmed 200 OK on both, 2026-09-24). Nothing in `mortgage-research/` contains a secret, an SSN, or anything not already effectively public via gaduramortgage.com's own site — but it does contain Vineet's self-published NMLS numbers restated in one place, a written AfBA/family-referral compliance analysis naming both Nitin and Vineet, and an explicit question to Vineet about past referral-fee history. None of that belongs on a page that Google, Bing, and every AI crawler are explicitly invited to index, and it's one `git merge` away from exactly that.
+>
+> **Recommendation (this is a recommendation, not something this reviewing session can decide for you — Nitin/Vineet decide):** before this branch is ever merged, move `mortgage-research/` and this file out of any repository that publishes on merge — either into a location outside git entirely (the pattern the real estate project uses: an untracked, gitignored local file), or into a private repository with no Pages configuration. **Do not let "we already tracked it once, so it's fine to keep tracking it" become the default** — that would mean every future Gadura Mortgage research file gets committed here too, compounding the exposure. See "Answering this project's own open process questions," added by this same review, further down.
+
 **Status:** Pre-research. Nothing below authorizes content, publishing, advertising, or outreach.
 **Entity:** Gadura Mortgage (principal: Vineet Gadura) — legally and organizationally separate from Gadura Real Estate LLC (Nitin Gadura). Vineet is sole decision authority for this project; Nitin has no authority over mortgage-side compliance or content decisions, and vice versa.
 **Relationship to real estate Project CELL:** Adjacent, not merged. Shared discipline (evidence-first, fail-closed generation, entity-consistency, handoff-packet structure) is reused. Compliance conclusions are NOT reused — mortgage lending has its own federal/state regulatory regime.
@@ -111,3 +120,26 @@ No content, page, advertisement, email, or outreach of any kind will be produced
 - No money spent, no prospect contacted, nothing deployed or published.
 
 This is a research and strategy phase only.
+
+---
+
+## 2026-09-24 addendum — live-site verification + answers to this project's own open questions
+
+Added by a separate Claude Code session (local machine, full network access, author of `THE_GADURA_PLAYBOOK.md`) reviewing handoff packet `CELL-MORTGAGE-2026-09-24-001` at Nitin's request. Everything below was verified directly against the live site just now, not drawn from either supplied document, and not asserted without a fresh check.
+
+### Live-site facts this session could reach directly (this repo's own session could not — network egress to gaduramortgage.com was blocked there)
+
+- **The "not authorized by NYDFS" disclosure is real, current, and verbatim** — confirmed by direct browser render 2026-09-24: *"This site is not authorized by the New York State Department of Financial Services. No Mortgage Loan Applications for the properties located in the state of New York will be accepted through this site."* This is exactly what `regulatory-source-register.md` Item 0 reported from the supplied documents. It is now independently confirmed, first-hand, not just relayed.
+- **New finding neither supplied document caught — this disclosure is inconsistently applied.** It appears in the footer of `/contact-us/`. It does **not** appear anywhere on the homepage footer, even though the homepage carries the same company-info block (address, NMLS 1859097, the registered-broker legend) minus this one sentence. Given the homepage is the highest-traffic page and carries three separate lead-capture CTAs (see next point), this asymmetry is itself worth flagging to Vineet — not just "is the site authorized," but "is the required disclosure even displayed everywhere it needs to be."
+- **New finding: the homepage's three main CTAs ("Purchase Your Home," "Refinance an Existing Loan," "Commercial Loans") each link a live, functioning Google Calendar appointment-booking page** (`calendar.google.com/.../appointments/schedules/...`), not just a phone number. This is a concrete, verifiable data point for the "is the site conducting NY-regulated business through the site" question in Item 0 above — scheduling a mortgage consultation via an embedded booking widget is a stronger candidate for "conducting business through the site" than static content, and it's live today.
+- **Site structure confirmed directly** (not inferred from search snippets): main nav is Team, Purchase (`/purchase-faq/`), Refinance (`/refinance-faq/`), Commercial (`/commercial-faq/`), Resources (`/resources/`), Contact Us (`/contact-us/`), Careers (`/careers/`) — matching what this repo's session found via search-snippet inference, now directly confirmed.
+- **This session could not go further.** Cloudflare's bot-management began returning 403 challenges to direct (non-browser-rendered) requests partway through this check, and per this project's own standing rule, bot-detection is never bypassed. A full page-by-page crawl of every inner page (Team, Purchase FAQ, Refinance FAQ, Commercial FAQ, Resources, Careers) still has not been done by anyone, from any session. That remains genuinely open.
+- **NMLS Consumer Access: also bot-blocked for this session**, consistent with both supplied documents and this repo's own finding. Company #1859097 and individual #1501434 remain self-published, unverified, by every session that has attempted this so far. This needs a human doing the lookup manually.
+
+### Answers to this document's "Recommended Master Brain reasoning task" (deciding rather than punting, since Nitin asked for no further back-and-forth)
+
+1. **Route `questions-for-vineet.md` to Vineet directly, or relay via Nitin?** Route via Nitin. Vineet is not a participant in any of these Claude Code sessions or in the ChatGPT thread this work has been coordinated through; Nitin is the one common point of contact across all three. Nitin should hand Vineet either the file directly or a plain-language summary of Group A and Group C (the two groups that gate everything else) first, rather than the full 22-question list cold.
+2. **Should "keep `mortgage-research/` in this tracked repo" stand as precedent?** **No.** See the warning banner at the top of this file for why. The override was made under time pressure in a single session without the context that this specific repo is a live-publishing one — that context is exactly what this addendum supplies. Recommend: move the directory out before any merge, and treat every future mortgage-research file the same way the real estate project treats `CLAUDE.local.md` — untracked, gitignored, never in a repo that deploys on merge.
+
+### One thing this addendum deliberately does not do
+It does not resolve the DFS website-authorization question, verify NMLS status, or answer any AfBA question — those genuinely need Vineet, per this document's own scope limit, and no amount of additional Claude Code research substitutes for his answer. What this addendum removes is only the friction that was solvable without him: a live-verified fact set instead of a relayed one, and the two process questions this document had explicitly left open.
