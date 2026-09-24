@@ -74,7 +74,23 @@ Does Gadura Mortgage already have, or plan to obtain, access to a compliant PPE/
 
 ---
 
-## Part 4 — UDAAP Framing Constraints (Advertising Copy Guardrails)
+## Part 4 — Fair-Lending & Advertising Risk Matrix (Full)
+
+Built now that the Regulatory Source Register (see `regulatory-source-register.md`) is complete enough to cite each row to a primary source. Each row maps one regulatory area to a specific advertising/content decision, the current known status on gaduramortgage.com (from the two supplied live-audit documents plus a 2026-09-24 search-engine sweep by this session — not a full crawl, which remains blocked/unavailable to this session), and the action required before any related content is built or changed.
+
+| Regulation | Specific decision it governs | Current status (as reported / searched, 2026-09-24) | Action required |
+|---|---|---|---|
+| NY DFS website authorization (register Item 0) | Whether the site may conduct NY solicitation/application activity at all | Footer reportedly says **not authorized** for NY web business (per supplied documents) | **Blocking gate.** Confirm current status with Vineet/compliance before any other row in this table matters for web-facing work. |
+| TILA/Reg Z §1026.24 (trigger terms) | Any specific rate, payment, or term in an ad | No rate/APR content found on the homepage (both supplied documents) or in this session's sitewide search sweep (homepage, Resources, Commercial FAQ, Contact, Careers) | Low current risk on this specific rule — but re-check before any future page publishes a number. No live crawl has actually verified every page. |
+| RESPA/Reg X §8 + AfBA (register Item 2) | Cross-referral content with Gadura Real Estate | No cross-referral content found on either site currently. Shared office address (106-09 101st Avenue, Ozone Park) between the two businesses is a real, verified fact that sharpens this risk even with no content yet | Do not build any cross-referral content until the AfBA disclosure/consent questions are answered in writing (see the consolidated question packet). |
+| ECOA/Reg B, Fair Housing Act | Discouragement, differential treatment, targeting | The purchase FAQ reportedly contains dated market-share statistics (71.6% conventional share, 2020 FHA figures) presented without a current source — not a fair-lending violation by itself, but exactly the kind of stale/unsourced statistic the fail-closed discipline exists to catch | Flag for a fresh-source or removal decision; unrelated to protected-class targeting but still a factual-accuracy defect. |
+| SAFE Act / NMLS display | Individual + company NMLS ID visibility and format | Company NMLS #1859097 in the footer; Vineet's individual NMLS #1501434 reportedly on the Team page (not the homepage) — both **self-published, not independently verified against NMLS Consumer Access** by any session to date | Manual NMLS Consumer Access lookup still required (bot-protected; cannot be automated by this or, per the supplied documents, either other session). |
+| UDAAP / Reg N | "As low as," guaranteed-approval, urgency framing | Refinance page reportedly phrases benefits as "Lower my interest rate & monthly payment!" — framed as an outcome rather than an evaluation, which the Growth Manifesto itself flags as needing reframing | Reframe as an evaluation with trade-offs (cost, term extension, fees, risk) rather than a promised result, per the Manifesto's own Stage 2 conditions. |
+| Redlining / marketing-footprint (Part 1 above) | Any future geo-targeted campaign | No campaign exists yet — this is a build-time gate, not a current-site defect | Apply the Part 1/Part 2 footprint check before any geo-targeting is designed, whenever that work starts. |
+| Consumer consent / privacy (not a single statute — cross-cutting) | The "Funded Loan Photos" section publishing ~10-11 closed transactions by street address, price, and loan amount | Present on the live site per both supplied documents; consent status for each of the ~10-11 named transactions is unverified by any session | Confirm written client consent exists for each published transaction before treating this as acceptable; this is the same discipline the real estate project applies to homeowner data. |
+| Third-party vendor risk (cross-cutting, not a single statute) | The external "My1003" application portal the purchase page routes to | Vendor ownership, NYDFS authorization scope, and data-security terms unconfirmed by either supplied document | Confirm vendor authorization and data-handling terms before treating the current application flow as compliant. |
+
+## Part 5 — UDAAP Framing Constraints (Advertising Copy Guardrails)
 
 Pending full compliance/legal review, the working default for any future copy:
 - No "as low as [rate]" framing without the full trigger-term disclosure block required by that specific rate claim.
@@ -82,4 +98,15 @@ Pending full compliance/legal review, the working default for any future copy:
 - No urgency/scarcity claims ("rates won't be this low again," "limited time") unless factually and currently true and defensible.
 - No geographic or channel targeting decision made without the Part 1/Part 2 footprint check above.
 
-This section is a placeholder scaffold for the full Fair-Lending & Advertising Risk Matrix (a row-by-row matrix mapping each regulation to specific advertising/content decisions) — building the full matrix is a Month 2 task that also depends on the Regulatory Source Register being finalized first, so citations in the matrix are traceable to a primary source rather than restated from memory.
+## Part 6 — 2026-09-24 Search-Engine Sweep of gaduramortgage.com (Not a Crawl)
+
+This session cannot directly fetch gaduramortgage.com (network egress to that domain is blocked in this environment, same limitation the earlier competitor-research pass hit). This is a best-effort supplement via search-engine-indexed content only, extending — not replacing — the homepage-level audits in the two supplied documents. A real crawl of every page remains an open item for whoever has direct site access.
+
+**New pages found, not mentioned in either supplied document:**
+- `/careers/` — lists open positions (Business Analyst, Senior Loan Processor).
+- `/resources/` — exists (confirmed via search index), content not visible in search snippets.
+- `/contact-us/` — exists.
+
+**Corroborating context found:** the company reportedly opened as an independent mortgage brokerage in early 2020; principal cites ~15 years of loan-processing experience; service area described as Brooklyn, Queens, and Long Island (consistent with the Queens/Nassau/Suffolk geography this research already uses, plus Brooklyn as an adjacent market worth noting for the Keyword Master doc later).
+
+**No rate/APR/percentage content found** in this sweep across the homepage, Resources, Commercial FAQ, and Contact pages — consistent with, and modestly extending, the "no rate content on the homepage" finding from both supplied documents to a slightly wider set of indexed pages. This is still not a confirmation that no rate content exists anywhere on the site (e.g., behind a login, in a PDF, or on an unindexed page).
