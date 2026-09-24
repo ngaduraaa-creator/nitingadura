@@ -1,0 +1,45 @@
+# Gadura Mortgage — Competitor Matrix (Queens / Nassau / Suffolk NY)
+
+**Status:** Research-phase deliverable (Month 4 of the Project CELL brief workplan).
+**Research limitation:** direct site rendering (WebFetch) was blocked by this environment's network egress proxy for every competitor domain attempted. All findings below come from WebSearch result snippets — search-engine caches and third-party aggregators (Yelp, BBB, Zillow, NerdWallet, Trustpilot, OriginationData.com) — not a firsthand read of each site. Treat specifics (review counts, exact copy, rate figures) as approximate, point-in-time (September 24, 2026), and re-verify with a direct site pass before relying on them for a build decision.
+**NMLS caveat:** every NMLS number below came from a search snippet only. **None have been checked against NMLS Consumer Access or NY DFS's licensee lookup.** Do not publish, cite, or rely on any of these numbers without that independent check — this applies to competitor numbers here and, even more so, to Gadura's own numbers per the Entity Truth Sheet requirement in the Project CELL brief.
+
+---
+
+## Matrix
+
+| # | Business | Type | Area | KEEP/IMPROVE/MATCH/SURPASS/COMBINE/REJECT | Why |
+|---|---|---|---|---|---|
+| 1 | MortgageDepot | Broker | Kew Gardens, Queens | KEEP | Genuine specialization in self-employed/non-traditional-income borrowers — a real value-add for Queens' small-business-owner population. Thin review volume (13 on Yelp) relative to its "largest independent broker" claim. |
+| 2 | Artisan Mortgage Company | Broker | Bay Shore, LI (Queens/Brooklyn/Nassau/Suffolk/Bronx/SI) | COMBINE | Strong hyper-local landing-page/SEO strategy and a standalone testimonials page, BBB A+. Combine this local-content approach with Coltrain's review-volume strength. |
+| 3 | Coltrain Mortgage | Broker | Hauppauge, Suffolk | KEEP | 800+ 5-star Google reviews — very high trust-signal volume for a local shop. Treat matching this review velocity as baseline, not a differentiator. |
+| 4 | Block Financial Resources | Broker | NYC (markets to LI/Nassau/Suffolk/Brooklyn) | KEEP, compliance flag | "No broker fee" positioning is a strong hook — adopt as baseline messaging, but get the exact wording compliance-reviewed so it can't read as implying the broker is free (lender-paid comp still applies). |
+| 5 | Meadowbrook Financial Mortgage Bankers | Banker | Hicksville/Westbury, Nassau | REJECT | Third-party HMDA-based data (OriginationData.com) shows above-market average rate (~7.15% vs ~6.55% market) and flags them as "typically a high fee lender." Not a pattern to emulate; worth a factual note for a pricing review, not a legal conclusion. |
+| 6 | Island Federal Credit Union | Credit union | Nassau/Suffolk | KEEP | "Cut-The-Cost Mortgage" program plus genuine consumer-education content, with rate pages explicitly dated ("accurate as of [date], subject to change"). This dated-disclaimer discipline is exactly the standard Gadura's own future rate content should meet. |
+| 7 | Municipal Credit Union (MCU) | Credit union | Metro NYC incl. Queens | COMBINE | Homebuyer Dream Program® (FHLBNY-funded down-payment/closing-cost grant, ≤80% AMI, HUD counseling required) is a genuinely differentiated first-time-buyer benefit. Combine this grant-partnership model with Island FCU's dated-rate transparency. |
+| 8 | NFI Mortgage | Broker | Smithtown, Suffolk (also Nassau/Queens/Kings) | IMPROVE | 20+ years of local tenure is a real trust asset, but digital presence (tools, content, visible reviews) is thin relative to peers — Gadura can keep a similar tenure/trust narrative while surpassing on digital tooling. |
+| 9 | Jet Direct Mortgage | Direct lender/banker | Bohemia, Suffolk (Queens + LI landing pages) | KEEP, compliance flag | Publishes specific numeric current rates on a dedicated page — unusually transparent vs. peers who gate rates behind a form. Good practice IF paired with visible APR/"as of" date/assumptions disclosure — unconfirmed from snippets whether that's actually present; a compliance reviewer should pull the live page. |
+| 10 | Get Me Mortgage (R & J Capital Group) | Broker | Queens/Brooklyn/Nassau/Tri-State | IMPROVE | No NMLS number, rate figures, or review count surfaced in search results — notably less transparent on regulatory identifiers than peers. Gadura can differentiate simply by making licensing/NMLS info highly visible site-wide. |
+| 11 | Long Island Mortgage Broker (Artisan-branded portal) | Broker | Nassau & Suffolk | REJECT (UX pattern) + compliance flag | References a projected/aggregate rate figure in body copy without a clearly visible source/date in the snippet, and gates all real rate info behind a lead-capture form. Don't copy either pattern — Gadura should surpass this with real, dated, disclosed rates shown up front. |
+| 12 | Fourleaf Federal Credit Union (formerly Bethpage FCU) | Credit union | LI-headquartered, Sunnyside Queens branch | MATCH | $13.4B in assets, strong third-party ratings (NerdWallet 5-star, Zillow 4.91/5 from 230+ reviews). Offers co-op mortgage financing — notable and worth matching given how common co-ops are in Queens specifically, a niche several competitors skip. |
+
+---
+
+## Compliance-Adjacent Observations (Factual Only — Not Legal Conclusions)
+
+- NY DFS's own Mortgage Broker Guide Book and 3 NYCRR §38.2 prohibit advertising "immediate approval" or "immediate closing," prohibit fraudulent/deceitful advertising or misrepresenting loan terms/charges, require the "Registered Mortgage Broker–NYS Banking Department" (or equivalent) legend on every ad, and require yield-spread premium and total borrower-paid fees/points to be disclosed as two separate amounts. Source: [DFS Mortgage Broker Guide Book (PDF)](https://www.dfs.ny.gov/system/files/documents/2021/04/mortgage_broker_guidebook.pdf), [3 NYCRR §38.2](https://www.law.cornell.edu/regulations/new-york/3-NYCRR-38.2).
+- No "guaranteed approval" language was found in search snippets for any of the 12 — but that's "not found in what was visible," not a clean bill of health, since most inner pages/footers (where NMLS legends typically sit) weren't directly rendered.
+- **Jet Direct Mortgage (#9)** and **Long Island Mortgage Broker (#11)** are the two competitors publishing specific numeric rate figures — the two most worth a compliance reviewer pulling live to check for proper APR/disclosure/"as of" date treatment, since that's precisely the trigger-term pattern regulators watch.
+- **Meadowbrook Financial (#5)** is flagged for a pricing sanity check given the third-party above-market-rate/high-fee signal — factual observation only, not an allegation of a violation.
+- Several competitors (Jet Direct, Artisan, MortgageDepot) run large numbers of hyper-local, neighborhood-level landing pages (e.g., "Mortgage Company Jackson Heights"). Standard local-SEO practice, but each such page is itself an "advertisement" under Part 38 — a compliance reviewer should confirm the broker/banker legend and license number appear on every one of them, not just the homepage. Apply the same check to any equivalent pages Gadura eventually builds.
+- One real NY DFS enforcement example was found — **New Deal Mortgage Group, LLC** ([DFS enforcement action, PDF](https://www.dfs.ny.gov/system/files/documents/2020/04/ea120222_new_deal.pdf)) — for deceptive advertising and misrepresenting broker-vs-banker status. Not one of the 12 competitors above; cited only as evidence that NY DFS actively enforces this exact category, which bears directly on how carefully Gadura's own "broker" vs. "banker" claims need to be worded (see the open question in Item 1 of the Entity Truth Sheet: broker or banker classification is still unconfirmed).
+
+---
+
+## What This Matrix Means for Gadura Mortgage's Eventual Build (Not Authorized Yet)
+
+- **Baseline to match, not differentiate on:** visible review volume (Coltrain, Fourleaf), dated/disclaimed rate transparency (Island FCU), prominent NMLS/license display (where Get Me Mortgage falls short — an easy own-goal to avoid).
+- **Real differentiation opportunities (SURPASS candidates):** combining local-content depth (Artisan) with a genuine down-payment-assistance/grant partnership (MCU's Homebuyer Dream Program model, or NY's own SONYMA programs per the Keyword Master doc) rather than copying either alone; co-op mortgage support given Queens' housing stock (Fourleaf sets the bar); digital tooling where a 20-year-tenure competitor (NFI) is currently thin.
+- **Patterns to avoid:** rate figures without visible dated disclosure (Long Island Mortgage Broker), pricing that trends above market with weak transparency (Meadowbrook), and any "no fee" claim without careful wording (Block Financial's otherwise-good hook needs compliance language).
+
+None of the above is a build decision — it's input for the Month 6 synthesis and the 90-day/12-month plan, which still requires Vineet's explicit written authorization per the Project CELL brief before anything here becomes a live page.
