@@ -6,6 +6,8 @@
 
 This document is the requested first response to the intake brief: (a) open verification items, (b) AfBA/RESPA understanding + questions for Vineet, (c) proposed 6-month research workplan, (d) explicit scope limit for this phase.
 
+**2026-09-24 supersession note:** this response was written against the v1 draft brief. Nitin has since supplied `THE_GADURA_PLAYBOOK.md`, whose Part Three explicitly states its own embedded "v2" brief "supersedes the shorter draft given earlier in this conversation" — i.e., supersedes the v1 brief this document answers. The v2 brief is grounded in an actual live audit of gaduramortgage.com (performed by that document's own session, not this one) and surfaces one material addition this document did not have: **gaduramortgage.com is live**, and its footer reportedly states it is not yet authorized by NY DFS for NY-regulated web solicitation/application activity — now the top-priority gate, ahead of the AfBA question below. See `mortgage-research/regulatory-source-register.md` Item 0 (added and independently verified against the DFS primary source in this session) and `mortgage-research/README.md` for the full correction. Everything below remains accurate as general framework; treat the "no known live site" framing implicit in some of it as outdated.
+
 ---
 
 ## (a) Facts Requiring Verification Before Anything Else Proceeds
