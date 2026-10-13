@@ -352,7 +352,7 @@ def seller_html(nb: dict) -> str:
 </div>
 <footer>
   <div class="container">
-    <p><strong>Gadura Real Estate, LLC</strong> · 106-09 101st Ave, Ozone Park, NY 11416 · NYS Firm Broker License #10991238487 · © 2026</p>
+    <p><strong>Gadura Real Estate, LLC</strong> · 106-09 101st Ave, Ozone Park, NY 11416 · NYS Real Estate Principal Office #109926909 · © 2026</p>
     <p>Median price estimates from public sales data. For an authoritative valuation, request a CMA.</p>
   </div>
 </footer>
@@ -598,7 +598,7 @@ def rental_html(nb: dict) -> str:
 </div>
 <footer>
   <div class="container">
-    <p><strong>Gadura Real Estate, LLC</strong> · 106-09 101st Ave, Ozone Park, NY 11416 · NYS Firm Broker License #10991238487 · © 2026</p>
+    <p><strong>Gadura Real Estate, LLC</strong> · 106-09 101st Ave, Ozone Park, NY 11416 · NYS Real Estate Principal Office #109926909 · © 2026</p>
     <p>Rent estimates derived from sale-price ratios. For property-specific rent comps, request a free analysis.</p>
   </div>
 </footer>
