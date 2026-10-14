@@ -12,7 +12,6 @@ get cited.
 Each page is genuinely differentiated:
 - Real median sale price + estimated rent (median × 0.42% / month)
 - Real ZIP codes
-- Real community demographics
 - Different commentary based on price tier (low/mid/high)
 - Different FAQ rotations
 - Hand-tuned answer-first paragraph keyed to neighborhood character
@@ -34,7 +33,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "nyc-locations.json"
 
 # Top neighborhoods for seller + rental pages.
-# Selected for: real estate transaction volume, AI-search intent, community match.
+# Selected for: real estate transaction volume, AI-search intent.
 PRIORITY_QUEENS = [
     "ozone-park", "south-ozone-park", "richmond-hill", "south-richmond-hill",
     "howard-beach", "jamaica", "jamaica-estates", "woodhaven", "glendale",
@@ -134,7 +133,6 @@ def seller_html(nb: dict) -> str:
     borough = nb["borough"]
     median = nb.get("median", 720000)
     zips = nb.get("zips", [])
-    communities = nb.get("communities", [])
     tier = price_tier(median)
     tips = SELLER_TIPS[tier]
     today = dt.date.today().isoformat()
@@ -148,13 +146,6 @@ def seller_html(nb: dict) -> str:
         f"with multilingual representation in English, Hindi, Punjabi, Bengali, and Guyanese Creole. "
         f"Free Comparative Market Analysis on request — call <a href=\"tel:+19177050132\">(917) 705-0132</a>."
     )
-
-    community_phrase = ""
-    if communities:
-        community_phrase = (
-            f"<p>{name} has notable {communities[0]} community presence, which affects buyer pool composition. "
-            f"Multilingual listing presentation can extend reach significantly in this market.</p>"
-        )
 
     zips_block = ""
     if zips:
@@ -306,7 +297,7 @@ def seller_html(nb: dict) -> str:
     <div class="fact"><div class="label">Sold-to-List Ratio</div><div class="value">98–102%</div></div>
   </div>
   {zips_block}
-  {community_phrase}
+  
 </section>
 
 <section>
