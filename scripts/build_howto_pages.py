@@ -285,7 +285,7 @@ def render(g: dict) -> str:
 </div>
 <footer>
   <div class="container">
-    <p><strong>Gadura Real Estate, LLC</strong> · NYS Firm Broker License #10991238487 · © 2026</p>
+    <p><strong>Gadura Real Estate, LLC</strong> · NYS Real Estate Principal Office #109926909 · © 2026</p>
   </div>
 </footer>
 </body>

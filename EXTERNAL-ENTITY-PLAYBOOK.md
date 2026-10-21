@@ -48,7 +48,7 @@ Chinese is the second-largest non-English language in NYC. Flushing has the larg
 ## TIER 2 — BUSINESS REGISTRIES (high authority, free)
 
 ### 9. 💡 OpenCorporates — automatic from NY State
-**OpenCorporates** automatically imports state-level corporate registrations. Gadura Real Estate, LLC is already in NY's Department of State registry (License #10991238487), so OpenCorporates likely already has the listing.
+**OpenCorporates** automatically imports state-level corporate registrations. Gadura Real Estate, LLC is already in NY's Department of State registry (NYS Real Estate Principal Office #109926909), so OpenCorporates likely already has the listing.
 - Search: https://opencorporates.com/companies?utf8=%E2%9C%93&q=Gadura+Real+Estate
 - If the listing doesn't include the website yet, claim it (free) and add `nitingadura.com`.
 
