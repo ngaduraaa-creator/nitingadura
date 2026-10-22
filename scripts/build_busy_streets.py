@@ -21,18 +21,18 @@ CORRIDORS = [
         "name": "Liberty Avenue",
         "borough": "Queens",
         "neighborhoods": ["Richmond Hill", "South Richmond Hill", "Ozone Park"],
-        "character": "Queens' Indo-Caribbean and Punjabi cultural and commercial spine",
-        "description": "Liberty Avenue between Lefferts Boulevard and Cross Bay runs through the densest Indo-Caribbean and Punjabi community in the United States. The corridor mixes ground-floor retail (sari shops, roti shops, gurdwaras, temples) with 2-fam and 3-fam houses on adjacent streets. Property along Liberty Avenue trades at a 5–10% premium over surrounding side streets due to walkability and cultural foot traffic.",
-        "tags": ["Indo-Caribbean", "Punjabi", "Sikh", "multi-family"],
+        "character": "Commercial spine",
+        "description": "The corridor mixes ground-floor retail with 2-fam and 3-fam houses on adjacent streets. Property along Liberty Avenue trades at a 5–10% premium over surrounding side streets due to walkability and foot traffic.",
+        "tags": ["multi-family"],
     },
     {
         "slug": "hillside-avenue",
         "name": "Hillside Avenue",
         "borough": "Queens",
         "neighborhoods": ["Jamaica", "Jamaica Hills", "Hollis", "Queens Village"],
-        "character": "Queens' Bangladeshi, Bengali, and Indian commercial corridor",
-        "description": "Hillside Avenue from Jamaica through Queens Village is the primary commercial spine for the Bangladeshi and Bengali community in Queens. South Asian grocery stores, halal butchers, restaurants, and Bengali-language services cluster between 168th and Springfield Boulevard. Multi-family and 2-fam houses on side streets see strong owner-occupant + rental demand from this community.",
-        "tags": ["Bangladeshi", "Bengali", "Indian", "multi-family"],
+        "character": "Commercial corridor",
+        "description": "Grocery stores, restaurants, and services cluster between 168th and Springfield Boulevard. Multi-family and 2-fam houses on side streets see strong owner-occupant + rental demand.",
+        "tags": ["multi-family"],
     },
     {
         "slug": "queens-boulevard",
@@ -48,18 +48,18 @@ CORRIDORS = [
         "name": "Northern Boulevard",
         "borough": "Queens / Nassau",
         "neighborhoods": ["Long Island City", "Astoria", "Jackson Heights", "Flushing", "Bayside", "Manhasset"],
-        "character": "The Korean and Greek commercial spine, transit-poor but car-essential",
-        "description": "Northern Boulevard runs from Long Island City through Bayside and into Nassau County. The Bayside / Whitestone / Douglaston stretch is heavily Korean. The Astoria stretch is Greek and Egyptian. Manhasset's Northern Boulevard stretch has the 'Miracle Mile' luxury retail. Single-family detached homes dominate side streets in the Bayside-and-east stretch; mid-rise apartments dominate the Astoria-and-west stretch.",
-        "tags": ["Korean", "Greek", "single-family", "luxury-retail"],
+        "character": "Commercial spine, transit-poor but car-essential",
+        "description": "Northern Boulevard runs from Long Island City through Bayside and into Nassau County. Manhasset's Northern Boulevard stretch has the 'Miracle Mile' luxury retail. Single-family detached homes dominate side streets in the Bayside-and-east stretch; mid-rise apartments dominate the Astoria-and-west stretch.",
+        "tags": ["single-family", "luxury-retail"],
     },
     {
         "slug": "hempstead-turnpike",
         "name": "Hempstead Turnpike",
         "borough": "Nassau County",
         "neighborhoods": ["Floral Park", "Elmont", "Bellerose", "Hempstead", "West Hempstead"],
-        "character": "Nassau's primary east-west commercial spine, Indian + Caribbean diaspora",
-        "description": "Hempstead Turnpike (NY 24) runs east from the Queens border through Floral Park, Elmont, and into Hempstead Village. The Floral Park / Elmont stretch is the densest Indian and Punjabi community in Nassau County. Floral Park's section has strong family-housing demand keyed to Sewanhaka High School District. Elmont's section sees Caribbean (Haitian, Jamaican, Trinidadian) demographic strength.",
-        "tags": ["Indian", "Punjabi", "Caribbean", "single-family", "school-district-driven"],
+        "character": "Nassau's primary east-west commercial spine",
+        "description": "Hempstead Turnpike (NY 24) runs east from the Queens border through Floral Park, Elmont, and into Hempstead Village. Floral Park's section has strong family-housing demand keyed to Sewanhaka High School District.",
+        "tags": ["single-family", "school-district-driven"],
     },
 ]
 
@@ -72,7 +72,7 @@ def render(c: dict) -> str:
     canonical = f"https://nitingadura.com/streets/{slug}.html"
     title = f"{name} Real Estate — Homes Along Queens' {name} Corridor"
     if borough == "Nassau County":
-        title = f"{name} Real Estate — {borough}'s Indian + Caribbean Corridor"
+        title = f"{name} Real Estate — {borough} Corridor"
     elif borough == "Queens / Nassau":
         title = f"{name} Real Estate — Long Island + Queens Border Corridor"
     meta_desc = (
@@ -84,8 +84,7 @@ def render(c: dict) -> str:
         f"<strong>What's the real estate market like along {name}?</strong> "
         f"{name} runs through {nb_list} in {borough}. {c['description']} "
         f"For specific pricing along {name} or in any of the surrounding side streets, "
-        f"call Nitin Gadura at <a href=\"tel:+19177050132\"><strong>(917) 705-0132</strong></a> — "
-        f"multilingual representation in English, Hindi, Punjabi, Bengali, Guyanese Creole, and Spanish."
+        f"call Nitin Gadura at <a href=\"tel:+19177050132\"><strong>(917) 705-0132</strong></a>."
     )
 
     nb_links = "\n".join(
@@ -194,7 +193,7 @@ def render(c: dict) -> str:
 
 <section>
   <h2>Buying or Selling Along {name}</h2>
-  <p>If you're buying along {name}, the side streets one block in either direction often offer 5–10% lower prices for similar housing stock than properties directly on the corridor. The trade-off: corridor properties have stronger walkability and rental demand from the cultural foot traffic; side-street properties have less noise and more parking.</p>
+  <p>If you're buying along {name}, the side streets one block in either direction often offer 5–10% lower prices for similar housing stock than properties directly on the corridor. The trade-off: corridor properties have stronger walkability and rental demand from the foot traffic; side-street properties have less noise and more parking.</p>
   <p>If you're selling, marketing presentation matters more here than in pure-residential corridors. We position {name} listings to capture both end-user buyers AND investor buyers attracted by the rental demand from the corridor's commercial draw.</p>
 </section>
 
@@ -202,7 +201,7 @@ def render(c: dict) -> str:
 
 <div class="cta">
   <h3 style="font-family:Montserrat;color:var(--navy);margin-bottom:10px">Looking at a property along {name}?</h3>
-  <p style="margin-bottom:14px">Free 30-min market analysis. English, Hindi, Punjabi, Bengali, Spanish, Guyanese Creole.</p>
+  <p style="margin-bottom:14px">Free 30-min market analysis.</p>
   <a class="btn" href="tel:+19177050132">📞 (917) 705-0132</a>
 </div>
 

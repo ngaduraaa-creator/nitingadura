@@ -81,7 +81,7 @@ def build_rss() -> str:
         ("/calculators/", "NY Real Estate Calculators", "Free NY-specific real estate calculators: mortgage, mansion tax, NYC closing costs, rent-vs-buy, FHA self-sufficiency, 1031 exchange timeline."),
         ("/streets/", "NYC + LI Commercial Corridors", "Real estate guides for Liberty Avenue, Hillside Avenue, Queens Boulevard, Northern Boulevard, Hempstead Turnpike."),
         ("/glossary.html", "NY Landlord & Tenant Glossary", "50+ NY rental terms explained: rent stabilization, source-of-income protection, security deposit cap, broker fee rules."),
-        ("/about.html", "About Nitin Gadura", "Licensed NYS Real Estate Salesperson #10401383405, $100M+ closed, multilingual."),
+        ("/about.html", "About Nitin Gadura", "Licensed NYS Real Estate Salesperson #10401383405, $100M+ closed."),
     ]
     last_build = dt.datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S +0000")
     lines = ['<?xml version="1.0" encoding="UTF-8"?>',
