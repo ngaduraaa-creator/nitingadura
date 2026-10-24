@@ -1388,7 +1388,7 @@
   </url>
   <url>
     <loc>https://nitingadura.com/blog/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.60</priority>
   </url>
@@ -1396,6 +1396,12 @@
     <loc>https://nitingadura.com/blog/south-queens-market-update-fall-2026.html</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.55</priority>
+  </url>
+  <url>
+    <loc>https://nitingadura.com/blog/two-august-closings-dix-hills-south-richmond-hill.html</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.55</priority>
   </url>
   <url>
