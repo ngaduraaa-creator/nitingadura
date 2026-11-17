@@ -1031,73 +1031,12 @@
         </div>
       </div>
 
-      <div class="cta-form" role="region" aria-label="Consultation request form">
+      <div class="cta-form" role="region" aria-label="Contact Nitin about a consultation">
         <h3>Request a Free Consultation</h3>
-        <p class="cta-form-sub">Fill in your details and Nitin will reach out to schedule a time that works for your family.</p>
-        <div id="saFormContent">
-          <form id="saForm" novalidate>
-            <div class="form-row">
-              <div class="form-field">
-                <label for="sa-first">First Name</label>
-                <input type="text" id="sa-first" name="firstName" placeholder="First name" required>
-              </div>
-              <div class="form-field">
-                <label for="sa-last">Last Name</label>
-                <input type="text" id="sa-last" name="lastName" placeholder="Last name" required>
-              </div>
-            </div>
-            <div class="form-field">
-              <label for="sa-phone">Phone / WhatsApp Number</label>
-              <input type="tel" id="sa-phone" name="phone" placeholder="(917) 555-0000" required>
-            </div>
-            <div class="form-field">
-              <label for="sa-email">Email Address (Optional)</label>
-              <input type="email" id="sa-email" name="email" placeholder="you@email.com">
-            </div>
-            <div class="form-field">
-              <label for="sa-neighborhood">Neighborhoods You Are Considering</label>
-              <select id="sa-neighborhood" name="neighborhood">
-                <option value="">Select neighborhood</option>
-                <option>Richmond Hill / South Ozone Park</option>
-                <option>Ozone Park</option>
-                <option>Jackson Heights</option>
-                <option>Jamaica</option>
-                <option>Flushing</option>
-                <option>Woodside</option>
-                <option>Still exploring / Not sure</option>
-              </select>
-            </div>
-            <div class="form-field">
-              <label for="sa-budget">Budget Range</label>
-              <select id="sa-budget" name="budget">
-                <option value="">Select budget</option>
-                <option>Under $550K</option>
-                <option>$550K – $700K</option>
-                <option>$700K – $900K</option>
-                <option>$900K – $1.2M</option>
-                <option>$1.2M+</option>
-              </select>
-            </div>
-            <div class="form-field">
-              <label for="sa-lang">Preferred Language</label>
-              <select id="sa-lang" name="language">
-                <option value="">Select language</option>
-                <option>English</option>
-                <option>Hindi</option>
-                <option>Punjabi</option>
-                <option>Urdu</option>
-                <option>Bengali</option>
-                <option>Spanish</option>
-              </select>
-            </div>
-            <button type="submit" class="btn-submit">Request Free Consultation</button>
-            <p class="form-disclaimer">By submitting this form you consent to be contacted by Nitin Gadura of Gadura Real Estate, LLC. Your information will never be sold or shared with third parties.</p>
-          </form>
-        </div>
-        <div class="form-success" id="saFormSuccess">
-          <div class="form-success-icon" aria-hidden="true">&#10003;</div>
-          <h4>Request Received</h4>
-          <p>Nitin will be in touch shortly. You can also reach him directly at <a href="tel:+19177050132" style="color:var(--gold)">(917) 705-0132</a> or <a href="https://wa.me/19177050132" target="_blank" rel="noopener" style="color:var(--gold)">WhatsApp</a>.</p>
+        <p class="cta-form-sub">Call or email Nitin to arrange a time that works for you.</p>
+        <div class="contact-fallback" data-contact-fallback style="text-align:center;padding:8px 0;line-height:1.7">
+          <p style="margin:0 0 16px">To talk with Nitin Gadura, Licensed Real Estate Salesperson with Gadura Real Estate, LLC, call the office or send an email.</p>
+          <p style="margin:0;display:flex;flex-wrap:wrap;gap:12px;justify-content:center"><a href="tel:+17188500010" style="display:inline-block;padding:12px 20px;border:1px solid currentColor;border-radius:4px;color:inherit;font-weight:600;text-decoration:none;max-width:100%;overflow-wrap:anywhere">Call (718) 850-0010</a> <a href="mailto:info@gadurarealestate.com" style="display:inline-block;padding:12px 20px;border:1px solid currentColor;border-radius:4px;color:inherit;font-weight:600;text-decoration:none;max-width:100%;overflow-wrap:anywhere">Email info@gadurarealestate.com</a></p>
         </div>
       </div>
 
@@ -1169,19 +1108,6 @@
         this.setAttribute('aria-expanded','true');
       }
     });
-  });
-
-  // Form submit
-  document.getElementById('saForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    var firstName = document.getElementById('sa-first').value.trim();
-    var phone = document.getElementById('sa-phone').value.trim();
-    if (!firstName || !phone) {
-      alert('Please fill in your name and phone number to continue.');
-      return;
-    }
-    document.getElementById('saFormContent').style.display = 'none';
-    document.getElementById('saFormSuccess').style.display = 'block';
   });
 
   // Nav scroll

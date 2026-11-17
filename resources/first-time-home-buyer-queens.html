@@ -1251,69 +1251,12 @@
           </div>
         </div>
 
-        <div class="cta-form" role="region" aria-label="First-time buyer consultation request form">
+        <div class="cta-form" role="region" aria-label="Contact Nitin about a first-time buyer consultation">
           <h3>Schedule Your Free Consultation</h3>
-          <p class="cta-form-sub">Fill out the form and Nitin will be in touch to schedule a time that works for you.</p>
-          <div id="ftbFormContent">
-            <form id="ftbForm" novalidate>
-              <div class="form-row">
-                <div class="form-field">
-                  <label for="f-first">First Name</label>
-                  <input type="text" id="f-first" name="firstName" placeholder="First name" required>
-                </div>
-                <div class="form-field">
-                  <label for="f-last">Last Name</label>
-                  <input type="text" id="f-last" name="lastName" placeholder="Last name" required>
-                </div>
-              </div>
-              <div class="form-field">
-                <label for="f-phone">Phone Number</label>
-                <input type="tel" id="f-phone" name="phone" placeholder="(917) 555-0000" required>
-              </div>
-              <div class="form-field">
-                <label for="f-email">Email Address</label>
-                <input type="email" id="f-email" name="email" placeholder="you@email.com">
-              </div>
-              <div class="form-field">
-                <label for="f-budget">Target Budget</label>
-                <select id="f-budget" name="budget">
-                  <option value="">Select budget range</option>
-                  <option>Under $500K</option>
-                  <option>$500K – $650K</option>
-                  <option>$650K – $850K</option>
-                  <option>$850K – $1.1M</option>
-                  <option>$1.1M+</option>
-                </select>
-              </div>
-              <div class="form-field">
-                <label for="f-preapproved">Are you pre-approved yet?</label>
-                <select id="f-preapproved" name="preApproved">
-                  <option value="">Select</option>
-                  <option>Yes — pre-approved</option>
-                  <option>No — but I have spoken to a lender</option>
-                  <option>No — have not started yet</option>
-                  <option>Not sure where to begin</option>
-                </select>
-              </div>
-              <div class="form-field">
-                <label for="f-lang">Preferred Language</label>
-                <select id="f-lang" name="language">
-                  <option value="">Select language</option>
-                  <option>English</option>
-                  <option>Hindi</option>
-                  <option>Punjabi</option>
-                  <option>Gujarati</option>
-                  <option>Urdu</option>
-                </select>
-              </div>
-              <button type="submit" class="btn-submit">Schedule Free Consultation</button>
-              <p class="form-disclaimer">By submitting this form, you consent to be contacted by Nitin Gadura of Gadura Real Estate, LLC. Your information will never be sold or shared with third parties.</p>
-            </form>
-          </div>
-          <div class="form-success" id="ftbFormSuccess">
-            <div class="form-success-icon">&#10003;</div>
-            <h4>Request Received</h4>
-            <p>Nitin Gadura will be in touch shortly to schedule your consultation. You can also call directly at <a href="tel:+19177050132" style="color:var(--gold)">(917) 705-0132</a>.</p>
+          <p class="cta-form-sub">Call or email Nitin to arrange a time that works for you.</p>
+          <div class="contact-fallback" data-contact-fallback style="text-align:center;padding:8px 0;line-height:1.7">
+            <p style="margin:0 0 16px">To talk with Nitin Gadura, Licensed Real Estate Salesperson with Gadura Real Estate, LLC, call the office or send an email.</p>
+            <p style="margin:0;display:flex;flex-wrap:wrap;gap:12px;justify-content:center"><a href="tel:+17188500010" style="display:inline-block;padding:12px 20px;border:1px solid currentColor;border-radius:4px;color:inherit;font-weight:600;text-decoration:none;max-width:100%;overflow-wrap:anywhere">Call (718) 850-0010</a> <a href="mailto:info@gadurarealestate.com" style="display:inline-block;padding:12px 20px;border:1px solid currentColor;border-radius:4px;color:inherit;font-weight:600;text-decoration:none;max-width:100%;overflow-wrap:anywhere">Email info@gadurarealestate.com</a></p>
           </div>
         </div>
 
@@ -1382,19 +1325,6 @@
           this.setAttribute('aria-expanded','true');
         }
       });
-    });
-
-    // Form submit
-    document.getElementById('ftbForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const firstName = document.getElementById('f-first').value.trim();
-      const phone = document.getElementById('f-phone').value.trim();
-      if (!firstName || !phone) {
-        alert('Please fill in your name and phone number.');
-        return;
-      }
-      document.getElementById('ftbFormContent').style.display = 'none';
-      document.getElementById('ftbFormSuccess').style.display = 'block';
     });
 
     // Nav scroll

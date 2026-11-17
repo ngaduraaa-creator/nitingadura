@@ -977,12 +977,11 @@
         <div class="val-left">
           <span class="val-eyebrow">Free — No Obligation</span>
           <h2 class="val-title" id="val-heading">What Is Your Queens Home Worth Today?</h2>
-          <p class="val-desc">Get a data-driven, no-obligation home valuation from Nitin Gadura — Queens' trusted real estate expert. You will receive a comprehensive CMA and personalized net proceeds estimate within 24 hours, with no pressure and no hidden agenda.</p>
+          <p class="val-desc">Get a data-driven, no-obligation home valuation from Nitin Gadura, Licensed Real Estate Salesperson with Gadura Real Estate, LLC. You will receive a comprehensive CMA and personalized net proceeds estimate, with no pressure and no hidden agenda.</p>
           <ul class="val-bullets">
             <li>OneKey MLS comparable sales analysis</li>
             <li>Personalized estimated net proceeds sheet</li>
             <li>Current Queens market conditions report</li>
-            <li>Delivered within 24 hours of your request</li>
             <li>Available in English, Hindi, Punjabi, Gujarati, and Urdu</li>
           </ul>
           <div class="agent-card">
@@ -1001,75 +1000,10 @@
 
         <div class="val-form" id="valuationFormCard">
           <h3>Request Your Free Valuation</h3>
-          <p class="val-form-sub">Complete the form below. Nitin will personally review your property details and respond within 24 hours.</p>
-          <div id="formContent">
-            <form id="sellForm" novalidate>
-              <div class="form-row">
-                <div class="form-field">
-                  <label for="s-first">First Name</label>
-                  <input type="text" id="s-first" name="firstName" placeholder="First name" required>
-                </div>
-                <div class="form-field">
-                  <label for="s-last">Last Name</label>
-                  <input type="text" id="s-last" name="lastName" placeholder="Last name" required>
-                </div>
-              </div>
-              <div class="form-field">
-                <label for="s-phone">Phone Number</label>
-                <input type="tel" id="s-phone" name="phone" placeholder="(917) 555-0000" required>
-              </div>
-              <div class="form-field">
-                <label for="s-email">Email Address</label>
-                <input type="email" id="s-email" name="email" placeholder="you@email.com" required>
-              </div>
-              <div class="form-field">
-                <label for="s-address">Property Address</label>
-                <input type="text" id="s-address" name="address" placeholder="Street address, Queens, NY" required>
-              </div>
-              <div class="form-row">
-                <div class="form-field">
-                  <label for="s-type">Property Type</label>
-                  <select id="s-type" name="propertyType">
-                    <option value="">Select type</option>
-                    <option>Single Family</option>
-                    <option>Two Family</option>
-                    <option>Three Family</option>
-                    <option>Condo / Co-op</option>
-                    <option>Multi-Family (4+)</option>
-                    <option>Mixed Use</option>
-                  </select>
-                </div>
-                <div class="form-field">
-                  <label for="s-beds">Bedrooms</label>
-                  <select id="s-beds" name="bedrooms">
-                    <option value="">Select</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5+</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-field">
-                <label for="s-timeline">When are you looking to sell?</label>
-                <select id="s-timeline" name="timeline">
-                  <option value="">Select timeline</option>
-                  <option>As soon as possible</option>
-                  <option>Within 3 months</option>
-                  <option>3–6 months</option>
-                  <option>6–12 months</option>
-                  <option>Just researching</option>
-                </select>
-              </div>
-              <button type="submit" class="btn-submit">Request Free Valuation</button>
-              <p class="form-disclaimer">By submitting this form, you consent to be contacted by Nitin Gadura of Gadura Real Estate, LLC regarding your property valuation inquiry. Your information will never be sold or shared with third parties.</p>
-            </form>
-          </div>
-          <div class="form-success" id="formSuccess">
-            <div class="form-success-icon">&#10003;</div>
-            <h4>Valuation Request Received</h4>
-            <p>Thank you. Nitin Gadura will personally review your property details and be in touch within 24 hours. You can also reach him directly at <a href="tel:+19177050132" style="color:var(--gold)">(917) 705-0132</a>.</p>
+          <p class="val-form-sub">Call or email Nitin with your property details to ask about a market analysis.</p>
+          <div class="contact-fallback" data-contact-fallback style="text-align:center;padding:8px 0;line-height:1.7">
+            <p style="margin:0 0 16px">To talk with Nitin Gadura, Licensed Real Estate Salesperson with Gadura Real Estate, LLC, call the office or send an email.</p>
+            <p style="margin:0;display:flex;flex-wrap:wrap;gap:12px;justify-content:center"><a href="tel:+17188500010" style="display:inline-block;padding:12px 20px;border:1px solid currentColor;border-radius:4px;color:inherit;font-weight:600;text-decoration:none;max-width:100%;overflow-wrap:anywhere">Call (718) 850-0010</a> <a href="mailto:info@gadurarealestate.com" style="display:inline-block;padding:12px 20px;border:1px solid currentColor;border-radius:4px;color:inherit;font-weight:600;text-decoration:none;max-width:100%;overflow-wrap:anywhere">Email info@gadurarealestate.com</a></p>
           </div>
         </div>
 
@@ -1138,20 +1072,6 @@
           this.setAttribute('aria-expanded', 'true');
         }
       });
-    });
-
-    // Form submit
-    document.getElementById('sellForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const firstName = document.getElementById('s-first').value.trim();
-      const phone = document.getElementById('s-phone').value.trim();
-      const address = document.getElementById('s-address').value.trim();
-      if (!firstName || !phone || !address) {
-        alert('Please fill in your name, phone number, and property address.');
-        return;
-      }
-      document.getElementById('formContent').style.display = 'none';
-      document.getElementById('formSuccess').style.display = 'block';
     });
 
     // Nav scroll behavior
