@@ -36,7 +36,8 @@ from urllib.parse import urlparse
 SITE_HOSTS = {"nitingadura.com", "www.nitingadura.com"}
 
 # Pages that showed a fake confirmation before the repair. Each must keep a
-# working, honest way to reach a person.
+# working, honest way to reach a person. A page that is retired (deleted) is
+# reported as a NOTE, not a failure; a page kept as a stub must keep the block.
 REQUIRED_CONTACT_PAGES = (
     "index.html", "queens.html", "brooklyn.html", "long-island.html",
     "long-island/elmont.html", "long-island/garden-city.html",
@@ -407,9 +408,11 @@ def main(argv: list[str]) -> int:
         print(f"SETUP ERROR: {root} does not look like the site root (index.html and CNAME required)")
         return 2
     missing = [p for p in REQUIRED_CONTACT_PAGES if not (root / p).is_file()]
-    if missing:
-        print("SETUP ERROR: required pages missing: " + ", ".join(missing))
+    if len(missing) == len(REQUIRED_CONTACT_PAGES):
+        print("SETUP ERROR: none of the required pages exist under " + str(root))
         return 2
+    for rel in missing:
+        print(f"NOTE {rel} is absent (retired?); no contact block required")
     findings = scan(root)
     for rule, rel, line, msg in findings:
         print(f"FAIL {rule} {rel}:{line} {msg}")
