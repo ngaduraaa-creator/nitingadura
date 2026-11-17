@@ -180,7 +180,7 @@ def hidden_classes(css: str) -> set[str]:
 
 
 def match_close(text: str, start: int, open_ch: str, close_ch: str) -> int:
-    """Index after the bracket that closes text[start]; skips JS strings."""
+    """Index after the bracket that closes text[start]; skips JS strings and comments."""
     depth, quote, i = 0, None, start
     while i < len(text):
         ch = text[i]
@@ -190,6 +190,14 @@ def match_close(text: str, start: int, open_ch: str, close_ch: str) -> int:
                 continue
             if ch == quote:
                 quote = None
+        elif text.startswith("//", i):
+            nl = text.find("\n", i)
+            i = len(text) if nl < 0 else nl
+            continue
+        elif text.startswith("/*", i):
+            end = text.find("*/", i + 2)
+            i = len(text) if end < 0 else end + 2
+            continue
         elif ch in "'\"`":
             quote = ch
         elif ch == open_ch:
