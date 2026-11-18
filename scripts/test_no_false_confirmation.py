@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regression gate: a page may only say a message was sent if it really sends it.
+"""Regression gate for contact forms, confirmation copy and the contact block.
 
 Scans every .html file in the site tree (stdlib only, no network) and fails
 (exit 1) when a page:
@@ -16,11 +16,28 @@ Scans every .html file in the site tree (stdlib only, no network) and fails
   F4  carries confirmation copy in an element hidden on load, or in a JS
       string, while the page has no real submission path at all.
   F5  has personal-data inputs outside any <form> that no request-making
-      script reads (a dead lead block).
-  F6  is a page that used to fake a confirmation (REQUIRED_CONTACT_PAGES) but
-      lacks the honest contact block ([data-contact-fallback] with a tel: and
-      a mailto: link), or any contact block carries a response-time promise,
-      confirmation copy, or a phone/email target that differs from the others.
+      script reads.
+  F6  is a listed contact page (REQUIRED_CONTACT_PAGES) that lacks the contact
+      block ([data-contact-fallback] with a tel: and a mailto: link), or any
+      contact block carries a response-time promise, confirmation copy, or a
+      phone/email target that differs from the others.
+  F7  has a contact block whose legibility depends on where it is placed: the
+      block must declare its own opaque background and text colour inline
+      (#hex or rgb(), not inherit/currentColor/var()), every text element in
+      it must set color:inherit or its own colour, every colour pair must
+      reach MIN_CONTRAST, nothing in it may be faded with opacity, and no
+      page CSS may target the block or force colours with !important on bare
+      p/a/span/div/* selectors.
+  F8  has a contact block that is hidden on load (display:none, the hidden
+      attribute, visibility:hidden, opacity:0, aria-hidden, or a class that
+      page CSS sets to display:none, on the block or any ancestor). A block
+      inside a dialog (role="dialog" or aria-modal="true") may start hidden
+      only if every hidden element from the block up to the dialog is shown
+      by a click handler.
+  F9  has a contact block link whose visible text does not match its target:
+      a tel: link must show the digits it dials (a leading country code 1 may
+      appear in the href only), and a mailto: link must show the address it
+      opens. An aria-label that carries digits must match as well.
 
 Exit codes: 0 pass, 1 findings, 2 usage or setup error (fails closed).
 Usage: python3 scripts/test_no_false_confirmation.py [SITE_ROOT]
@@ -31,13 +48,12 @@ import re
 import sys
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import unquote, urlparse
 
 SITE_HOSTS = {"nitingadura.com", "www.nitingadura.com"}
 
-# Pages that showed a fake confirmation before the repair. Each must keep a
-# working, honest way to reach a person. A page that is retired (deleted) is
-# reported as a NOTE, not a failure; a page kept as a stub must keep the block.
+# Pages that must carry the contact block. A page that is retired (deleted)
+# is reported as a NOTE, not a failure; a page kept as a stub must keep it.
 REQUIRED_CONTACT_PAGES = (
     "index.html", "queens.html", "brooklyn.html", "long-island.html",
     "long-island/elmont.html", "long-island/garden-city.html",
@@ -74,6 +90,11 @@ RESPONSE_PROMISE = re.compile(
     r"|respond(?:s)?\s+(?:fast|quickly|immediately|right\s+away|promptly)",
     re.I,
 )
+
+MIN_CONTRAST = 4.5  # WCAG 2.x AA, normal text
+NAMED_COLORS = {"white": (255, 255, 255), "black": (0, 0, 0)}
+EMAIL = re.compile(r"[\w.+-]+@[\w-]+(?:\.[\w-]+)+")
+OVERRIDE_PROPS = re.compile(r"(?:^|;)\s*(?:color|background(?:-color)?|opacity|visibility|display)\s*:[^;]*!\s*important", re.I)
 
 PERSONAL_FIELD = re.compile(r"name|phone|tel|email|e-mail|address|telefono|correo", re.I)
 PERSONAL_TYPES = {"tel", "email"}
@@ -159,7 +180,8 @@ class Page:
             self.by_id.setdefault(node.attrs.get("id", ""), node)
         self.js = "\n".join("".join(n.text) for n in self.nodes if n.tag == "script"
                             and n.attrs.get("type", "").strip().lower() in JS_TYPES and "src" not in n.attrs)
-        self.hidden_classes = hidden_classes("\n".join("".join(n.text) for n in self.nodes if n.tag == "style"))
+        self.css = "\n".join("".join(n.text) for n in self.nodes if n.tag == "style")
+        self.hidden_classes = hidden_classes(self.css)
         self.var_to_id = dict(re.findall(
             r"(?:const|let|var)\s+(\w+)\s*=\s*document\.getElementById\(\s*['\"]([^'\"]+)['\"]\s*\)", self.js))
         for var, sel in re.findall(
@@ -368,7 +390,7 @@ def check_dead_fields(page: Page, findings: list):
 def check_contact_blocks(page: Page, findings: list, targets: dict):
     blocks = [n for n in page.nodes if "data-contact-fallback" in n.attrs]
     if page.rel in REQUIRED_CONTACT_PAGES and not blocks:
-        findings.append(("F6", page.rel, 0, "missing honest contact block [data-contact-fallback]"))
+        findings.append(("F6", page.rel, 0, "missing contact block [data-contact-fallback]"))
     for block in blocks:
         hrefs = [n.attrs.get("href", "") for n in block.descendants() if n.tag == "a"]
         tel = sorted({h for h in hrefs if h.startswith("tel:")})
@@ -380,6 +402,178 @@ def check_contact_blocks(page: Page, findings: list, targets: dict):
             findings.append(("F6", page.rel, block.line, "contact block carries a response-time promise or confirmation copy"))
         for href in tel + mail:
             targets.setdefault(href.split(":")[0], {}).setdefault(href, []).append(page.rel)
+
+
+def style_decls(node: Node) -> dict[str, str]:
+    """Inline style declarations, lower-cased, with !important stripped."""
+    out = {}
+    for decl in node.attrs.get("style", "").split(";"):
+        if ":" in decl:
+            prop, value = decl.split(":", 1)
+            out[prop.strip().lower()] = re.sub(r"!\s*important\s*$", "", value.strip(), flags=re.I).strip().lower()
+    return out
+
+
+def parse_color(value: str | None) -> tuple[int, int, int] | None:
+    """Opaque #rgb / #rrggbb / rgb() / rgba(..., 1) / white / black; anything else is unverifiable."""
+    v = (value or "").strip().lower()
+    if v in NAMED_COLORS:
+        return NAMED_COLORS[v]
+    m = re.fullmatch(r"#([0-9a-f]{3}|[0-9a-f]{6})", v)
+    if m:
+        h = m.group(1) if len(m.group(1)) == 6 else "".join(c * 2 for c in m.group(1))
+        return tuple(int(h[i:i + 2], 16) for i in (0, 2, 4))
+    m = re.fullmatch(r"rgba?\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*(?:,\s*(?:1|1\.0+|100%)\s*)?\)", v)
+    if m and all(int(x) <= 255 for x in m.groups()):
+        return tuple(int(x) for x in m.groups())
+    return None
+
+
+def declared_background(decls: dict) -> str | None:
+    return decls.get("background-color", decls.get("background"))
+
+
+def contrast(a: tuple, b: tuple) -> float:
+    def lum(c):
+        ch = [x / 255 for x in c]
+        ch = [x / 12.92 if x <= 0.03928 else ((x + 0.055) / 1.055) ** 2.4 for x in ch]
+        return 0.2126 * ch[0] + 0.7152 * ch[1] + 0.0722 * ch[2]
+    hi, lo = sorted((lum(a), lum(b)), reverse=True)
+    return (hi + 0.05) / (lo + 0.05)
+
+
+def faded(decls: dict) -> bool:
+    try:
+        value = decls.get("opacity", "1").strip()
+        return (float(value[:-1]) / 100 if value.endswith("%") else float(value)) < 1
+    except ValueError:
+        return True
+
+
+def check_block_colours(page: Page, block: Node, findings: list):
+    decls = style_decls(block)
+    fg, bg = parse_color(decls.get("color")), parse_color(declared_background(decls))
+    if fg is None or bg is None:
+        findings.append(("F7", page.rel, block.line, "contact block must declare its own opaque background and "
+                         "text colour inline (#hex or rgb()); inherit/currentColor/var() cannot be checked"))
+        return
+    if faded(decls):
+        findings.append(("F7", page.rel, block.line, "contact block is faded with opacity"))
+    if contrast(fg, bg) < MIN_CONTRAST:
+        findings.append(("F7", page.rel, block.line, f"contact block colours reach {contrast(fg, bg):.2f}:1 (< {MIN_CONTRAST}:1)"))
+
+    def walk(node: Node, inherited: tuple, background: tuple):
+        for child in node.children:
+            if child.tag in ("script", "style"):
+                continue
+            d = style_decls(child)
+            here_bg, raw_bg = background, declared_background(d)
+            if raw_bg is not None and raw_bg not in ("transparent", "none", "inherit"):
+                here_bg = parse_color(raw_bg)
+                if here_bg is None:
+                    findings.append(("F7", page.rel, child.line, f"<{child.tag}> in contact block sets an unverifiable background"))
+                    continue
+            raw_fg, has_text = d.get("color"), bool(child.full_text())
+            if raw_fg in ("inherit", "currentcolor"):
+                here_fg = inherited
+            elif raw_fg is None:
+                here_fg = inherited
+                if has_text:
+                    findings.append(("F7", page.rel, child.line, f"<{child.tag}> in contact block must set color:inherit "
+                                     "(or its own colour) so page CSS cannot recolour it"))
+            else:
+                here_fg = parse_color(raw_fg)
+                if here_fg is None:
+                    findings.append(("F7", page.rel, child.line, f"<{child.tag}> in contact block sets an unverifiable colour"))
+                    continue
+            if faded(d):
+                findings.append(("F7", page.rel, child.line, f"<{child.tag}> in contact block is faded with opacity"))
+            if has_text and contrast(here_fg, here_bg) < MIN_CONTRAST:
+                findings.append(("F7", page.rel, child.line, f"<{child.tag}> in contact block reaches "
+                                 f"{contrast(here_fg, here_bg):.2f}:1 (< {MIN_CONTRAST}:1)"))
+            walk(child, here_fg, here_bg)
+
+    walk(block, fg, bg)
+
+
+def check_block_css(page: Page, findings: list):
+    for selectors, body in re.findall(r"([^{}]+)\{([^{}]*)\}", page.css):
+        targets_block = "contact-fallback" in selectors
+        forced = OVERRIDE_PROPS.search(body) and any(
+            re.fullmatch(r"(?:p|a|span|div|\*)(?::[\w-]+)*", sel.strip().split()[-1] if sel.strip() else "")
+            for sel in selectors.split(","))
+        if targets_block or forced:
+            findings.append(("F7", page.rel, file_line(page, selectors.strip()),
+                             f"page CSS can override the contact block: {selectors.strip()[:60]!r}"))
+
+
+def concealed(page: Page, el: Node) -> bool:
+    d = style_decls(el)
+    return (hidden_itself(page, el) or d.get("visibility") in ("hidden", "collapse")
+            or d.get("opacity", "1").strip() in ("0", "0.0", "0%") or el.attrs.get("aria-hidden", "").lower() == "true")
+
+
+def click_revealed_ids(page: Page) -> set[str]:
+    ids: set[str] = set()
+    for _, kind, _, body in handlers(page):
+        if kind.endswith("click"):
+            ids |= revealed_ids(page, expand_calls(page, body))
+    return ids
+
+
+def check_block_visibility(page: Page, block: Node, findings: list, revealed: set[str]):
+    chain = [block, *block.ancestors()]
+    dialog = next((i for i, el in enumerate(chain) if el.attrs.get("role", "").lower() in ("dialog", "alertdialog")
+                   or el.attrs.get("aria-modal", "").lower() == "true"), None)
+    must_show, may_reveal = (chain, []) if dialog is None else (chain[dialog + 1:], chain[:dialog + 1])
+    for el in must_show:
+        if concealed(page, el):
+            where = "the block" if el is block else f"ancestor <{el.tag}> line {el.line}"
+            findings.append(("F8", page.rel, block.line, f"contact block is hidden on load ({where})"))
+            return
+    for el in may_reveal:
+        if concealed(page, el) and el.attrs.get("id", "") not in revealed:
+            findings.append(("F8", page.rel, block.line, f"contact block in a dialog stays hidden: <{el.tag}> line {el.line} "
+                             "is hidden and no click handler shows it"))
+            return
+
+
+def same_number(shown: str, dialled: str) -> bool:
+    return shown == dialled or (len(shown) == 10 and dialled == "1" + shown)
+
+
+def check_block_links(page: Page, block: Node, findings: list):
+    for a in (n for n in block.descendants() if n.tag == "a"):
+        href, text = unquote(a.attrs.get("href", "").strip()), a.full_text()
+        scheme = href.split(":", 1)[0].lower()
+        if scheme == "tel":
+            dialled, shown = re.sub(r"\D", "", href[4:]), re.sub(r"\D", "", text)
+            aria = re.sub(r"\D", "", a.attrs.get("aria-label", ""))
+            if not shown:
+                findings.append(("F9", page.rel, a.line, "tel: link in contact block does not show the number it dials"))
+            elif not same_number(shown, dialled):
+                findings.append(("F9", page.rel, a.line, "tel: link in contact block shows a different number than it dials"))
+            if aria and not same_number(aria, dialled):
+                findings.append(("F9", page.rel, a.line, "tel: link aria-label names a different number than it dials"))
+        elif scheme == "mailto":
+            address = href[7:].split("?")[0].strip().lower()
+            shown = {e.lower() for e in EMAIL.findall(text)}
+            if not shown:
+                findings.append(("F9", page.rel, a.line, "mailto: link in contact block does not show the address it opens"))
+            elif shown != {address}:
+                findings.append(("F9", page.rel, a.line, "mailto: link in contact block shows a different address than it opens"))
+
+
+def check_block_quality(page: Page, findings: list):
+    blocks = [n for n in page.nodes if "data-contact-fallback" in n.attrs]
+    if not blocks:
+        return
+    check_block_css(page, findings)
+    revealed = click_revealed_ids(page)
+    for block in blocks:
+        check_block_colours(page, block, findings)
+        check_block_visibility(page, block, findings, revealed)
+        check_block_links(page, block, findings)
 
 
 def scan(root: Path) -> list:
@@ -395,6 +589,7 @@ def scan(root: Path) -> list:
         check_static_copy(page, findings)
         check_dead_fields(page, findings)
         check_contact_blocks(page, findings, targets)
+        check_block_quality(page, findings)
     for scheme, by_href in targets.items():
         if len(by_href) > 1:
             detail = "; ".join(f"{h} on {len(p)} page(s)" for h, p in sorted(by_href.items()))
@@ -416,7 +611,7 @@ def main(argv: list[str]) -> int:
     findings = scan(root)
     for rule, rel, line, msg in findings:
         print(f"FAIL {rule} {rel}:{line} {msg}")
-    counts = {r: sum(1 for f in findings if f[0] == r) for r in ("F1", "F2", "F3", "F4", "F5", "F6")}
+    counts = {r: sum(1 for f in findings if f[0] == r) for r in ("F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9")}
     pages = len({f[1] for f in findings})
     print("SUMMARY " + " ".join(f"{k}={v}" for k, v in counts.items()) + f" pages={pages}")
     print("RESULT " + ("FAIL" if findings else "PASS"))
