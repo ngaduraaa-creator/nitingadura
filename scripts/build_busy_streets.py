@@ -145,7 +145,7 @@ def render(c: dict) -> str:
   "description":"{meta_desc}",
   "datePublished":"{TODAY}","dateModified":"{TODAY}",
   "url":"{canonical}",
-  "author":{{"@type":"Person","name":"Nitin Gadura","url":"https://nitingadura.com/","sameAs":["https://www.wikidata.org/wiki/Q139583263"]}},
+  "author":{{"@type":"Person","@id":"https://nitingadura.com/#nitin-gadura","name":"Nitin Gadura","url":"https://nitingadura.com/","sameAs":["https://www.wikidata.org/wiki/Q139583263"]}},
   "publisher":{{"@type":"RealEstateAgent","name":"Gadura Real Estate, LLC","sameAs":["https://www.wikidata.org/wiki/Q139583275"]}},
   "image":"https://nitingadura.com/nitin-gadura.jpg",
   "mainEntityOfPage":"{canonical}",
