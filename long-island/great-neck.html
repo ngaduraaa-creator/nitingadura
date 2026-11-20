@@ -896,32 +896,11 @@
   <div class="section-inner" style="text-align: center;">
     <p class="section-label">Get In Touch</p>
     <h2 class="section-title section-title-light">Talk to Nitin About Great Neck</h2>
-    <p class="section-body section-body-light" style="margin: 0 auto 0;">Whether you are searching for a specific village on the peninsula, evaluating a waterfront opportunity, or preparing to sell an estate — Nitin provides expert, confidential counsel. He responds within two hours.</p>
+    <p class="section-body section-body-light" style="margin: 0 auto 0;">Whether you are searching for a specific village on the peninsula, evaluating a waterfront opportunity, or preparing to sell an estate — call or email Nitin for confidential counsel.</p>
     <div class="contact-form-wrap">
-      <form id="contact-form" novalidate>
-        <div class="form-grid">
-          <div class="form-field"><label for="name">Name</label><input type="text" id="name" name="name" placeholder="Your full name" required></div>
-          <div class="form-field"><label for="phone">Phone</label><input type="tel" id="phone" name="phone" placeholder="(917) 705-0132" required></div>
-          <div class="form-field"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="you@email.com" required></div>
-          <div class="form-field">
-            <label for="interest">I Want To</label>
-            <select id="interest" name="interest">
-              <option value="">Select one...</option>
-              <option>Buy a home in Great Neck</option>
-              <option>Sell my Great Neck property</option>
-              <option>Explore waterfront estates</option>
-              <option>Get a luxury home valuation</option>
-              <option>Understand the market by village</option>
-            </select>
-          </div>
-          <div class="form-field form-full"><label for="message">Message</label><textarea id="message" name="message" rows="4" placeholder="Tell Nitin what you're looking for in Great Neck — specific village, price range, must-haves..."></textarea></div>
-          <div class="form-submit"><button type="submit" class="btn-gold" style="width: 100%; padding: 0.9rem; font-size: 0.9rem;">Send Message</button></div>
-        </div>
-      </form>
-      <div class="form-success" id="form-success">
-        <div style="font-size: 2rem; margin-bottom: 1rem;">&#10003;</div>
-        <p style="font-family: var(--serif); font-size: 1.3rem; color: var(--white); margin-bottom: 0.5rem;">Message Received</p>
-        <p>Nitin will be in touch within 2 hours. Direct line: <a href="tel:+19177050132" style="color: var(--gold);">(917) 705-0132</a>.</p>
+      <div class="contact-fallback" data-contact-fallback style="text-align:center;padding:20px 16px;line-height:1.7;background:#FFFFFF;color:#1C1A18;border:1px solid #D6D0C4;border-radius:6px">
+        <p style="margin:0 0 16px;color:inherit">To talk with Nitin Gadura, Licensed Real Estate Salesperson with Gadura Real Estate, LLC, call the office or send an email.</p>
+        <p style="margin:0;display:flex;flex-wrap:wrap;gap:12px;justify-content:center;color:inherit"><a href="tel:+17188500010" style="display:inline-block;padding:12px 20px;border:1px solid currentColor;border-radius:4px;color:inherit;font-weight:600;text-decoration:none;max-width:100%;overflow-wrap:anywhere">Call (718) 850-0010</a> <a href="mailto:info@gadurarealestate.com" style="display:inline-block;padding:12px 20px;border:1px solid currentColor;border-radius:4px;color:inherit;font-weight:600;text-decoration:none;max-width:100%;overflow-wrap:anywhere">Email info@gadurarealestate.com</a></p>
       </div>
     </div>
   </div>
@@ -998,12 +977,6 @@
       document.querySelectorAll('.faq-item.open').forEach(i => { i.classList.remove('open'); i.querySelector('.faq-q').setAttribute('aria-expanded','false'); });
       if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
     });
-  });
-  document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    if (!document.getElementById('name').value.trim() || !document.getElementById('phone').value.trim() || !document.getElementById('email').value.trim()) { alert('Please fill in your name, phone, and email.'); return; }
-    this.style.display = 'none';
-    document.getElementById('form-success').style.display = 'block';
   });
 </script>
   <script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en',includedLanguages:'en,es,hi,pa,ur,bn',autoDisplay:false},'google_translate_element');}</script>

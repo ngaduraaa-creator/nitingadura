@@ -653,21 +653,13 @@
     <div id="popup-step2" style="display:none">
       <button class="popup-back" id="popup-back">← Back</button>
       <h2 class="popup-form-title" id="popup-form-title">Free Home Valuation</h2>
-      <p class="popup-form-sub" id="popup-form-sub">Get a precise, no-pressure market analysis for your home — delivered within 24 hours.</p>
-      <div class="form-field"><label for="p-name">Your Name</label><input type="text" id="p-name" placeholder="Full name" required></div>
-      <div class="form-field"><label for="p-phone">Phone</label><input type="tel" id="p-phone" placeholder="(917) 705-0132" required></div>
-      <div class="form-field"><label for="p-address">Property Address <small style="text-transform:none;letter-spacing:0;font-weight:300">(if selling)</small></label><input type="text" id="p-address" placeholder="Optional"></div>
-      <div class="form-field"><label for="p-msg">Message</label><input type="text" id="p-msg" placeholder="Tell me a little about your situation"></div>
-      <button class="btn-submit" id="popup-submit">Send Message</button>
-      <p class="form-disclaimer">Your info is never sold or shared. Nitin will respond within 2 hours.</p>
+      <p class="popup-form-sub" id="popup-form-sub">Get a precise, no-pressure market analysis for your home.</p>
+      <div class="contact-fallback" data-contact-fallback style="text-align:center;padding:20px 16px;line-height:1.7;background:#FFFFFF;color:#1C1A18;border:1px solid #D6D0C4;border-radius:6px">
+        <p style="margin:0 0 16px;color:inherit">To talk with Nitin Gadura, Licensed Real Estate Salesperson with Gadura Real Estate, LLC, call the office or send an email.</p>
+        <p style="margin:0;display:flex;flex-wrap:wrap;gap:12px;justify-content:center;color:inherit"><a href="tel:+17188500010" style="display:inline-block;padding:12px 20px;border:1px solid currentColor;border-radius:4px;color:inherit;font-weight:600;text-decoration:none;max-width:100%;overflow-wrap:anywhere">Call (718) 850-0010</a> <a href="mailto:info@gadurarealestate.com" style="display:inline-block;padding:12px 20px;border:1px solid currentColor;border-radius:4px;color:inherit;font-weight:600;text-decoration:none;max-width:100%;overflow-wrap:anywhere">Email info@gadurarealestate.com</a></p>
+      </div>
     </div>
 
-    <div id="popup-step3" style="display:none;text-align:center;padding:20px 0">
-      <p style="font-size:2rem;margin-bottom:14px">✓</p>
-      <h2 class="popup-form-title">Message Sent</h2>
-      <p style="color:var(--mid);font-size:0.83rem;font-weight:300;margin-top:8px;line-height:1.8">Nitin will reach out within 2 hours. In the meantime, feel free to call directly.</p>
-      <a href="tel:9177050132" class="btn-gold" style="margin-top:24px;max-width:280px;margin-left:auto;margin-right:auto">(917) 705-0132</a>
-    </div>
   </div>
 </div>
 
@@ -1011,37 +1003,17 @@
         <ul class="val-bullets">
           <li>Based on real comparable sales from OneKey MLS</li>
           <li>Includes neighborhood trend analysis and pricing strategy</li>
-          <li>Delivered within 24 hours — zero obligation</li>
+          <li>Zero obligation</li>
           <li>No pressure, no hard sell — ever</li>
         </ul>
         <button class="btn-gold popup-trigger" data-type="sell" style="max-width:260px">Request My Free Valuation</button>
       </div>
       <div class="val-form">
         <h3>Start Your Free Home Valuation</h3>
-        <form id="val-form" novalidate>
-          <div class="form-field"><label for="v-address">Property Address</label><input type="text" id="v-address" name="address" placeholder="106-09 101st Ave, Ozone Park, NY" required></div>
-          <div class="form-row">
-            <div class="form-field"><label for="v-name">Your Name</label><input type="text" id="v-name" name="name" placeholder="Full name" required></div>
-            <div class="form-field"><label for="v-phone">Phone</label><input type="tel" id="v-phone" name="phone" placeholder="(917) 705-0132" required></div>
-          </div>
-          <div class="form-field"><label for="v-email">Email Address</label><input type="email" id="v-email" name="email" placeholder="you@email.com" required></div>
-          <div class="form-field">
-            <label for="v-type">Property Type</label>
-            <select id="v-type" name="type">
-              <option value="">Select property type</option>
-              <option>Single Family Home</option>
-              <option>Multi-Family (2–4 units)</option>
-              <option>Condo / Co-op</option>
-              <option>Commercial / Mixed-Use</option>
-              <option>Land / Vacant Lot</option>
-            </select>
-          </div>
-          <button type="submit" class="btn-submit">Get My Free Valuation</button>
-        </form>
-        <div id="val-success" style="display:none;text-align:center;padding:20px 0">
-          <p style="font-weight:600;color:var(--dark)">Thank you — Nitin will be in touch within 24 hours.</p>
+        <div class="contact-fallback" data-contact-fallback style="text-align:center;padding:20px 16px;line-height:1.7;background:#FFFFFF;color:#1C1A18;border:1px solid #D6D0C4;border-radius:6px">
+          <p style="margin:0 0 16px;color:inherit">To talk with Nitin Gadura, Licensed Real Estate Salesperson with Gadura Real Estate, LLC, call the office or send an email.</p>
+          <p style="margin:0;display:flex;flex-wrap:wrap;gap:12px;justify-content:center;color:inherit"><a href="tel:+17188500010" style="display:inline-block;padding:12px 20px;border:1px solid currentColor;border-radius:4px;color:inherit;font-weight:600;text-decoration:none;max-width:100%;overflow-wrap:anywhere">Call (718) 850-0010</a> <a href="mailto:info@gadurarealestate.com" style="display:inline-block;padding:12px 20px;border:1px solid currentColor;border-radius:4px;color:inherit;font-weight:600;text-decoration:none;max-width:100%;overflow-wrap:anywhere">Email info@gadurarealestate.com</a></p>
         </div>
-        <p class="form-disclaimer">By submitting you consent to receive communications from Gadura Real Estate, LLC. Your information is never sold or shared.</p>
       </div>
     </div>
   </div>
@@ -1162,7 +1134,7 @@
       </div>
       <div class="seo-card">
         <h3>What is a comparative market analysis (CMA)?</h3>
-        <p>A CMA (Comparative Market Analysis) is a detailed report of recent comparable sales in your neighborhood used to determine your home's current market value. Nitin provides free, no-obligation CMAs for any Queens, Brooklyn, or Long Island property — delivered within 24 hours of your request.</p>
+        <p>A CMA (Comparative Market Analysis) is a detailed report of recent comparable sales in your neighborhood used to determine your home's current market value. Nitin provides free, no-obligation CMAs for any Queens, Brooklyn, or Long Island property.</p>
       </div>
       <div class="seo-card">
         <h3>How is property tax calculated in Queens and Nassau County?</h3>
@@ -1204,7 +1176,7 @@
     <div class="faq-wrap">
       <div class="faq-item">
         <button class="faq-q">How do I get a free home valuation from Nitin?<span class="faq-icon">+</span></button>
-        <div class="faq-a"><div class="faq-a-inner">Simply click "Free Home Valuation" anywhere on this site, fill in your address and contact information, and Nitin will prepare a detailed comparative market analysis based on current OneKey MLS data — delivered within 24 hours at zero cost and no obligation.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">Use the call or email buttons on this page to share your property address, and Nitin will prepare a detailed comparative market analysis based on current OneKey MLS data at zero cost and no obligation.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">Does Nitin work with buyers or only sellers?<span class="faq-icon">+</span></button>
@@ -1223,8 +1195,8 @@
         <div class="faq-a"><div class="faq-a-inner">Nitin Gadura is a licensed NYS Real Estate Salesperson (License #10401383405) operating under Gadura Real Estate, LLC — a licensed NYS real estate brokerage. All transactions are conducted in accordance with New York State real estate law and OneKey MLS rules. NY RPL §443 agency disclosure is provided at first substantive contact.</div></div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">How quickly can Nitin list my home for sale?<span class="faq-icon">+</span></button>
-        <div class="faq-a"><div class="faq-a-inner">Once the listing agreement is signed and photography is completed, Nitin can have your home live on OneKey MLS and syndicated to Zillow, Realtor.com, Homes.com, and StreetEasy within 24–48 hours. He coordinates professional photography, floor plans, and all marketing materials before the listing goes live.</div></div>
+        <button class="faq-q">How does Nitin list my home for sale?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Once the listing agreement is signed and photography is completed, Nitin can have your home live on OneKey MLS and syndicated to Zillow, Realtor.com, Homes.com, and StreetEasy. He coordinates professional photography, floor plans, and all marketing materials before the listing goes live.</div></div>
       </div>
     </div>
   </div>
@@ -1293,7 +1265,6 @@
   const overlay = document.getElementById('popup');
   const step1 = document.getElementById('popup-step1');
   const step2 = document.getElementById('popup-step2');
-  const step3 = document.getElementById('popup-step3');
   const formTitle = document.getElementById('popup-form-title');
   const formSub = document.getElementById('popup-form-sub');
 
@@ -1301,15 +1272,15 @@
     overlay.classList.add('active');
     document.body.style.overflow = 'hidden';
     if(type) showForm(type);
-    else { step1.style.display=''; step2.style.display='none'; step3.style.display='none'; }
+    else { step1.style.display=''; step2.style.display='none'; }
   }
   function closePopup() {
     overlay.classList.remove('active');
     document.body.style.overflow = '';
   }
   function showForm(type) {
-    step1.style.display='none'; step2.style.display=''; step3.style.display='none';
-    if(type==='sell'){ formTitle.textContent='Free Home Valuation'; formSub.textContent='Get a precise market analysis for your home — delivered within 24 hours, zero obligation.'; }
+    step1.style.display='none'; step2.style.display='';
+    if(type==='sell'){ formTitle.textContent='Free Home Valuation'; formSub.textContent='Get a precise market analysis for your home, with no obligation.'; }
     else if(type==='buy'){ formTitle.textContent='Buyer Consultation'; formSub.textContent='Tell Nitin what you\'re looking for and get a free buyer strategy session.'; }
     else { formTitle.textContent='Ask Nitin a Question'; formSub.textContent='Any question about buying or selling in Queens or Long Island — Nitin responds personally.'; }
   }
@@ -1324,9 +1295,6 @@
   });
   document.getElementById('popup-back').addEventListener('click', () => {
     step1.style.display=''; step2.style.display='none';
-  });
-  document.getElementById('popup-submit').addEventListener('click', () => {
-    step2.style.display='none'; step3.style.display='';
   });
 
   // TABS
@@ -1347,13 +1315,6 @@
       document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
       if(!isOpen) item.classList.add('open');
     });
-  });
-
-  // VALUATION FORM
-  document.getElementById('val-form').addEventListener('submit', e => {
-    e.preventDefault();
-    document.getElementById('val-form').style.display='none';
-    document.getElementById('val-success').style.display='block';
   });
 
   // CONTACT WIDGET

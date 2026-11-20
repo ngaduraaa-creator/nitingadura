@@ -451,17 +451,10 @@
     <div id="popup-step2" style="display:none">
       <button class="popup-back" id="popup-back">&#x2190; Back</button>
       <h2 class="popup-form-title" id="popup-form-title">Free Home Valuation</h2>
-      <p class="popup-form-sub">Nitin responds within 2 hours.</p>
-      <div class="form-field"><label for="p-name">Name</label><input type="text" id="p-name" placeholder="Full name" required></div>
-      <div class="form-field"><label for="p-phone">Phone</label><input type="tel" id="p-phone" placeholder="(917) 705-0132" required></div>
-      <div class="form-field"><label for="p-address">Property Address</label><input type="text" id="p-address" placeholder="Optional"></div>
-      <button class="btn-submit" id="popup-submit">Send Message</button>
-    </div>
-    <div id="popup-step3" style="display:none;text-align:center;padding:20px 0">
-      <p style="font-size:2rem;margin-bottom:14px">&#x2713;</p>
-      <h2 class="popup-form-title">Message Sent</h2>
-      <p style="color:var(--mid);font-size:0.83rem;font-weight:300;margin-top:8px">Nitin will reach out within 2 hours.</p>
-      <a href="tel:9177050132" style="display:block;margin-top:20px;background:var(--gold);color:#fff;font-size:0.66rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;padding:14px;text-align:center;border-radius:2px">(917) 705-0132</a>
+      <div class="contact-fallback" data-contact-fallback style="text-align:center;padding:20px 16px;line-height:1.7;background:#FFFFFF;color:#1C1A18;border:1px solid #D6D0C4;border-radius:6px">
+        <p style="margin:0 0 16px;color:inherit">To talk with Nitin Gadura, Licensed Real Estate Salesperson with Gadura Real Estate, LLC, call the office or send an email.</p>
+        <p style="margin:0;display:flex;flex-wrap:wrap;gap:12px;justify-content:center;color:inherit"><a href="tel:+17188500010" style="display:inline-block;padding:12px 20px;border:1px solid currentColor;border-radius:4px;color:inherit;font-weight:600;text-decoration:none;max-width:100%;overflow-wrap:anywhere">Call (718) 850-0010</a> <a href="mailto:info@gadurarealestate.com" style="display:inline-block;padding:12px 20px;border:1px solid currentColor;border-radius:4px;color:inherit;font-weight:600;text-decoration:none;max-width:100%;overflow-wrap:anywhere">Email info@gadurarealestate.com</a></p>
+      </div>
     </div>
   </div>
 </div>
@@ -836,7 +829,7 @@
   <div class="container">
     <span class="eyebrow" style="color:var(--gold)">Ready to Move?</span>
     <h2 style="font-family:var(--serif);font-size:clamp(1.8rem,3vw,2.8rem);font-weight:700;color:#fff;margin-bottom:14px">Get Your Free Brooklyn Home Valuation</h2>
-    <p style="font-size:0.9rem;font-weight:300;color:rgba(255,255,255,0.45);margin-bottom:36px;max-width:520px;margin-left:auto;margin-right:auto;line-height:1.85">Precise comparative market analysis based on current OneKey MLS data — delivered within 24 hours, zero obligation.</p>
+    <p style="font-size:0.9rem;font-weight:300;color:rgba(255,255,255,0.45);margin-bottom:36px;max-width:520px;margin-left:auto;margin-right:auto;line-height:1.85">Precise comparative market analysis based on current OneKey MLS data, with no obligation.</p>
     <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
       <button class="nav-cta popup-trigger" style="padding:16px 32px;font-size:0.7rem" data-type="sell">Free Home Valuation</button>
       <a href="https://www.gadurarealestate.com" target="_blank" rel="noopener" style="border:1px solid rgba(255,255,255,0.18);color:rgba(255,255,255,0.65);font-size:0.68rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;padding:16px 32px;border-radius:2px;transition:all 0.22s;display:inline-block">Search MLS Listings</a>
@@ -896,16 +889,14 @@
   const popup=document.getElementById('popup');
   const step1=document.getElementById('popup-step1');
   const step2=document.getElementById('popup-step2');
-  const step3=document.getElementById('popup-step3');
   const formTitle=document.getElementById('popup-form-title');
-  function openPopup(type){popup.classList.add('active');document.body.style.overflow='hidden';if(type){step1.style.display='none';step2.style.display='';step3.style.display='none';formTitle.textContent=type==='sell'?'Free Home Valuation':type==='buy'?'Buyer Consultation':'Ask Nitin a Question';}else{step1.style.display='';step2.style.display='none';step3.style.display='none';}}
+  function openPopup(type){popup.classList.add('active');document.body.style.overflow='hidden';if(type){step1.style.display='none';step2.style.display='';formTitle.textContent=type==='sell'?'Free Home Valuation':type==='buy'?'Buyer Consultation':'Ask Nitin a Question';}else{step1.style.display='';step2.style.display='none';}}
   function closePopup(){popup.classList.remove('active');document.body.style.overflow='';}
   document.querySelectorAll('.popup-trigger').forEach(el=>el.addEventListener('click',()=>openPopup(el.dataset.type||null)));
   document.querySelectorAll('.popup-opt').forEach(btn=>btn.addEventListener('click',()=>openPopup(btn.dataset.type)));
   document.getElementById('popup-close').addEventListener('click',closePopup);
   popup.addEventListener('click',e=>{if(e.target===popup)closePopup();});
   document.getElementById('popup-back').addEventListener('click',()=>{step1.style.display='';step2.style.display='none';});
-  document.getElementById('popup-submit').addEventListener('click',()=>{step2.style.display='none';step3.style.display='';});
 </script>
   <script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en',includedLanguages:'en,es,hi,pa,ur,bn',autoDisplay:false},'google_translate_element');}</script>
   <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>

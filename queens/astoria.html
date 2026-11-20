@@ -1433,7 +1433,7 @@
         </button>
         <div class="faq-answer" id="faq-a7" role="region">
           <div class="faq-answer-inner">
-            Selling in Astoria starts with an accurate Comparative Market Analysis — I analyze recent closed sales, active competition, and your property's specific attributes to set a price that attracts buyers without leaving money on the table. I then coordinate professional photography and staging consultation, list on OneKey® MLS with maximum exposure, and manage all buyer inquiries, showings, and offer negotiations. I stay with you through the entire process: signed contract, attorney coordination, appraisal, and closing. Call (917) 705-0132 or fill out the form below for a free, no-obligation home valuation.
+            Selling in Astoria starts with an accurate Comparative Market Analysis — I analyze recent closed sales, active competition, and your property's specific attributes to set a price that attracts buyers without leaving money on the table. I then coordinate professional photography and staging consultation, list on OneKey® MLS with maximum exposure, and manage all buyer inquiries, showings, and offer negotiations. I stay with you through the entire process: signed contract, attorney coordination, appraisal, and closing. Use the call or email buttons on this page to ask for a free, no-obligation home valuation.
           </div>
         </div>
       </div>
@@ -1449,7 +1449,7 @@
       <div class="contact-left">
         <span class="eyebrow" style="color: var(--gold);">Get in Touch</span>
         <h2 id="contact-heading">Ready to Buy or Sell in Astoria?</h2>
-        <p>Whether you want a free home valuation, guidance on your first purchase, or a second opinion on a listing you have seen — reach out. I respond to all inquiries within two hours during business hours.</p>
+        <p>Whether you want a free home valuation, guidance on your first purchase, or a second opinion on a listing you have seen — reach out.</p>
         <div class="contact-detail"><strong>Phone:</strong>&nbsp;<a href="tel:9177050132">(917) 705-0132</a></div>
         <div class="contact-detail"><strong>Email:</strong>&nbsp;<a href="mailto:info@gadurarealestate.com">info@gadurarealestate.com</a></div>
         <div class="contact-detail"><strong>Office:</strong>&nbsp;106-09 101st Ave, Ozone Park, NY 11416</div>
@@ -1470,47 +1470,9 @@
 
       <div class="contact-form">
         <h3>Send Nitin a Message</h3>
-        <form id="contact-form" novalidate>
-          <div class="form-row-2">
-            <div class="form-group">
-              <label for="cf-name">Name</label>
-              <input type="text" id="cf-name" name="name" placeholder="Full name" required>
-            </div>
-            <div class="form-group">
-              <label for="cf-phone">Phone</label>
-              <input type="tel" id="cf-phone" name="phone" placeholder="(917) 705-0132" required>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="cf-email">Email</label>
-            <input type="email" id="cf-email" name="email" placeholder="you@email.com" required>
-          </div>
-          <div class="form-group">
-            <label for="cf-intent">I am looking to</label>
-            <select id="cf-intent" name="intent">
-              <option value="sell">Sell my home</option>
-              <option value="buy">Buy a home</option>
-              <option value="invest">Invest in a property</option>
-              <option value="value">Get a home valuation</option>
-              <option value="other">Other / Just have questions</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="cf-address">Property Address (optional)</label>
-            <input type="text" id="cf-address" name="address" placeholder="Street address, Astoria, NY">
-          </div>
-          <div class="form-group">
-            <label for="cf-msg">Message</label>
-            <textarea id="cf-msg" name="message" rows="4" placeholder="Tell me about your situation..."></textarea>
-          </div>
-          <button type="submit" class="form-submit">Send Message to Nitin</button>
-        </form>
-        <div class="form-success" id="form-success">
-          <div class="success-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C8953A" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-          </div>
-          <h4>Message Received</h4>
-          <p>Nitin will reach out within 2 hours.<br>For immediate assistance, call <a href="tel:9177050132" style="color:var(--gold)">(917) 705-0132</a>.</p>
+        <div class="contact-fallback" data-contact-fallback style="text-align:center;padding:20px 16px;line-height:1.7;background:#FFFFFF;color:#1C1A18;border:1px solid #D6D0C4;border-radius:6px">
+          <p style="margin:0 0 16px;color:inherit">To talk with Nitin Gadura, Licensed Real Estate Salesperson with Gadura Real Estate, LLC, call the office or send an email.</p>
+          <p style="margin:0;display:flex;flex-wrap:wrap;gap:12px;justify-content:center;color:inherit"><a href="tel:+17188500010" style="display:inline-block;padding:12px 20px;border:1px solid currentColor;border-radius:4px;color:inherit;font-weight:600;text-decoration:none;max-width:100%;overflow-wrap:anywhere">Call (718) 850-0010</a> <a href="mailto:info@gadurarealestate.com" style="display:inline-block;padding:12px 20px;border:1px solid currentColor;border-radius:4px;color:inherit;font-weight:600;text-decoration:none;max-width:100%;overflow-wrap:anywhere">Email info@gadurarealestate.com</a></p>
         </div>
       </div>
     </div>
@@ -1599,24 +1561,6 @@
     });
   })();
 
-  // FORM HANDLER
-  (function() {
-    var form = document.getElementById('contact-form');
-    var success = document.getElementById('form-success');
-    if (!form) return;
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      var name = form.querySelector('#cf-name').value.trim();
-      var phone = form.querySelector('#cf-phone').value.trim();
-      var email = form.querySelector('#cf-email').value.trim();
-      if (!name || !phone || !email) {
-        alert('Please fill in your name, phone, and email.');
-        return;
-      }
-      form.style.display = 'none';
-      success.style.display = 'block';
-    });
-  })();
 </script>
   <script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en',includedLanguages:'en,es,hi,pa,ur,bn',autoDisplay:false},'google_translate_element');}</script>
   <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>

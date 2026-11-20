@@ -913,48 +913,10 @@
           </div>
         </div>
         <div class="contact-form">
-          <form id="contactForm">
-            <div class="form-success" id="formSuccess">
-              <div class="form-success-title">Message Received</div>
-              <div class="form-success-text">Nitin will be in touch within one business day. For immediate assistance, call (917) 705-0132.</div>
-            </div>
-            <div id="formFields">
-              <div class="form-row">
-                <div class="form-group">
-                  <label class="form-label" for="fname">First Name</label>
-                  <input class="form-input" type="text" id="fname" name="fname" placeholder="First name" required>
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="lname">Last Name</label>
-                  <input class="form-input" type="text" id="lname" name="lname" placeholder="Last name" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="email">Email Address</label>
-                <input class="form-input" type="email" id="email" name="email" placeholder="your@email.com" required>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="phone">Phone Number</label>
-                <input class="form-input" type="tel" id="phone" name="phone" placeholder="(xxx) xxx-xxxx">
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="interest">I Am Looking To</label>
-                <select class="form-select form-input" id="interest" name="interest">
-                  <option value="">Select one</option>
-                  <option value="sell">Sell my home</option>
-                  <option value="buy">Buy a home</option>
-                  <option value="waterfront">Find a waterfront / canal property</option>
-                  <option value="value">Get a free home valuation</option>
-                  <option value="other">Other inquiry</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="message">Message</label>
-                <textarea class="form-textarea" id="message" name="message" placeholder="Tell Nitin about your property or what you're looking for in Howard Beach..."></textarea>
-              </div>
-              <button type="submit" class="form-submit">Send Message</button>
-            </div>
-          </form>
+          <div class="contact-fallback" data-contact-fallback style="text-align:center;padding:20px 16px;line-height:1.7;background:#FFFFFF;color:#1C1A18;border:1px solid #D6D0C4;border-radius:6px">
+            <p style="margin:0 0 16px;color:inherit">To talk with Nitin Gadura, Licensed Real Estate Salesperson with Gadura Real Estate, LLC, call the office or send an email.</p>
+            <p style="margin:0;display:flex;flex-wrap:wrap;gap:12px;justify-content:center;color:inherit"><a href="tel:+17188500010" style="display:inline-block;padding:12px 20px;border:1px solid currentColor;border-radius:4px;color:inherit;font-weight:600;text-decoration:none;max-width:100%;overflow-wrap:anywhere">Call (718) 850-0010</a> <a href="mailto:info@gadurarealestate.com" style="display:inline-block;padding:12px 20px;border:1px solid currentColor;border-radius:4px;color:inherit;font-weight:600;text-decoration:none;max-width:100%;overflow-wrap:anywhere">Email info@gadurarealestate.com</a></p>
+          </div>
         </div>
       </div>
     </div>
@@ -1042,11 +1004,6 @@
         document.querySelectorAll('.faq-item.open').forEach(i => { i.classList.remove('open'); i.querySelector('.faq-trigger').setAttribute('aria-expanded','false'); });
         if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
       });
-    });
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      document.getElementById('formFields').style.display = 'none';
-      document.getElementById('formSuccess').style.display = 'block';
     });
   </script>
   <script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en',includedLanguages:'en,es,hi,pa,ur,bn',autoDisplay:false},'google_translate_element');}</script>
